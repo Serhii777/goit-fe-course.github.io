@@ -12,9 +12,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Playfair Display', serif;
     color: #626262;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px;
 }
 
 * {
@@ -31,6 +31,7 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+
 }
 
 /* navigation */
@@ -38,7 +39,7 @@ body {
 .main-menu {
     margin: 0;
     padding: 76px 164px 102px 164px;
-    font-size: 14px;
+    font-size: 0;
     list-style: none;
     text-align: center;
     vertical-align: middle;
@@ -46,11 +47,12 @@ body {
 
 .main-menu-item {
     display: inline-block;
+    font-size: 14px;
 }
 
 /* must be change */
-.main-menu li:not(:last-child){
-    margin-right: 102px;
+.main-menu li:not(:last-child) {
+    margin-right: 0px;
 }
 
 .main-menu-link {
@@ -78,20 +80,17 @@ body {
 
 /* main */
 
-.main-content{
-
-}
-
-.main-section-content{
+.main-section-content {
     display: inline-block;
     width: 900px;
     text-align: center;
     vertical-align: top;
     margin: 0;
     font-size: 0px;
+    margin-bottom: 130px;
 }
 
-.main-subsection-content{
+.main-subsection-content {
     display: inline-block;
     width: 420px;
     text-align: left;
@@ -99,37 +98,42 @@ body {
     font-size: 0;
     margin: 0;
     padding: 0;
-    margin-bottom: 130px;
 }
 
-.main-section-content:not(:nth-child(2n)){
-margin-right: 58px;
+.main-section-content div:not(:last-child) {
+    margin-right: 60px;
 }
 
-.main-section-content:nth-last-child(-n+2){
-    margin-bottom: 0;
+.main-section-content:nth-last-child(-n+1) {
+    margin-bottom: 0px;
 }
 
 .section-content {
-    display: inline-block;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.section-content-title {
+    display: block;
     font-size: 14px;
     line-height: 17px;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
-    margin-top: 30px 0 26px 0;
-    padding: 0;
+    margin-top: 0px;
+    padding: 30px 0 0 0;
 }
 
 .title-section {
-    display: inline-block;
     font-size: 30px;
     line-height: 36px;
     font-family: 'Playfair Display', serif;
     color: #626262;
-    margin: 0;
-    margin-bottom: ;
+    margin: 20px 0 34px 0;
     padding: 0;
+
 }
 
 .content {
@@ -143,3 +147,33 @@ margin-right: 58px;
 }
 
 /* footer */
+
+.footer-button {
+    display: block;
+    text-align: center;
+}
+
+.load-button {
+    margin: 54px 0 70px 0;
+    padding: 20px;
+    border: 1px;
+    min-width: 164px;
+    max-height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+.load-button:hover {
+    color: #03a9f4;
+}
+
+.load-button:focus {
+    color: rgb(76, 40, 7);
+    background-color: rgb(213, 201, 43);
+}
+
+.load-button:active {
+    background-color: lightcoral;
+}
