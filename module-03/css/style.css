@@ -18,46 +18,56 @@ body {
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .container {
     width: 900px;
     margin: 0 auto;
-    background-color: #dce7c2;
+    /* background-color: #dce7c2; */
 }
 
 .img {
     display: block;
     max-width: 100%;
     height: auto;
-
 }
 
 /* navigation */
 
 .main-menu {
+    display: inline-block;
     margin: 0;
     padding: 76px 164px 102px 164px;
     font-size: 0;
     list-style: none;
     text-align: center;
-    vertical-align: middle;
 }
 
-.main-menu-item {
+.menu-item-lifestyle {
     display: inline-block;
-    font-size: 14px;
+    margin-right: 120px;
 }
 
-/* must be change */
-.main-menu li:not(:last-child) {
-    margin-right: 0px;
+.menu-item-photodiary {
+    display: inline-block;
+    margin-right: 102px;
+}
+
+.menu-item-music {
+    display: inline-block;
+    margin-right: 94px;
+}
+
+.menu-item-travel {
+    display: inline-block;
+    margin-right: auto;
 }
 
 .main-menu-link {
     display: block;
     color: #626262;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
@@ -154,13 +164,15 @@ body {
 }
 
 .load-button {
-    margin: 54px 0 70px 0;
+    margin: 54px 368px 70px 368px;
     padding: 20px;
-    border: 1px;
     min-width: 164px;
     max-height: 60px;
+    background-color: #ffffff;
     font-size: 20px;
     line-height: 24px;
+    border-width: 1px;
+    border-color: #626262;
     font-family: 'Playfair Display', serif;
     cursor: pointer;
 }
