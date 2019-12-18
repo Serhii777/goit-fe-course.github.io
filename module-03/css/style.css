@@ -18,7 +18,7 @@ body {
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .container {
@@ -90,8 +90,6 @@ body {
     width: 900px;
     text-align: center;
     vertical-align: top;
-    margin: 0;
-    font-size: 0px;
     margin-bottom: 130px;
 }
 
@@ -100,9 +98,6 @@ body {
     width: 420px;
     text-align: left;
     vertical-align: top;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
 }
 
 .main-section-content div:not(:last-child) {
@@ -115,9 +110,6 @@ body {
 
 .section-content {
     display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
 }
 
 .section-content-title {
@@ -137,8 +129,6 @@ body {
     font-family: 'Playfair Display', serif;
     color: #626262;
     margin: 20px 0 34px 0;
-    padding: 0;
-
 }
 
 .content {
@@ -148,7 +138,6 @@ body {
     color: #626262;
     text-transform: none;
     margin: 0;
-    padding: 0;
 }
 
 /* footer */
