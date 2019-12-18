@@ -36,12 +36,7 @@ body {
 /* navigation */
 
 .main-menu {
-    display: inline-block;
-    margin: 0;
     padding: 76px 164px 102px 164px;
-    font-size: 0;
-    list-style: none;
-    text-align: center;
 }
 
 .menu-item-lifestyle {
@@ -164,7 +159,7 @@ body {
 }
 
 .load-button {
-    margin: 54px 368px 70px 368px;
+    margin: 54px 0 70px 0;
     padding: 20px;
     min-width: 164px;
     max-height: 60px;
