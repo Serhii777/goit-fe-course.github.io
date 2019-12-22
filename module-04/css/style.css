@@ -1,10 +1,10 @@
-/* *,
+*,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
-body {
+/* body {
     font-family: 'Raleway', 'Arial', sans-serif;
     color: #6c7279;
     font-size: 14px;
