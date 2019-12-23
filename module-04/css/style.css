@@ -1,14 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
-/* body {
-    font-family: 'Raleway', 'Arial', sans-serif;
-    color: #6c7279;
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    color: #555252;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 26px;
 }
 
 img {
@@ -18,8 +22,36 @@ img {
 }
 
 .container {
-    width: 1170px;
+    width: 1110px;
     margin: 0px auto;
-    box-sizing: border-box;
     background-color: rgb(216, 209, 147);
+}
+
+* {
+    outline: 1px solid red;
+}
+
+/* main */
+
+.main-title{
+    font-family: serif;
+}
+
+
+
+
+
+
+/* p::before{
+    content: "\260E";
+    color: red;
+}
+
+h2::before {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: red;
+    content: '';
+    margin: 0px auto;
 } */
