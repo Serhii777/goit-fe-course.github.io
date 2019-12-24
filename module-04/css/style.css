@@ -30,11 +30,6 @@ img {
 .container {
     width: 1110px;
     margin: 0px auto;
-    background-color: rgb(216, 209, 147);
-}
-
-* {
-    outline: 1px solid red;
 }
 
 /* navigation */
@@ -192,8 +187,6 @@ h2::after {
 
 /* LATEST NEWS */
 
-
-
 .main-title-news {
     font-size: 48px;
     line-height: 32px;
@@ -204,7 +197,7 @@ h2::after {
     margin-bottom: 106px;
 }
 
-.items-news{
+.items-news {
     margin: 0px;
     padding: 0px;
 }
@@ -219,11 +212,6 @@ h2::after {
 .items-news li:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
-/* .news{
-    margin: 0px;
-    padding: 0px;
-} */
 
 .news-name {
     font-size: 18px;
@@ -250,7 +238,7 @@ h2::after {
     padding: 0px;
 }
 
-.download-button{
+.download-button {
     border: none;
     margin: 0px;
     padding: 14px 42px;
@@ -263,28 +251,17 @@ h2::after {
     cursor: pointer;
 }
 
-
-
-
-
-
-/* p::before{
-    content: "\260E";
-    color: red;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-*/
