@@ -39,9 +39,10 @@ img {
 
 /* navigation */
 
-.main-logo {
-    margin: 0px;
-    padding: 0px;
+.main-navigation a {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .logo-name {
@@ -49,6 +50,7 @@ img {
     font-size: 30px;
     line-height: 32px;
     font-family: 'Roboto', sans-serif;
+    font-weight: light;
     color: #555252;
     margin-top: 34px;
 }
@@ -58,6 +60,8 @@ img {
 .logo-name::first-letter {
     color: #1abc9c;
 }
+
+/* navigation-items */
 
 .navigation-items {
     float: right;
@@ -90,19 +94,114 @@ img {
     color: #1abc9c;
 }
 
-.main-navigation{
+.main-navigation {
     margin-bottom: 90px;
 }
 
 /* main */
+/* FEATURED PRODUCTS */
 
-.main-title {
-    font-family: serif;
+.main-section {
+    margin-bottom: 98px;
 }
 
+.main-section h2 {
+    text-align: center;
+}
 
+.main-title {
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #515151;
+    margin-bottom: 118px;
+}
 
+h2::after {
+    display: block;
+    width: 164px;
+    height: 6px;
+    background-color: #4ec6ab;
+    content: '';
+    margin: 20px auto;
+}
 
+.items-products {
+    margin: 0px;
+    padding: 0px;
+}
+
+.items-products li {
+    float: left;
+    width: 255px;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.items-products li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.items-products li:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
+}
+
+.product {
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+.item-products p {
+    float: left;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: ;
+    color: #ffffff;
+    height: 40px;
+    margin: 0px;
+    /* padding:5px 0px 10px 12px; */
+    padding: 0px 0px 0px 12px;
+}
+
+.name-product {
+    min-width: 201px;
+    background-color: #323232;
+}
+
+.price-product {
+    min-width: 54px;
+    background-color: #8c8c8c;
+}
+
+.product .name-product:hover,
+.product .name-product:focus {
+    color: #ffffff;
+    background-color: #1abc9c;
+}
+
+.product .price-product:hover,
+.product .price-product:focus {
+    color: #ffffff;
+    background-color: #7fd9c7;
+}
+
+/* LATEST NEWS */
+
+.main-title-news {
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #515151;
+    margin-bottom: 106px;
+}
 
 
 /* p::before{
