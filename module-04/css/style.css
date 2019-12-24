@@ -15,6 +15,12 @@ body {
     line-height: 26px;
 }
 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -31,9 +37,66 @@ img {
     outline: 1px solid red;
 }
 
+/* navigation */
+
+.main-logo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-name {
+    float: left;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: #555252;
+    margin-top: 34px;
+}
+
+.logo-name:hover,
+.logo-name:focus,
+.logo-name::first-letter {
+    color: #1abc9c;
+}
+
+.navigation-items {
+    float: right;
+    width: 466px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 44px;
+}
+
+.navigation-items li {
+    float: left;
+}
+
+.navigation-items a {
+    float: right;
+    line-height: 11px;
+    font-weight: bold;
+    color: #0f0101;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-items li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation-items a:hover,
+.navigation-items a:focus {
+    color: #1abc9c;
+}
+
+.main-navigation{
+    margin-bottom: 90px;
+}
+
 /* main */
 
-.main-title{
+.main-title {
     font-family: serif;
 }
 
