@@ -45,7 +45,7 @@ img {
     font-size: 30px;
     line-height: 32px;
     font-family: 'Roboto', sans-serif;
-    font-weight: light;
+    font-weight: 300;
     color: #555252;
     margin-top: 34px;
 }
@@ -131,8 +131,7 @@ h2::after {
     float: left;
     width: 255px;
     list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
+
 }
 
 .items-products li:not(:nth-child(4n)) {
@@ -143,7 +142,14 @@ h2::after {
     margin-bottom: 30px;
 }
 
-.item-products p {
+.product a {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.item-products .name-product,
+.item-products .price-product {
     float: left;
     font-size: 18px;
     line-height: 32px;
@@ -153,6 +159,10 @@ h2::after {
     height: 40px;
     margin: 0px;
     padding: 5px 0px 0px 12px;
+}
+
+.item-products:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .name-product {
@@ -252,15 +262,18 @@ h2::after {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
+
     width: 1px;
     height: 1px;
-    margin: -1px;
+    margin: 1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
+
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
