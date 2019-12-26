@@ -16,14 +16,14 @@ body {
 }
 
 .clearfix::after {
-    display: table;
     content: '';
+    display: table;
     clear: both;
 }
 
 img {
     display: block;
-    /* max-width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -163,8 +163,6 @@ h2::after {
 }
 
 .product-text-wrp {
-    /* height: calc(322px-282px);
-    line-height: calc(322px-282px); */
     height: 40px;
     line-height: 40px;
     overflow: hidden;
@@ -197,46 +195,44 @@ h2::after {
     margin-bottom: 30px;
 }
 
-.item-products:hover,
-.item-products a:focus {
+.item-products:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* .name-product {
-    min-width: 201px;
-    background-color: #323232;
-}
-
-.price-product {
-    min-width: 54px;
-    background-color: #8c8c8c; 
-}*/
-
-.item-products:hover .product-text-wrp,
-.item-products:focus .product-text-wrp {
+.item-products:hover .product-text-wrp {
     background: #1abc9c;
 }
 
-.item-products:hover .product-price,
 .item-products:hover .product-price {
     background: #7fd9c7;
 }
 
-.item-products:focus {
-    color: #ffffff;
-    background-color: #1abc9c;
+
+/* Tab по Featured products - не работает, и не знаю почему??? */
+
+
+/* .item-products:focus .product-link {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.price-product:focus {
-    color: #ffffff;
-    background-color: #7fd9c7;
+.item-products:focus .product-text-wrp {
+    background: #1abc9c;
 }
+
+.item-products:focus .product-price {
+    background: #7fd9c7;
+} */
+
+
+
+
+
 
 /* LATEST NEWS */
 
-/* .main-section-news{
+.main-section-news {
     margin-bottom: 82px;
-} */
+}
 
 .main-title-news {
     font-size: 48px;
@@ -247,6 +243,8 @@ h2::after {
     color: #515151;
     margin: 0px;
     margin-bottom: 106px;
+    height: auto;
+    overflow: hidden;
 }
 
 .items-news {
@@ -254,24 +252,54 @@ h2::after {
     padding: 0px;
 }
 
-.items-news li {
+.items-news li{
     float: left;
     width: 350px;
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
+    margin: 0px;
 }
 
 .items-news li:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
-.news-name {
+.content-news-item{
+    float: right;
+    overflow: hidden;
+}
+
+.item-news:hover,
+.item-news .download-button:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.content-img-wrp {
+    height: 262px;
+    line-height: 262px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.news-img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.content-text-wrp {
     font-size: 18px;
     line-height: 26px;
+    color: #555252;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    margin: 14px 0px 40px 0px;
+    margin-bottom: 14px;
     padding: 0px;
+}
+
+.news-name {
+    margin: 0px 0px 40px;
 }
 
 .news-name::after {
@@ -280,13 +308,13 @@ h2::after {
     height: 3px;
     background-color: #4ec6ab;
     content: '';
-    margin-top: 10px;
+    margin: 10px 0px 0px 0px;
 }
 
-.news-content {
-    font-weight: 400;
+.news-text {
+    font-size: 14px;
+    font-weight: 300;
     margin: 0px;
-    margin-bottom: 14px;
     padding: 0px;
 }
 
@@ -318,4 +346,16 @@ input[type="radio"].visually-hidden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.main-footer h2 {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #515151;
 }
