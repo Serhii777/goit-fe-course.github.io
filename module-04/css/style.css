@@ -36,10 +36,6 @@ a {
     text-decoration: none;
 }
 
-* {
-    outline: 1px solid red;
-}
-
 /* navigation */
 
 .main-navigation a {
@@ -133,9 +129,6 @@ h2::after {
     margin: 20px auto;
 }
 
-
-
-
 .items-products {
     margin: 0px;
     padding: 0px;
@@ -173,7 +166,6 @@ h2::after {
     text-transform: uppercase;
     transition-duration: 0.3s;
     background: #323232;
-
 }
 
 .product-title {
@@ -207,27 +199,6 @@ h2::after {
     background: #7fd9c7;
 }
 
-
-/* Tab по Featured products - не работает, и не знаю почему??? */
-
-
-/* .item-products:focus .product-link {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.item-products:focus .product-text-wrp {
-    background: #1abc9c;
-}
-
-.item-products:focus .product-price {
-    background: #7fd9c7;
-} */
-
-
-
-
-
-
 /* LATEST NEWS */
 
 .main-section-news {
@@ -252,7 +223,7 @@ h2::after {
     padding: 0px;
 }
 
-.items-news li{
+.items-news li {
     float: left;
     width: 350px;
     list-style: none;
@@ -265,13 +236,13 @@ h2::after {
     margin-right: 30px;
 }
 
-.content-news-item{
+.content-news-item {
     float: right;
     overflow: hidden;
 }
 
 .item-news:hover,
-.item-news .download-button:hover{
+.item-news .download-button:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
