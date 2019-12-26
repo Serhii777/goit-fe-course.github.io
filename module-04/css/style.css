@@ -12,7 +12,7 @@ body {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     color: #555252;
     font-size: 14px;
-    line-height: 26px;
+    line-height: unset;
 }
 
 .clearfix::after {
@@ -23,13 +23,21 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
 }
 
 .container {
     width: 1110px;
     margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    outline: 1px solid red;
 }
 
 /* navigation */
@@ -40,7 +48,7 @@ img {
     text-decoration: none;
 }
 
-.logo-name {
+.site-logo {
     float: left;
     font-size: 30px;
     line-height: 32px;
@@ -50,9 +58,9 @@ img {
     margin-top: 34px;
 }
 
-.logo-name:hover,
-.logo-name:focus,
-.logo-name::first-letter {
+.site-logo:hover,
+.site-logo:focus,
+.site-logo::first-letter {
     color: #1abc9c;
 }
 
@@ -60,7 +68,6 @@ img {
 
 .navigation-items {
     float: right;
-    width: 466px;
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -89,18 +96,22 @@ img {
     color: #1abc9c;
 }
 
-.main-navigation {
+.main-header {
     margin-bottom: 90px;
 }
 
 /* main */
 /* FEATURED PRODUCTS */
 
-.main-section {
+.main-content {
+    margin-bottom: 82px;
+}
+
+.main-section-product {
     margin-bottom: 98px;
 }
 
-.main-section h2 {
+.main-section-product h2 {
     text-align: center;
 }
 
@@ -122,19 +133,63 @@ h2::after {
     margin: 20px auto;
 }
 
+
+
+
 .items-products {
     margin: 0px;
     padding: 0px;
 }
 
-.items-products li {
-    float: left;
+.item-products {
     width: 255px;
+    height: 322px;
+    float: left;
     list-style: none;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.product-img-wrp {
+    height: 282px;
+    line-height: 282px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.product-text-wrp {
+    /* height: calc(322px-282px);
+    line-height: calc(322px-282px); */
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+    background: #323232;
 
 }
 
-.items-products li:not(:nth-child(4n)) {
+.product-title {
+    padding-left: 14px;
+}
+
+.product-price {
+    float: right;
+    background: #8c8c8c;
+    padding: 0 12px;
+    transition-duration: 0.3s;
+}
+
+.item-products:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
@@ -142,50 +197,32 @@ h2::after {
     margin-bottom: 30px;
 }
 
-.product a {
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.item-products .name-product,
-.item-products .price-product {
-    float: left;
-    font-size: 18px;
-    line-height: 32px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #ffffff;
-    height: 40px;
-    margin: 0px;
-    padding: 5px 0px 0px 12px;
-}
-
-.item-products:hover {
+.item-products:hover,
+.item-products a:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.name-product {
+/* .name-product {
     min-width: 201px;
     background-color: #323232;
 }
 
 .price-product {
     min-width: 54px;
-    background-color: #8c8c8c;
+    background-color: #8c8c8c; 
+}*/
+
+.item-products:hover .product-text-wrp,
+.item-products:focus .product-text-wrp {
+    background: #1abc9c;
 }
 
-.name-product:hover {
-    color: #ffffff;
-    background-color: #1abc9c;
+.item-products:hover .product-price,
+.item-products:hover .product-price {
+    background: #7fd9c7;
 }
 
-.price-product:hover {
-    color: #ffffff;
-    background-color: #7fd9c7;
-}
-
-.name-product:focus {
+.item-products:focus {
     color: #ffffff;
     background-color: #1abc9c;
 }
@@ -197,9 +234,14 @@ h2::after {
 
 /* LATEST NEWS */
 
+/* .main-section-news{
+    margin-bottom: 82px;
+} */
+
 .main-title-news {
     font-size: 48px;
     line-height: 32px;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #515151;
@@ -257,7 +299,6 @@ h2::after {
     font-weight: 300;
     color: #ffffff;
     background-color: #4ec6ab;
-    margin-bottom: 82px;
     cursor: pointer;
 }
 
