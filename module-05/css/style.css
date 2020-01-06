@@ -24,7 +24,7 @@ body {
 
 img {
     display: block;
-    /* max-width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -111,8 +111,9 @@ a {
 
 .slider {
     position: relative;
+    width: 1110px;
     height: 600px;
-    margin: auto;
+    margin: 0px auto;
     margin-bottom: 94px;
 }
 
@@ -144,6 +145,7 @@ a {
 }
 
 .slides {
+    min-height: 600px;
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -151,61 +153,36 @@ a {
 }
 
 .slides-item {
-    position: relative;
+    position: absolute;
     min-height: 600px;
-    min-width: auto;
-    object-fit: cover;
+    width: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url(../img/slide4.png);
-
-    margin: 0px;
-    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .overlay {
-    position: absolute;
-
-    /* background-color: rgb(24, 24, 25); */
-    left: 50%;
-    transform: translateX(-50%);
-    /* z-index: 1; */
+    min-height: 600px;
+    background-color: rgba(24, 24, 25, 0.52);
 }
 
+.overlay:hover{
+    background-color:  rgba(24, 24, 25, 0);
+}
 
-
-
-
-
-
-
-
-
-/* .slides-image {
-    position: absolute;
-    min-height: 600px;
-    object-fit: cover;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.52;
-} */
-
-/* .slides:hover,
-.slides-title:hover{
-opacity: 1;
-color: #ff7200;
-} */
-
-
-
-
-
-
+.slides-item:hover .slides-title {
+    opacity: 1;
+    color: #ff7200;
+}
 
 .slides-content {
     position: absolute;
-    top: 208px;
-    left: 184px;
-    margin: 0px auto;
-
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
 }
 
 .slides-title {
@@ -214,7 +191,6 @@ color: #ff7200;
     color: #ffffff;
     margin: 0px 0px 6px 0px;
     padding: 0px;
-
 }
 
 .slides-description {
@@ -224,6 +200,7 @@ color: #ff7200;
     color: #ffffff;
     margin: 0px;
     padding: 0px;
+    text-align: left;
 }
 
 
