@@ -126,7 +126,7 @@ a {
     border: 0px;
     margin: 0px;
     padding: 0px;
-    background-color: #1abc9c;
+    background-color: rgba(26, 188, 156, 0.65);
     cursor: pointer;
     z-index: 1;
 }
@@ -169,13 +169,17 @@ a {
     background-color: rgba(24, 24, 25, 0.52);
 }
 
-.overlay:hover{
-    background-color:  rgba(24, 24, 25, 0);
+.overlay:hover {
+    background-color: rgba(24, 24, 25, 0);
 }
 
 .slides-item:hover .slides-title {
     opacity: 1;
     color: #ff7200;
+}
+
+.slider:hover .slider-ctrl {
+    background-color: rgba(26, 188, 156, 1);
 }
 
 .slides-content {
@@ -205,12 +209,6 @@ a {
 
 
 
-
-
-
-
-
-
 /* new collection */
 
 .main-section-product h2 {
@@ -236,12 +234,18 @@ h2::after {
     margin: 20px auto 0px;
 }
 
+
+
+
+/* cards */
+
 .items-products {
     margin: 0px;
     padding: 0px;
 }
 
 .item-products {
+    position: relative;
     width: 255px;
     height: 322px;
     float: left;
@@ -255,7 +259,90 @@ h2::after {
     line-height: 282px;
     text-align: center;
     overflow: hidden;
+
 }
+
+.icon-button-items {
+    position: absolute;
+    width: 235px;
+    height: 262px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(115, 115, 115, 0.55);
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.icon-button-social{
+    display: inline-block;
+    margin: 78px 0px 8px 0px;
+}
+
+.icon-button {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.icon-button:not(:nth-of-type(3n)) {
+    margin-right: 8px;
+}
+
+.icon-button-basket {
+    width: 166px;
+    height: 50px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+.icon-button a {
+    border: 1px;
+    border-color: #131010;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-like {
+    background-image: url(../img/icon51.png);
+}
+
+.icon-exchange {
+    background-image: url(../img/icon52.png);
+}
+
+.icon-time {
+    background-image: url(../img/icon53.png);
+}
+
+.icon-basket {
+    background-image: url(../img/icon54.png);
+}
+
+
+
+
+
+
+
+.icon-button {
+    /* opacity: 1; */
+    /* position: absolute; */
+
+
+}
+
+
+
+
 
 .product-img {
     vertical-align: middle;
@@ -295,6 +382,7 @@ h2::after {
 }
 
 .item-products:hover {
+    /* background-color: rgba(115, 115, 115, 0.55); */
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
