@@ -394,18 +394,6 @@ h2::after {
     background: #7fd9c7;
 }
 
-/* .item-products:focus .icon-button-items {
-    opacity: 1;
-    background-color: rgba(115, 115, 115, 0.55);
-    transition-duration: 0.3s;
-}
-.icon-button:focus a{
-    background-color: #1abc9c;
-}
-.icon-basket:focus a {
-    background-color: #323232;
-} */
-
 /* footer */
 
 .main-footer {
@@ -456,15 +444,12 @@ h2::after {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: 1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-
     clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
