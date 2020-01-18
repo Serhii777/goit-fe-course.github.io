@@ -205,11 +205,11 @@ img {
 
 /* Meet our team */
 
-.text-item-team{
-margin: 0px 120px 92px;
+.text-item-team {
+    margin: 0px 120px 92px;
 }
 
-.team-items{
+.team-items {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -218,17 +218,71 @@ margin: 0px 120px 92px;
     padding: 0px;
 }
 
-.team-item{
-    
+.team-item {
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(0deg, #fce38a, #f38181);
 }
 
-.icon-link{
+
+
+.icon-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 470px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.team-link {
     list-style: none;
 }
 
-.team-link{
-    text-decoration: none;
+.team-link:not(:nth-of-type(4n)){
+    margin-right: 1px;
 }
+
+.icon-link {
+    display: block;
+    text-decoration: none;
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-facebook{
+background-image: url(../img/facebook.png);
+}
+
+.icon-twitter{
+    background-image: url(../img/twitter.png);
+}
+
+.icon-pinterest{
+background-image: url(../img/pinterest.png);
+}
+
+.icon-instagram{
+    background-image: url(../img/instagram.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
