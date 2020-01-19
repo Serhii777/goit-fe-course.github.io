@@ -205,6 +205,10 @@ img {
 
 /* Meet our team */
 
+.team-section{
+    margin-bottom: 82px;
+}
+
 .text-item-team {
     margin: 0px 120px 92px;
 }
@@ -219,12 +223,21 @@ img {
 }
 
 .team-item {
-    width: 380px;
-    height: 470px;
-    background: linear-gradient(0deg, #fce38a, #f38181);
+    flex: 0px 0px 380px;
+    background-repeat: no-repeat;
 }
 
+.team-item-graphic {
+    background-image: url(../img/img1.png);
+}
 
+.team-item-branding {
+    background-image: url(../img/img2.png);
+}
+
+.team-item-developer {
+    background-image: url(../img/img3.png);
+}
 
 .icon-socials {
     display: flex;
@@ -234,13 +247,10 @@ img {
     height: 470px;
     margin: 0px;
     padding: 0px;
+    opacity: 0;
 }
 
-.team-link {
-    list-style: none;
-}
-
-.team-link:not(:nth-of-type(4n)){
+.team-link:not(:nth-of-type(4n)) {
     margin-right: 1px;
 }
 
@@ -253,22 +263,64 @@ img {
     background-position: center;
 }
 
-.icon-facebook{
-background-image: url(../img/facebook.png);
+.team-link {
+    list-style: none;
+    background-color: rgb(252, 227, 138);
 }
 
-.icon-twitter{
+.icon-facebook {
+    background-image: url(../img/facebook.png);
+}
+
+.icon-twitter {
     background-image: url(../img/twitter.png);
 }
 
-.icon-pinterest{
-background-image: url(../img/pinterest.png);
+.icon-pinterest {
+    background-image: url(../img/pinterest.png);
 }
 
-.icon-instagram{
+.icon-instagram {
     background-image: url(../img/instagram.png);
 }
 
+.team-item:hover .cart {
+    background: linear-gradient(0deg, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px rgb(149, 225, 211);
+}
+
+.icon-socials:hover {
+    opacity: 1;
+}
+
+.team-link:hover {
+    background-color: rgba(149, 225, 211, 1);
+}
+
+.cart {
+    margin-bottom: 28px;
+}
+
+.team-item-name {
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+.team-item-occupation {
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
