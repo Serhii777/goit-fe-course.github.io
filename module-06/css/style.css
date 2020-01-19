@@ -13,6 +13,7 @@ body {
     line-height: unset;
     font-family: 'Roboto', 'Montserrat', 'Kaushan Script', sans-serif;
     color: #999999;
+    
 }
 
 img {
@@ -26,9 +27,9 @@ img {
     margin: 0px auto;
 }
 
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 /* header */
 
@@ -321,7 +322,79 @@ img {
     margin: 0px;
     padding: 0px;
 }
+ /* footer */
 
+ .main-footer{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 62px;
+     border-top: 1px solid #e5e5e5;
+ }
+
+ .footer-content{
+     display: flex;
+ }
+
+ .footer-text{
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    margin: 0px 4px 0px;
+ }
+
+.footer-link{
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #f38181;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.footer-link:hover{
+    color: #f38181;
+}
+
+.footer-field{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    margin: 0px;
+}
+
+.input-field{
+    width: 230px;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    padding: 12px 0px 10px 12px;
+    border: 1px solid #e7e7e7;
+    border-right: 0px;
+}
+
+input::-webkit-input-placeholder { color: #cccccc; }
+
+.button{
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #95e1d3;
+    margin: 0px;
+    padding: 12px 34px;
+    border: none;
+    cursor: pointer;
+}
 
 
 
