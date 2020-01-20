@@ -15,7 +15,6 @@ body {
     color: #999999;
     margin: 0px;
     padding: 0px;
-
 }
 
 img {
@@ -36,8 +35,6 @@ img {
 /* header */
 
 .main-header {
-    /* display: flex; */
-    /* height: 114px; */
     margin-bottom: 114px;
 }
 
@@ -416,6 +413,7 @@ input::-webkit-input-placeholder {
     color: #ffffff;
     background: #95e1d3;
     padding: 12px 34px;
+    bottom: none;
     cursor: pointer;
 }
 
