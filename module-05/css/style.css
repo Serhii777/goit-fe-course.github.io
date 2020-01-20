@@ -422,7 +422,6 @@ img {
     display: inline-block;
     margin-top: 32px;
     list-style: none;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -432,6 +431,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fefefe;
+    text-decoration: none;
 }
 
 .footer-item-link:hover,
