@@ -391,7 +391,7 @@ img {
     background: #1abc9c;
 }
 
-.item-products:hover .product-price,
+.item-products:focus .product-price,
 .item-products:hover .product-price {
     background: #7fd9c7;
 }
