@@ -28,10 +28,6 @@ img {
     margin: 0px auto;
 }
 
-* {
-    outline: 1px solid red;
-}
-
 /* header */
 
 .main-header {
@@ -413,7 +409,7 @@ input::-webkit-input-placeholder {
     color: #ffffff;
     background: #95e1d3;
     padding: 12px 34px;
-    bottom: none;
+    border: none;
     cursor: pointer;
 }
 
