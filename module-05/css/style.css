@@ -171,7 +171,7 @@ img {
 .slider:hover .slides-title,
 .slider:hover .overlay {
     background-color: rgba(24, 24, 25, 0);
-    /* color: #ff7200; */
+    color: #ff7200;
 }
 
 .slider:hover .slider-ctrl {
