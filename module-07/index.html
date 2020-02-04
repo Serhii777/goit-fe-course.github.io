@@ -14,18 +14,20 @@
 <body>
 
     <header class="main-header container">
-        <nav class="main-navigation">
-            <a href="#" class="site-logo">
-                <img class="img-logo" src="./img/logo-treehouse.png" alt="brand and company name">
-            </a>
-            <ul class="navigation-items">
-                <li class="navigation-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="navigation-item"><a href="#" class="nav-link">Services</a></li>
-                <li class="navigation-item"><a href="#" class="nav-link">Portfolio</a></li>
-                <li class="navigation-item"><a href="#" class="nav-link">About</a></li>
-                <li class="navigation-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav class="main-navigation">
+                <a href="#" class="site-logo">
+                    <img class="img-logo" src="./img/logo-treehouse.png" alt="brand and company name">
+                </a>
+                <ul class="navigation-items">
+                    <li class="navigation-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="navigation-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="navigation-item"><a href="#" class="nav-link">Portfolio</a></li>
+                    <li class="navigation-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="navigation-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main-content container">
@@ -59,31 +61,34 @@
     </main>
 
     <footer class="main-footer">
-
-        <section class="footer-section container">
-            <h2 class="footer-title">Contact us</h2>
-            <p class="description-footer">Proin iaculis purus consequat sem cure.</p>
+        <div class="wrapper container">
 
             <form class="profile-form" action="#" method="GET">
+                <h2 class="footer-title">Contact us</h2>
+                <p class="description-footer">Proin iaculis purus consequat sem cure.</p>
+
                 <div class="fieldset-form">
                     <ul class="input-items">
                         <li class="input-item">
-                            <input class="input-field" type="text" name="yourname" placeholder="Your Name *">
+                            <input class="input-field" type="text" name="name" placeholder="Your Name *" autofocus
+                                required autocomplete="name">
                         </li>
                         <li class="input-item">
-                            <input class="input-field" type="email" name="youremail" placeholder="Your E-mail *">
+                            <input class="input-field" type="email" name="email" placeholder="Your E-mail *" required
+                                autocomplete="email">
                         </li>
                         <li class="input-item">
-                            <input class="input-field" type="text" name="subject" placeholder="Subject">
+                            <input class="input-field" type="text" name="subject" placeholder="Subject"
+                                autocomplete="off">
                         </li>
                     </ul>
-                    <textarea class="input-area" rows="5" cols="10" name="message"
-                        placeholder="Your message *"></textarea>
+                    <textarea class="input-area" rows="10" cols="30" name="message" placeholder="Your message *"
+                        required autocomplete="off"></textarea>
                 </div>
-                <button type="submit">Send message</button>
+                <button type="submit" class="button" value="Submit">Send message</button>
             </form>
 
-        </section>
+        </div>
 
     </footer>
 </body>
