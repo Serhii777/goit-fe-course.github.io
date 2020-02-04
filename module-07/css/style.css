@@ -79,18 +79,20 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* min-height: 64px; */
 }
 
 .site-logo {
+    /* width: 80px; */
+    /* height: 28px; */
     /* cursor: pointer; */
     /* margin-bottom: 12px; */
 }
 
 .navigation-items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
+    flex-basis: 480px;
     margin: 48px 0px 0px;
     padding: 0px;
     list-style: none;
@@ -102,9 +104,9 @@ img {
     position: relative;
 } */
 
-.navigation-item:not(:nth-of-type(5n)) {
+/* .navigation-item:not(:nth-of-type(5n)) {
     margin-right: 40px;
-}
+} */
 
 .nav-link {
     display: block;
@@ -192,7 +194,6 @@ img {
 }
 
 .section-item {
-    /* flex: 0, 0, 290px; */
     width: 290px;
     padding: 96px 0px 0px;
     background-repeat: no-repeat;
@@ -208,17 +209,17 @@ img {
     background-image: url(../img/circle-basket.png);
 }
 
-.icon-laptop{
+.icon-laptop {
     background-image: url(../img/circle-laptop.png);
 }
 
-.icon-locked{
+.icon-locked {
     background-image: url(../img/circle-locked.png);
 }
 
 .title-item {
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     color: rgb(34, 34, 34);
     font-weight: 700;
     line-height: 1.2;
@@ -229,11 +230,118 @@ img {
 
 .description {
     font-size: 14px;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
     color: rgb(119, 119, 119);
+    font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0px;
+}
+
+
+
+
+
+/* footer */
+
+.main-footer {
+    height: 676px;
+    background-color: #222222;
+    background-image: url(../img/map_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 106px;
+}
+
+.footer-title {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin: 106px 0px 16px;
+}
+
+.description-footer {
+    font-size: 16px;
+    font-family: "Droid Serif", serif;
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0px 0px 74px 0px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fieldset-form {
+    display: flex;
+    justify-content: space-between;
+    height: 214px;
+    border: none;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+}
+
+.input-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    width: 478px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.input-item {
+    width: 458px;
+    height: 54px;
+}
+
+.input-field {
+    width: 458px;
+    height: 54px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    color: rgb(187, 187, 187);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0px;
+    padding: 20px 5px 20px 20px;
+}
+
+.input-area {
+    width: 458px;
+    height: 214px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 20px 5px 0px 20px;
+    resize: none;
 }
 
 
@@ -244,10 +352,15 @@ img {
 
 
 
-/* Meet our team */
 
 
-/* footer */
+
+
+
+
+
+
+
 
 /* .main-footer {
     display: flex;
