@@ -28,20 +28,12 @@ img {
     margin: 0px auto;
 }
 
-*{
-    outline: 1px solid red;
-}
-
 /* header */
-
-.main-header {
-    margin-bottom: 114px;
-}
 
 .main-navigation {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .site-logo {
@@ -50,9 +42,10 @@ img {
 
 .navigation-items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 38px 0px 0px 0px;
+    flex: 0 0 492px;
+    margin: 38px 0px 114px 0px;
     padding: 0px;
     list-style: none;
     text-transform: uppercase;
@@ -61,10 +54,6 @@ img {
 .navigation-item {
     cursor: pointer;
     position: relative;
-}
-
-.navigation-item:not(:nth-of-type(5n)) {
-    margin-right: 58px;
 }
 
 .nav-link {
@@ -117,26 +106,10 @@ img {
 
 /* Amazing Services */
 
-.main-content {
+.services-section-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 82px;
-}
-
-.services-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 0px 94px 0px;
-}
-
-.wrapper-title {
-    position: relative;
-}
-
-.wrapper-services-title{
-    margin-bottom: 64px;
 }
 
 .title-slogan {
@@ -160,27 +133,37 @@ img {
     color: #333333;
     text-transform: uppercase;
     text-align: center;
-    margin: 0px 0px 36px 0px;
+    margin: 0px 0px 108px 0px;
     padding: 0px;
 }
 
-.section-title-underline {
+.section-title::after {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    content: '';
     width: 60px;
     height: 3px;
     background-color: #f38181;
+    left: 50%;
+    bottom: -42px;
+    transform: translateX(-50%);
     margin: 0px;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+    left: 0;
+    transition: all 0.2s linear;
 }
 
 .servises {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-end;
     list-style: none;
     text-decoration: none;
-    margin: 0px;
+    margin: 0px 0px 96px 0px;
     padding: 0px;
 }
 
@@ -248,14 +231,14 @@ img {
 
 /* Meet our team */
 
-.team-section {
+.team-sectioon-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wrapper-team-title{
-    margin-bottom: 44px;
+.section-title-team {
+    margin-bottom: 84px;
 }
 
 .text-item-team {
@@ -271,7 +254,7 @@ img {
     width: 100%;
     list-style: none;
     text-decoration: none;
-    margin: 0px;
+    margin: 0px 0px 82px 0px;
     padding: 0px;
 }
 
@@ -382,11 +365,10 @@ img {
 
 /* footer */
 
-.main-footer {
+.main-footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
     border-top: 1px solid #e5e5e5;
 }
 
