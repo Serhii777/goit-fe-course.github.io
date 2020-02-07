@@ -77,8 +77,6 @@ img {
 
 .main-header-wrapper {
     display: flex;
-    /* margin-bottom: 98px; */
-    /* padding-bottom: 98px; */
 }
 
 .main-navigation {
@@ -86,37 +84,26 @@ img {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    /* padding-bottom: 98px; */
-    margin-bottom: 98px;
+    margin: 36px 0px 98px;
 }
 
 .site-logo {
-    /* width: 80px; */
-    /* height: 28px; */
-    /* cursor: pointer; */
-    /* margin-bottom: 12px; */
-    /* margin-bottom: 98px; */
 }
 
 .navigation-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    flex-basis: 480px;
-    margin: 48px 0px 0px;
+    max-width: 480px;
+    margin: 0px;
     padding: 0px;
     list-style: none;
     text-transform: uppercase;
 }
 
-/* .navigation-item {
-    cursor: pointer;
-    position: relative;
-} */
-
-/* .navigation-item:not(:nth-of-type(5n)) {
-    margin-right: 40px;
-} */
+.navigation-item:not(:nth-of-type(5n)) {
+    margin-right: 39px;
+}
 
 .nav-link {
     display: block;
