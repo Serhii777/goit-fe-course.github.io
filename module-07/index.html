@@ -64,35 +64,37 @@
     </main>
 
     <footer class="main-footer">
-        <div class="wrapper container">
+        <div class="main-footer-wrapper container">
 
-            <form class="profile-form" action="#" method="GET">
-                <h2 class="footer-title">Contact us</h2>
-                <p class="description-footer">Proin iaculis purus consequat sem cure.</p>
+            <form class="profile-form" action="#" method="POST">
+                <div class="profile-form-wrapper">
 
-                <div class="fieldset-form">
-                    <ul class="input-items">
-                        <li class="input-item">
-                            <input class="input-field" type="text" name="name" placeholder="Your Name *" autofocus
-                                required autocomplete="name">
-                        </li>
-                        <li class="input-item">
-                            <input class="input-field" type="email" name="email" placeholder="Your E-mail *" required
-                                autocomplete="email">
-                        </li>
-                        <li class="input-item">
-                            <input class="input-field" type="text" name="subject" placeholder="Subject"
-                                autocomplete="off">
-                        </li>
-                    </ul>
-                    <textarea class="input-area" rows="10" cols="30" name="message" placeholder="Your message *"
-                        required autocomplete="off"></textarea>
+                    <h2 class="footer-title">Contact us</h2>
+                    <p class="description-footer">Proin iaculis purus consequat sem cure.</p>
+
+                    <div class="fieldset-form">
+                        <ul class="input-items">
+                            <li class="input-item">
+                                <input class="input-field" type="text" name="name" placeholder="Your Name *"
+                                    minlength="4" maxlength="40" autocomplete="name" autofocus required>
+                            </li>
+                            <li class="input-item">
+                                <input class="input-field" type="email" name="email" placeholder="Your E-mail *"
+                                    required autocomplete="email">
+                            </li>
+                            <li class="input-item">
+                                <input class="input-field" type="text" name="subject" placeholder="Subject"
+                                    autocomplete="off">
+                            </li>
+                        </ul>
+                        <textarea class="input-area" rows="10" cols="30" name="message" placeholder="Your message *"
+                            required autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit" class="button" value="Submit">Send message</button>
                 </div>
-                <button type="submit" class="button" value="Submit">Send message</button>
             </form>
 
         </div>
-
     </footer>
 </body>
 

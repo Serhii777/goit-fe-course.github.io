@@ -86,8 +86,7 @@ img {
     margin: 36px 0px 118px;
 }
 
-.site-logo {
-}
+.site-logo {}
 
 .navigation-items {
     display: flex;
@@ -141,7 +140,18 @@ img {
 /* main */
 
 .main-content {
-    /* margin-bottom: 120px; */
+    display: flex;
+}
+
+.main-content-wrapper {
+    width: 100%;
+}
+
+.main-section {
+}
+
+.main-section-wrapper {
+    margin-bottom: 118px;
 }
 
 .section-title {
@@ -224,15 +234,32 @@ img {
 /* footer */
 
 .main-footer {
+    display: flex;
     background-image: url(../img/background-map.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    /* background-size: 100%; */
+    background-position: center;
+    background-size: contain;
+}
+
+.main-footer-wrapper{
+    width: 100%;
 }
 
 .profile-form {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* margin-bottom: 114px; */
+}
+
+.profile-form-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 114px;
+    
 }
 
 .footer-title {
@@ -322,7 +349,7 @@ textarea::-webkit-input-placeholder {
     line-height: 1.2;
     text-align: center;
     padding: 24px 46px;
-    margin-bottom: 114px;
+    /* margin-bottom: 114px; */
 }
 
 .profile-form input[name='name']:valid,
