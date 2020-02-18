@@ -10,7 +10,7 @@ html {
 
 body {
     font-size: 14px;
-    font-family: 'Roboto Slab', 'Montserrat', 'Droid Serif', serif;
+    font-family: 'Roboto Slab', 'Montserrat', 'Droid Serif', 'Wisdom Script', serif;
     color: rgb(119, 119, 119);
     line-height: 1.2;
     margin: 0px;
@@ -79,6 +79,16 @@ img {
     margin: 36px 0px 118px;
 }
 
+.logo-text-wrapper {
+    display: block;
+    font-size: 26px;
+    font-family: 'Wisdom Script';
+    color: rgb(254, 209, 54);
+    line-height: 1.1;
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+}
+
 .navigation-items {
     display: flex;
     justify-content: flex-start;
@@ -134,7 +144,7 @@ img {
     display: flex;
 }
 
-.main-section{
+.main-section {
     width: 100%;
 }
 
