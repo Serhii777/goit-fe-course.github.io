@@ -23,10 +23,6 @@ img {
     height: auto;
 }
 
-* {
-    outline: 1px solid red;
-}
-
 /* header */
 
 .container-fluid {
@@ -35,9 +31,6 @@ img {
         url(../img/mobile-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    -o-backgground-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
 }
 
 .typographic-title {
