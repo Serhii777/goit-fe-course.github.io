@@ -23,47 +23,45 @@ img {
     height: auto;
 }
 
-.container {
-    max-width: 320px;
-    text-align: center;
+* {
+    outline: 1px solid red;
 }
 
 /* header */
 
-.wrapper {
-    background-image: url(../img/mobile-img.png);
+.container-fluid {
+    min-height: 542px;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 0%, 0.2)),
+        url(../img/mobile-img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    -o-backgground-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
-.main-navigation-wrapper {
-    margin-bottom: 22px;
-    padding-top: 20px;
+.typographic-title {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.typographic-description {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 
 .navigation-items {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0px 0px 116px;
-    padding: 0px 0px 0px 66px;
-}
-
-.navigation-item {
-    cursor: pointer;
+    margin-bottom: 116px;
+    padding-top: 20px;
 }
 
 .item-link {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    line-height: 1.2;
+    display: inline-block;
+    text-decoration: none !important;
     border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 20px;
-    padding: 8px 16px;
     transition: all 0.2s linear;
 }
 
@@ -73,60 +71,6 @@ img {
 }
 
 .site-logo {
-    display: block;
-    cursor: pointer;
-    transition: all 0.2s linear;
-}
-
-.main-header-content {
-    margin: 0px 0px 138px;
-    padding: 0px;
-}
-
-.px-0 {
-    padding: 0px !important;
-}
-
-.mg-a {
-    margin: 0px auto;
-}
-
-.main-header-content {
-    text-align: center;
-}
-
-.header-content-title {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin: 0px 0px 12px;
-    padding: 0px;
-}
-
-.header-content-description {
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    margin: 0px 0px 16px;
-    padding: 0px 50px;
-}
-
-.header-button {
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    line-height: 1.2;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(255, 78, 80);
-    padding: 12px 48px;
-    cursor: pointer;
     transition: all 0.2s linear;
 }
 
@@ -135,132 +79,127 @@ img {
     box-shadow: 1px 1px 7px 1px rgb(255, 255, 255);
 }
 
-.header-button:hover,
-.header-button:focus {
-    box-shadow: 1px 1px 7px 1px rgb(255, 78, 80);
+.header-button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 /* main */
 
 .main-content {
-    display: flex;
-}
-
-.main-section-wrapper {
-    padding: 70px 0px 26px;
-    text-align: center;
+    padding-top: 70px;
 }
 
 .section-title {
     font-size: 22px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 0px 0px 16px;
-    padding: 0px 26px;
 }
 
-.section-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    margin: 0px auto;
+.carts {
     padding: 0px 50px;
 }
 
-.section-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 220px;
-    margin: 0px;
+.cart-link {
+    text-decoration: none;
     transition: all 0.2s linear;
 }
 
-.item-img-wrapper {
-    margin-bottom: 20px;
-}
-
-.item-partner {
+.cart-images {
     position: relative;
+    width: 122px;
+    margin: auto;
 }
 
-.item-icon {
+.cart-img-wrp {
+    border-radius: 50%;
+    height: 122px;
+    overflow: hidden;
+}
+
+.cart-img {
+    transition: all .3s ease;
+}
+
+.icon {
     display: block;
     min-width: 40px;
     min-height: 40px;
     position: absolute;
-    top: 80px;
-    left: 130px;
+    bottom: 0;
+    right: 0;
     z-index: 1;
-    margin: 0px;
-    padding: 0px;
 }
 
-.item-icon-tv {
+.cart-title {
+    font-size: 14px;
+}
+
+.text-dark {
+    color: rgb(51, 51, 51);
+}
+
+.text-ligth {
+    color: rgb(102, 102, 102);
+}
+
+.icon-tv {
     background-image: url(../img/icon-tv.png);
 }
 
-.item-icon-chemistry {
+.icon-chemistry {
     background-image: url(../img/icon-chemistry.png);
 }
 
-.item-icon-cap {
+.icon-cap {
     background-image: url(../img/icon-cap.png);
 }
 
-.item-icon-telegram {
+.icon-telegram {
     background-image: url(../img/icon-telegram.png);
 }
 
-.section-item-title {
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 0px 0px 14px;
+.cart:hover .cart-img {
+    transform: scale(1.2);
 }
 
-.section-item-description {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    margin: 0px;
+.cart:hover .cart-link {
+    text-decoration: none !important;
 }
-
-.section-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 
 /* footer */
-
-.main-footer {
-    display: flex;
-}
 
 .main-footer-wrapper {
     margin: 0px 0px 56px;
 }
 
 .footer-button {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 78, 80);
-    font-weight: 700;
+    font-size: 14px;
     border: 2px solid rgb(255, 78, 80);
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 70px;
+    padding: 0px 70px;
     cursor: pointer;
     transition: all 0.2s linear;
 }
 
-.footer-button:hover,
-.footer-button:focus {
-    box-shadow: 1px 1px 7px 1px rgb(255, 78, 80);
+.btn--dark {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
+}
+
+.btn--light {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+}
+
+.btn--dark:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+}
+
+.btn--light:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
 }
 
 .visually-hidden:not(:focus):not(:active),
