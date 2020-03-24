@@ -1,12 +1,12 @@
 /*
  * Все паршалы импортировать в этот файл
  */
+@import 'normalize';
 @import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
 @import 'helpers/extras';
 @import 'helpers/typography';
-@import 'normalize';
 @import 'base';
 
 // components
