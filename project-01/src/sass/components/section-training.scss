@@ -1,0 +1,31 @@
+// .section-training {}
+
+.section-training__title {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #18191d;
+  margin: 0px 0px 30px 0px;
+}
+
+.section-training__slogan {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #18191d;
+  margin: 0px 0px 4px 0px;
+
+  &::first-line {
+    font-weight: 500;
+    color: #b9b9b9;
+    margin: 0px 0px 4px 0px;
+  }
+}
+
+.section-training__point {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #ff6b08;
+  margin: 0px 0px 36px 0px;
+}

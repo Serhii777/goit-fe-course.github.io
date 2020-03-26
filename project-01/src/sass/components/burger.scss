@@ -1,5 +1,6 @@
 .burger {
   display: flex;
+  text-align: left;
   align-items: center;
   width: 24px;
   height: 12px;
@@ -10,15 +11,15 @@
   }
 
   &:hover .burger__block::before {
-    transform-origin: 2px 1px;
+    transform-origin: 3px 3px;
     transform: rotate(43deg);
-    width: 24px;
+    width: 25px;
   }
 
   &:hover .burger__block::after {
-    transform-origin: 2px 1px;
+    transform-origin: 3px 0px;
     transform: rotate(-43deg);
-    width: 24px;
+    width: 25px;
   }
 }
 

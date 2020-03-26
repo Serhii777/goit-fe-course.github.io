@@ -1,4 +1,11 @@
-.navigation--list {
-  text-transform: uppercase;
-  @extend %list;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+// .navigation--list {
+//   // text-transform: uppercase;
+//   // @extend %list;
+// }
