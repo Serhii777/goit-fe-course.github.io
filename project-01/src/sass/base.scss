@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  // font-size: $primary-text-size;
-  // line-height: $main-text-height;
-  // font-family: $main-font-stack;
-  // color: $primary-grey-color;
+  font-size: $primary-text-size;
+  line-height: $main-text-height;
+  font-family: $main-font-stack;
+  color: $primary-grey-color;
   margin: 0px;
   padding: 0px;
 }
@@ -21,4 +21,8 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+* {
+  outline: 1px solid red;
 }

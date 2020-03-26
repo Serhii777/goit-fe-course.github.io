@@ -1,33 +1,57 @@
-.typographic-mr {
+.typographic-meb {
   font-family: $font-family-monts;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-extrabold;
 }
 
 .typographic-mb {
   font-family: $font-family-monts;
   font-weight: $font-weight-bold;
-  text-align: center;
 }
 
-.typographic-rr {
-  font-family: $main-font-roboto;
+.typographic-msb {
+  font-family: $font-family-monts;
+  font-weight: $font-weight-semibold;
+}
+
+.typographic-mm {
+  font-family: $font-family-monts;
+  font-weight: $font-weight-medium;
+}
+
+.typographic-mr {
+  font-family: $font-family-monts;
   font-weight: $font-weight-regular;
 }
 
-.typographic-ri {
-  font-family: $main-font-roboto;
-  font-weight: $font-weight-light;
-  font-style: $font-style-italic;
-}
+// .typographic-mb {
+//   font-family: $font-family-monts;
+//   font-weight: $font-weight-bold;
+//   text-align: center;
+// }
 
-.typographic-kr {
-  font-family: $main-font-kaushanscr;
-  font-weight: $font-weight-regular;
-  text-align: center;
-}
+// .typographic-rr {
+//   font-family: $main-font-roboto;
+//   font-weight: $font-weight-regular;
+// }
 
-.text-ligth {
+// .typographic-ri {
+//   font-family: $main-font-roboto;
+//   font-weight: $font-weight-light;
+//   font-style: $font-style-italic;
+// }
+
+// .typographic-kr {
+//   font-family: $main-font-kaushanscr;
+//   font-weight: $font-weight-regular;
+//   text-align: center;
+// }
+
+.text-white {
   color: $primary-white-color;
+}
+
+.text-lightgrey {
+  color: $primary-lightgrey-color;
 }
 
 .text-grey {
@@ -38,6 +62,10 @@
   color: $primary-dark-color;
 }
 
-.title {
-  text-transform: uppercase;
-}
+// .text-orange {
+//   color: $primary-orange-color;
+// }
+
+// .title {
+//   text-transform: uppercase;
+// }

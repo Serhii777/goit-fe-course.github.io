@@ -1,53 +1,57 @@
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin: 0px;
+  display: none;
 }
 
 
-.menu__item {
-  position: relative;
-  @extend %item;
+// .menu {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: flex-end;
+//   margin: 0px;
+// }
 
-  &:not(:nth-child(7n)) {
-    margin-right: 52px;
-  }
-}
+// .menu__item {
+//   position: relative;
+//   @extend %item;
 
-.menu__link {
-  @extend %link;
-  font-size: 14px;
+//   &:not(:nth-child(7n)) {
+//     margin-right: 52px;
+//   }
+// }
 
-  &::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 3px;
-    background: $primary-yelow-color;
-    bottom: -12px;
-    left: 50%;
-    transition: all 0.2s linear;
-  }
+// .menu__link {
+//   @extend %link;
+//   font-size: 14px;
 
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
-    left: 0;
-  }
+//   &::after {
+//     position: absolute;
+//     content: '';
+//     width: 0;
+//     height: 3px;
+//     background: $primary-yelow-color;
+//     bottom: -12px;
+//     left: 50%;
+//     transition: all 0.2s linear;
+//   }
 
-  &:hover,
-  &:focus {
-    color: $primary-yelow-color;
-  }
-}
+//   &:hover::after,
+//   &:focus::after {
+//     width: 100%;
+//     left: 0;
+//   }
 
-.menu__icon {
-  @extend %icon;
-  fill: $primary-white-color;
+//   &:hover,
+//   &:focus {
+//     color: $primary-yelow-color;
+//   }
+// }
 
-  &:hover,
-  &:focus {
-    fill: $primary-yelow-color;
-  }
-}
+// .menu__icon {
+//   @extend %icon;
+//   fill: $primary-white-color;
+
+//   &:hover,
+//   &:focus {
+//     fill: $primary-yelow-color;
+//   }
+// }
