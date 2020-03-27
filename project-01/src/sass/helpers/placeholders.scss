@@ -1,14 +1,16 @@
 %button {
-  border: none;
+  border: 2px solid #ff6b08;
+  margin: 0px;
+  padding: 0px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s linear;
 }
 
-// %link {
-//   text-decoration: none;
-//   transition: all 0.2s linear;
-// }
+%link {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
 
 // %list {
 //   padding: 0px;

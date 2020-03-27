@@ -1,4 +1,7 @@
-// .section-training {}
+.section-training__content {
+  display: flex;
+  flex-direction: column;
+}
 
 .section-training__title {
   text-align: left;
@@ -28,4 +31,13 @@
   line-height: 1.35;
   color: #ff6b08;
   margin: 0px 0px 36px 0px;
+}
+
+.section-training__button {
+  margin: 0px auto 36px;
+}
+
+.section-training__img{
+  max-width: 216px;
+  margin: 0px auto;
 }

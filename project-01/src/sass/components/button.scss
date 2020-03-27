@@ -1,9 +1,20 @@
-.section-training__button {
+.button {
+  width: 250px;
   font-size: 11px;
-  color: rgb(255, 255, 255);
-  line-height: 10;
-  // padding: 10px 28px;
-  margin-bottom: 36px;
+  line-height: $main-text-height;
+  @extend %button;
+  padding: 16px 14px;
+
+  &--light {
+    color: $primary-white-color;
+    background-color: $primary-orange-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-orange-color;
+      background-color: $primary-white-color;
+    }
+  }
 }
 
 // .footer--button {
@@ -12,29 +23,13 @@
 //   border: none;
 // }
 
-.button {
-  @extend %button;
+// &--lighter {
+//   color: $primary-white-color;
+//   background-color: $background-lighter-color;
+//   border: 3px solid $primary-white-color;
 
-  &--light {
-    color: $primary-white-color;
-    background-color: $primary-orange-color;
-
-    &:hover,
-    &:focus {
-      color: $button-accent-color;
-      background-color: $primary-orange-color;
-    }
-  }
-
-  // &--lighter {
-  //   color: $primary-white-color;
-  //   background-color: $background-lighter-color;
-  //   border: 3px solid $primary-white-color;
-
-  //   &:hover,
-  //   &:hover {
-  //     color: $primary-yelow-color;
-  //     border-color: $primary-yelow-color;
-  //   }
-  // }
-}
+//   &:hover,
+//   &:hover {
+//     color: $primary-yelow-color;
+//     border-color: $primary-yelow-color;
+//   }
