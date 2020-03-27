@@ -1,7 +1,6 @@
 .header {
   display: flex;
-
-  background-color: rgb(169, 245, 169);
+  background-color: #ffffff;
 
   // @media (min-resolution: 192dpi),
   // (min-resolution: 2dppx) {
@@ -12,18 +11,22 @@
 }
 
 .header__wrapper {
-  min-height: 640px;
+  min-height: 650px;
   background-image: url('../../images/bgr-01.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .header__navigation {
   margin-bottom: 52px;
   padding: 26px 0px 0px;
 }
+
+// .header__section-training {
+//   // margin-bottom: 74px;
+// }
 
 // .header__title {
 //   @include font-settings(150px, 1);

@@ -1,0 +1,18 @@
+.menu-problem {
+  list-style: none;
+}
+
+.menu-problem__text {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(24, 25, 29);
+  font-weight: bold;
+  line-height: 1.538;
+  margin: 0px;
+}
+
+.menu-problem__item {
+  @extend %list;
+}
+
+//   @extend %link;

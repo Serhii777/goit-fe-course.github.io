@@ -1,41 +1,104 @@
 .menu-icons {
-  position: absolute;
-  width: 380px;
-  height: 470px;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color);
-  @include center-flex('all');
+  margin: 0px;
+  //   position: absolute;
+  //   width: 380px;
+  //   height: 470px;
+  //   top: 0;
+  //   left: 0;
+  //   opacity: 0;
+  //   background: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color);
+  //   @include center-flex('all');
   @extend %list;
-  transition: all 0.2s linear;
 }
 
 .menu-icons__item {
-  @extend %item;
-  background-color: $primary-yelow-color;
+  display: flex;
 
-  &:not(:nth-of-type(4n)) {
-    margin-right: 1px;
+  &:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 24px;
   }
 }
 
 
 .menu-icons__link {
-  @include center-flex('all');
-  width: 56px;
-  height: 56px;
-  fill: $primary-red-color;
-  @extend %link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  // width: 36px;
+  // height: 36px;
+  border: 2px solid #ff6b08;
+  position: relative;
+  margin: 0px 14px 0px 50px;
 
-  &:hover,
-  &:focus {
-    fill: $primary-white-color;
-    background-color: $primary-red-color;
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background: #ffffff;
+    right: -2px;
   }
 }
 
 .menu-icons__icon {
-  width: 26px;
-  height: 26px;
+  width: 36px;
+  height: 36px;
+  fill: #ff6b08;
 }
+
+.menu-icons__description {
+  width: 140px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(24, 25, 29);
+  font-weight: bold;
+  line-height: 1.538;
+  text-align: left;
+  margin: 0px;
+}
+
+
+// .menu-icons {
+//   position: absolute;
+//   width: 380px;
+//   height: 470px;
+//   top: 0;
+//   left: 0;
+//   opacity: 0;
+//   background: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color);
+//   @include center-flex('all');
+//   @extend %list;
+//   transition: all 0.2s linear;
+// }
+
+// .menu-icons__item {
+//   @extend %item;
+//   background-color: $primary-yelow-color;
+
+//   &:not(:nth-of-type(4n)) {
+//     margin-right: 1px;
+//   }
+// }
+
+
+// .menu-icons__link {
+//   @include center-flex('all');
+//   width: 56px;
+//   height: 56px;
+//   fill: $primary-red-color;
+//   @extend %link;
+
+//   &:hover,
+//   &:focus {
+//     fill: $primary-white-color;
+//     background-color: $primary-red-color;
+//   }
+// }
+
+// .menu-icons__icon {
+//   width: 26px;
+//   height: 26px;
+// }
