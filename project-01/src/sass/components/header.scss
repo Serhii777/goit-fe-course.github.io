@@ -1,6 +1,7 @@
 .header {
   display: flex;
   background-color: #ffffff;
+  // min-height: 945px;
 
   // @media (min-resolution: 192dpi),
   // (min-resolution: 2dppx) {
@@ -11,12 +12,13 @@
 }
 
 .header__wrapper {
-  min-height: 650px;
+  // height: 640px;
+  // min-height: 945px;
   background-image: url('../../images/bgr-01.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 20px;
+  background-position: 0px 10px;
+  margin-bottom: 50px;
+  padding: 0px 20px;
 }
 
 .header__navigation {
@@ -24,8 +26,12 @@
   padding: 26px 0px 0px;
 }
 
-// .header__section-training {
-//   // margin-bottom: 74px;
+.header__section-training {
+  margin-bottom: 86px;
+}
+
+// .header__section-icons {
+//   margin-bottom: 50px;
 // }
 
 // .header__title {

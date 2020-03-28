@@ -1,5 +1,30 @@
 .menu-problem {
-  list-style: none;
+  @extend %list;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  padding: 20px 28px 0px;
+  counter-reset: count-problem;
+}
+
+.menu-problem__item {
+  counter-increment: count-problem;
+
+  &::before {
+    content: '0'counter(count-problem);
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #ff6b08;
+    line-height: 2.083;
+    margin: 30px 0px 0px 35px;
+  }
+}
+
+// .menu-problem__item:not(:nth-last-of-type(-3n+1)) {
+//   margin-bottom: 12px;
+// }
+
+.menu-problem__item:nth-last-of-type(n+6) {
+  margin-bottom: 30px;
 }
 
 .menu-problem__text {
@@ -8,11 +33,17 @@
   color: rgb(24, 25, 29);
   font-weight: bold;
   line-height: 1.538;
+  text-align: left;
   margin: 0px;
-}
+  position: relative;
 
-.menu-problem__item {
-  @extend %list;
+  &::before {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    position: absolute;
+    top: -16px;
+  }
 }
-
-//   @extend %link;
