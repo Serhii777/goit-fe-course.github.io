@@ -1,15 +1,110 @@
-.list-program{
+.list-program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @extend %list;
+  counter-reset: count-program;
+  padding: 0px 54px 0px 84px;
+  //   border-left: 2px solid #546264;
+  position: relative;
 
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2px;
+    // min-height: 1240px;
+    min-height: 91.5%;
+    background-color: #546264;
+    top: 14px;
+    left: 83px;
+
+  }
 }
 
-.list-program__item{
+.list-program__item {
+  @extend %link;
+  position: relative;
+  padding-left: 30px;
 
+  &::before {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 107, 8);
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    transform: translateY(-50%);
+
+  }
 }
 
-.list-program__title{
-
+.list-program__item:not(:nth-last-of-type(-2n+1)) {
+  margin-bottom: 20px;
 }
 
-.list-program__text{
-    
+.list-program__title {
+  font-size: 15px;
+  line-height: 1.944;
+  text-transform: uppercase;
+  margin: 0px 0px 10px;
+  counter-increment: count-program;
+
+  &::before {
+    content: counter(count-program);
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.944;
+    margin-right: 8px;
+  }
 }
+
+.list-program__segment {
+  display: block;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(255, 107, 8);
+  line-height: 2.244;
+  position: relative;
+  margin: 0px 0px 12px 38px;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    transform: translateY(-50%);
+  }
+}
+
+.list-program__hidden-element {
+  opacity: 0;
+}
+
+
+.list-program__text {
+  font-size: 11px;
+  color: rgba(133, 133, 133, 0.502);
+  line-height: 1.818;
+  padding: 0px;
+  margin: 0px;
+}
+
+.list-program__text:not(:nth-last-of-type(-2n+1)) {
+  margin: 0px 0px 8px;
+}
+
+
+//   .menu-actions__item:not(:nth-last-of-type(-3n+1)) {
+//     margin-bottom: 10px;
+//   }
