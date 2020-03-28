@@ -19,11 +19,11 @@
   }
 }
 
-// .menu-problem__item:not(:nth-last-of-type(-3n+1)) {
-//   margin-bottom: 12px;
-// }
+.menu-problem__item:not(:nth-last-of-type(-3n+1)) {
+  margin-bottom: 10px;
+}
 
-.menu-problem__item:nth-last-of-type(n+6) {
+.menu-problem__item:nth-last-of-type(-6n+1) {
   margin-bottom: 30px;
 }
 

@@ -4,19 +4,24 @@
 }
 
 .section-problem__wrapper {
-  height: 518px;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
   background: #111517;
-  padding: 48px 20px 0px;
-  //   margin-bottom: 30px;
+  padding: 46px 20px 0px;
 }
 
 .section-problem__title {
-  width: 240px;
   font-size: 20px;
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: left;
-  margin: 0px 0px 18px 0px;
+  margin: 0px 0px 16px 0px;
+  padding: 0px 40px 0px 0px;
+}
+
+.section-problem__colortext {
+  color: #ff6b08;
 }
 
 // .section-problem__menu-problem {

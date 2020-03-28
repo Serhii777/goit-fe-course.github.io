@@ -1,0 +1,179 @@
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @extend %list;
+
+}
+
+
+.actions__item {
+  width: 290px;
+  height: 267px;
+
+  // padding: 18px 0px 0px;
+  padding: 30px 22px 0px;
+  background-size: 50px 45px;
+  background-repeat: no-repeat;
+  background-position: 0% 30px;
+  background-color: #d6b0b0;
+  // background-image: url(../../images/icons-svg/symbol-defs.svg#icon-study_program);
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+
+  &--study {
+    // background-image: url(../../images/icons-svg/study_program.svg);
+    // background-image: url(../../images/icons-svg/symbol-defs.svg#icon-study_program);
+    background-image: url(../../images/icons-svg/study_program.svg);
+    fill: #ff6b08;
+
+  }
+
+  &:hover {
+    background-color: #ff6b08;
+
+  }
+}
+
+.actions__link {
+  @extend %link;
+}
+
+.actions__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // width: 50px;
+  // height: 45px;
+  width: 200px;
+  height: 200px;
+  transform: 50% 50%;
+  margin: 0px;
+  padding: 0px;
+  // fill: #ff6b08;
+  fill: #3e291b;
+
+}
+
+.wrapperSvgImage {
+  background-image: url(http://s.cdpn.io/3/kiwi.svg);
+  width: 100px;
+  height: 82px;
+  background-size: cover;
+  border: 1px solid green;
+}
+
+
+
+.actions__title {
+  font-size: 13px;
+  color: #111517;
+  line-height: 1.538;
+  margin: 0px 0px 34px 0px;
+  position: relative;
+
+  // &::before {
+  //   display: block;
+  //   content: '';
+  //   position: absolute;
+  //   // width: 50px;
+  //   // height: 45px;
+  //   background-color: rgb(235, 179, 179);
+  //   // background-image: url(../../images/icons-svg/symbol-defs.svg#icon-study_program);
+  //   background-image: url(../../images/icons-svg/study_program.svg);
+  //   top: -62px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   fill: #ff6b08;
+  // }
+
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+  }
+
+  &:hover .actions__item {
+    color: #ffffff;
+  }
+
+  // &::after :hover {
+  //   background-color: #ffffff;
+  // }
+}
+
+.actions__text {
+  line-height: 1.818;
+  margin: 0px 0px 44px 0px;
+}
+
+
+// .section__services-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   align-items: flex-start;
+//   margin: 0px 0px 96px 0px;
+//   @extend %list;
+// }
+
+// .services__item {
+//   flex: 0 0 380px;
+//   text-align: left;
+//   padding: 0px 10px 0px 80px;
+//   background-repeat: no-repeat;
+//   background-position: 20px 0;
+//   background-size: 32px 32px;
+
+//   &::before {
+//     display: block;
+//     content: '';
+//   }
+
+//   &:not(:nth-last-of-type(-n+3)) {
+//     margin-bottom: 94px;
+//   }
+
+//   &--alarm {
+//     background-image: url(../images/sprite/alarm.svg);
+//   }
+
+//   &--graph {
+//     background-image: url(../images/sprite/line_graph.svg);
+//   }
+
+//   &--computer {
+//     background-image: url(../images/sprite/computer.svg);
+//   }
+
+//   &--book {
+//     background-image: url(../images/sprite/book.svg);
+//   }
+
+//   &--home {
+//     background-image: url(../images/sprite/home.svg);
+//   }
+
+//   &--image {
+//     background-image: url(../images/sprite/image.svg);
+//   }
+// }
+
+// .services__title {
+//   @include font-settings($secondary-font-size, 1);
+//   margin: 0px 0px 12px 0px;
+// }
+
+// .services__text {
+//   @include font-settings($primary-text-size, 1.6);
+//   margin: 0px;
+// }
