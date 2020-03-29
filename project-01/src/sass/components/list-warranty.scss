@@ -1,0 +1,33 @@
+.list-warranty {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  @extend %list;
+  padding: 24px 0px 0px 36px;
+}
+
+.list-warranty__item {
+  position: relative;
+  //   padding-left: 6px;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 13px;
+    height: 18px;
+    
+  }
+}
+
+.list-warranty__text {
+  font-size: 11px;
+  color: rgb(24, 25, 29);
+  line-height: 1.818;
+  margin: 0px;
+  word-spacing: 4px;
+}
+
+.list-warranty__text--colortext {
+  color: #ff6b08;
+  word-spacing: 5px;
+}
