@@ -1,0 +1,20 @@
+.section-teacher {
+  display: flex;
+}
+
+.section-teacher__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin-bottom: 24px;
+}
+
+.section-teacher__title {
+  font-size: 20px;
+  color: #111517;
+  line-height: 1.5;
+  margin: 0px 0px 24px;
+
+}
+
+.section-teacher__card {}

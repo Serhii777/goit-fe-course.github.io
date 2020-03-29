@@ -1,17 +1,17 @@
-.section-problem {
+.section-choosing {
   display: flex;
-  min-height: 676px;
+  min-height: 638px;
 }
 
-.section-problem__wrapper {
+.section-choosing__wrapper {
   display: flex;
   flex-direction: column;
-  height: 520px;
+  height: 394px;
   background: #111517;
-  padding: 46px 20px 0px;
+  padding: 0px 20px;
 }
 
-.section-problem__title {
+.section-choosing__title {
   font-size: 20px;
   color: rgb(255, 255, 255);
   line-height: 1.5;
@@ -20,6 +20,6 @@
   padding: 0px 40px 0px 0px;
 }
 
-.section-problem__colortext {
-  color: #ff6b08;
+.section-choosing__menu-problem {
+  z-index: 1;
 }
