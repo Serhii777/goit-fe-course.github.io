@@ -1,19 +1,22 @@
-// .section-warranty {
-//     display: flex;
-// }
-
 .section-warranty__wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0px 20px;
 }
 
 .section-warranty__title {
   font-size: 20px;
-  color: rgb(17, 21, 23);
+  color: #111517;
   margin: 0px 0px 20px;
 
 }
 
-// .section-warranty__items {}
+.section-warranty__wrapper-list {
+  padding: 0px 22px;
+  background: #f1f1f1;
+
+}
+
+.section-warranty__items {
+  margin-bottom: 22px;
+}

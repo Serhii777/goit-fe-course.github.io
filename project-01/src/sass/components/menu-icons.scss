@@ -1,13 +1,5 @@
 .menu-icons {
   margin: 0px;
-  //   position: absolute;
-  //   width: 380px;
-  //   height: 470px;
-  //   top: 0;
-  //   left: 0;
-  //   opacity: 0;
-  //   background: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color);
-  //   @include center-flex('all');
   @extend %list;
 }
 
@@ -19,7 +11,6 @@
   }
 }
 
-
 .menu-icons__link {
   display: flex;
   justify-content: center;
@@ -27,14 +18,23 @@
   width: 58px;
   height: 58px;
   border: 2px solid #ff6b08;
-  // width: 36px;
-  // // height: 36px;
-  // background-image: url(../../images/icons-svg/icon_check.svg);
-  // background-repeat: no-repeat;
-  // background-size: 36px 36px;
-  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center;
   position: relative;
   margin: 0px 14px 0px 50px;
+
+  &--female {
+    background-image: url(../../images/icons-svg/female3x.svg);
+  }
+
+  &--mobile {
+    background-image: url(../../images/icons-svg/mobile3x.svg);
+  }
+
+  &--insurance {
+    background-image: url(../../images/icons-svg/insurance3x.svg);
+  }
 
   &::after {
     display: block;
@@ -63,46 +63,3 @@
   text-align: left;
   margin: 0px;
 }
-
-
-// .menu-icons {
-//   position: absolute;
-//   width: 380px;
-//   height: 470px;
-//   top: 0;
-//   left: 0;
-//   opacity: 0;
-//   background: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color);
-//   @include center-flex('all');
-//   @extend %list;
-//   transition: all 0.2s linear;
-// }
-
-// .menu-icons__item {
-//   @extend %item;
-//   background-color: $primary-yelow-color;
-
-//   &:not(:nth-of-type(4n)) {
-//     margin-right: 1px;
-//   }
-// }
-
-
-// .menu-icons__link {
-//   @include center-flex('all');
-//   width: 56px;
-//   height: 56px;
-//   fill: $primary-red-color;
-//   @extend %link;
-
-//   &:hover,
-//   &:focus {
-//     fill: $primary-white-color;
-//     background-color: $primary-red-color;
-//   }
-// }
-
-// .menu-icons__icon {
-//   width: 26px;
-//   height: 26px;
-// }

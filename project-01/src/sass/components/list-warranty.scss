@@ -3,19 +3,50 @@
   flex-direction: column;
   text-align: left;
   @extend %list;
-  padding: 24px 0px 0px 36px;
+  padding: 24px 0px 0px 6px;
 }
 
 .list-warranty__item {
   position: relative;
-  //   padding-left: 6px;
+  padding-left: 30px;
 
   &::before {
     display: block;
     content: '';
+    position: absolute;
     width: 13px;
     height: 18px;
-    
+    background-image: url(../../images/icons-svg/fire3x.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0px;
+    left: -7px;
+    z-index: 1;
+  }
+
+  &:nth-last-of-type(-3n+1) {
+    border-left: 1px dotted #f1f1f1;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 18px;
+      border: none;
+      border-left: 1px dotted #bbbbbb;
+      top: 0px;
+      left: -1px;
+    }
+  }
+
+  &:not(:nth-last-of-type(-3n+1)) {
+    padding-bottom: 18px;
+  }
+
+  &:not(:nth-last-of-type(-3n+1)) {
+    border-left: 1px dotted #bbbbbb;
   }
 }
 

@@ -17,7 +17,7 @@
     <div class="header__wrapper container">
       <nav class="navigation header__navigation ">
         <a href="#" class="logo navigation__logo">
-          <img class="logo__img" src="./images/logo.png" alt="brand and company name">
+          <img class="logo__img" src="./images/logo2x.png" alt="brand and company name" width="78" height="30">
         </a>
         <div class="burger navigation__burger">
           <div class="burger__block"></div>
@@ -61,28 +61,15 @@
         <div class="section-icons__wrapper">
           <ul class="menu-icons">
             <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link">
-                <svg class="icon menu-icons__icon">
-                  <!-- <use width="107%" height="129%" href="./images/icons-svg/symbol-defs.svg#icon-female"></use> -->
-                  <use width="107%" height="129%" href="./images/icons-svg/symbol-defs.svg#icon-check"></use>
-                </svg>
-              </a>
+              <a href="#" class="link menu-icons__link menu-icons__link--female"></a>
               <p class="menu-icons__description">Адаптированная авторская программа ВНО</p>
             </li>
             <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link">
-                <svg class="icon menu-icons__icon">
-                  <use width="106%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-mobile-learning"></use>
-                </svg>
-              </a>
+              <a href="#" class="link menu-icons__link menu-icons__link--mobile"></a>
               <p class="menu-icons__description">Современные методики обучения</p>
             </li>
             <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link">
-                <svg class="icon menu-icons__icon">
-                  <use width="106%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-insurance"></use>
-                </svg>
-              </a>
+              <a href="#" class="link menu-icons__link menu-icons__link--insurance"></a>
               <p class="menu-icons__description">Финансовая гарантия результата</p>
             </li>
           </ul>
@@ -337,81 +324,93 @@
       <section class="section-warranty">
         <div class="section-warranty__wrapper">
           <h2 class="section-warranty__title typographic-meb">Мы гарантируем</h2>
-          <ul class="list-warranty section-warranty__items">
-            <li class="list-warranty__item">
-              <p class="list-warranty__text typographic-mm">Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом
-                пробном тестировании. Иначе мы вернем деньги.<span
-                  class="list-warranty__text typographic-mm list-warranty__text--colortext">*</span></p>
-            </li>
-            <li class="list-warranty__item">
-              <p class="list-warranty__text typographic-mm">Ты научишься писать сочинения минимум на 10 баллов из 14.
-                <span class="list-warranty__text typographic-mm list-warranty__text--colortext">В то время как 20%
-                  учеников получили<br />за сочинение 0.</span>
-              </p>
-            </li>
-            <li class="list-warranty__item">
-              <p class="list-warranty__text typographic-mm">Ты будешь заниматься в своем районе. Мы выберем место
-                проведения занятий после формирования команд.</p>
-            </li>
-            <li class="list-warranty__item">
-              <p class="list-warranty__text typographic-mm">Команды будут сформированы,<br /> исходя из начального
-                уровня
-                учеников. Мы учитываем особенности каждого ученика.</p>
-            </li>
-          </ul>
+          <div class="section-warranty__wrapper-list">
+            <ul class="list-warranty section-warranty__items">
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm">Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом
+                  пробном тестировании. Иначе мы вернем деньги.<span
+                    class="list-warranty__text typographic-mm list-warranty__text--colortext">*</span></p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm">Ты научишься писать сочинения минимум на 10 баллов из 14.
+                  <span class="list-warranty__text typographic-mm list-warranty__text--colortext">В то время как 20%
+                    учеников получили<br />за сочинение 0.</span>
+                </p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm">Ты будешь заниматься в своем районе. Мы выберем место
+                  проведения занятий после формирования команд.</p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm">Команды будут сформированы,<br /> исходя из начального
+                  уровня
+                  учеников. Мы учитываем особенности каждого ученика.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="section-slider">
         <div class="section-slider__wrapper">
-          <h2 class="section-slider__title">Text</h2>
-          <button class="section-slider__button left-arrow">Teeeeeeext</button>
-          <button class="section-slider__button right-arrow">Teeeeeeext</button>
+          <h2 class="section-slider__title">Отзывы наших выпускников</h2>
           <ul class="slider section-slider__items">
             <li class="slider__item">
-              <div class="graduate-card section-slider__graduate-card">
+              <div class="slider__link-wrapper">
+                <a href="" class="slider__link slider__link--img">
+                  <img class="slider__img" src="#" alt="">
+                </a>
+                <a href="" class="slider__link slider__link--icon">
+                  <svg class="slider__icon">
+                    <use href="./images/icons-svg/symbol-defs.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="graduate-card slider__graduate-card">
                 <h3 class="graduate-card__title">Text</h3>
                 <p class="graduate-card__description">Text</p>
                 <p class="graduate-card__text">Text</p>
-                <a class="graduate-card_link" href="#">Text</a>
+                <a class="graduate-card__link" href="#">Text</a>
               </div>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
             <li class="slider__item">
-              <a href="" class="section-slider__link">
-                <img class="img" src="#" alt="">
+              <a href="" class="slider__link">
+                <img class="slider__image" src="#" alt="">
               </a>
             </li>
           </ul>
+          <button class="section-slider__button  section-slider__button--left-arrow">&larr;</button>
+          <button class="section-slider__button section-slider__button--right-arrow">&rarr;</button>
         </div>
       </section>
 
