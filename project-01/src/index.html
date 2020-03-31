@@ -385,64 +385,82 @@
                 <ul class="cards-slides">
                   <li class="cards-slides__item slider__item--second-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate2.png" alt="name of the second card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate2.png" alt="name of the second card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--third-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate3.png" alt="name of the third card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate3.png" alt="name of the third card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--fourth-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate4.png" alt="name of the fourth card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate4.png" alt="name of the fourth card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--fifth-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate5.png" alt="name of the fifth card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate5.png" alt="name of the fifth card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--sixth-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate6.png" alt="name of the sixth card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate6.png" alt="name of the sixth card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--seventh-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate7.png" alt="name of the seventh card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate7.png" alt="name of the seventh card"
+                        width="54" height="54">
                     </a>
                   </li>
                   <li class="cards-slides__item slider__item--eighth-card">
                     <a href="#" class="cards-slides__link">
-                      <img class="cards-slides__image" src="./images/graduate8.png" alt="name of the eighth card" width="54" height="54">
+                      <img class="cards-slides__image" src="./images/graduate8.png" alt="name of the eighth card"
+                        width="54" height="54">
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-          <button class="section-slider__button  section-slider__button--left-arrow" type="button"><svg class="icon menu-actions__icon">
-            <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-communication"></use>
-          </svg></button>
-          <button class="section-slider__button section-slider__button--right-arrow" type="button"></button>
+          <button class="section-slider__button  section-slider__button--right-arrow" type="button">
+            <svg class="icon section-slider__icon">
+              <use y="-4" x="-10" width="200%" height="165%" href="./images/icons-svg/symbol-defs.svg#icon-left-arrow">
+              </use>
+            </svg>
+          </button>
+          <button class="section-slider__button section-slider__button--left-arrow" type="button">
+            <svg class="icon section-slider__icon">
+              <use y="-4" x="-10" width="200%" height="165%" href="./images/icons-svg/symbol-defs.svg#icon-right-arrow">
+              </use>
+            </svg>
+          </button>
         </div>
       </section>
 
-
-
-
-
       <section class="section-form">
         <div class="section-form__wrapper">
-          <h2 class="section-form__title">Text</h2>
-          <p class="section-form__description">Text</p>
-          <input class="section-form__input" type="text" name="name" placeholder="Имя*" minlength="4" maxlength="40"
-            autocomplete="name" required>
-          <!-- autofocus -->
-          <input class="section-form__input" type="tel" name="tel" placeholder="Телефон*" minlength="4" maxlength="40"
-            autocomplete="tel" required>
-          <button class="section-form__button">Text</button>
+          <form class="section-form__form" action="#" method="GET">
+            <h2 class="section-form__title typographic-meb">Регистрация на
+              <span class="section-form__title section-form__title--colortext">бесплатную </span> телефонную
+              <span class="section-form__title section-form__title--colortext">консультацию </span>
+              по нюансам ЗНО<br /> по английскому языку</h2>
+            <p class="section-form__description typographic-msb">Оставь заявку на участие в
+              <span class="section-form__description section-form__description--colortext"> бесплатном занятии. </span>
+              С вами свяжется консультант<br /> и ответит на вопросы.</p>
+            <input class="input-field section-form__input typographic-mb" type="text" name="name" placeholder="Имя*"
+              minlength="4" maxlength="30" autocomplete="name" required>
+            <input class="input-field section-form__input typographic-mb" type="tel" name="tel" placeholder="Телефон*"
+              minlength="6" maxlength="30" autocomplete="tel" required>
+            <button class="button section-form__button button--light typographic-tb" type="button">хочу на бесплатное
+              занятие</button>
+          </form>
         </div>
       </section>
 
@@ -450,44 +468,42 @@
   </main>
 
 
-
-
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__content">
-        <ul class="menu footer__menu">
-          <li class="item menu__item">
-            <a href="#" class="site-logo footer__logo">
-              <img class="site-logo__img" src="#" alt="brand and company name">
-            </a>
-          </li>
-          <li class="item menu__item">
-            <a href="#" class="link section-icons__link">
-              <svg class="icon section-icons__icon" width="20px" height="20px">
-                <!-- <use href="./images/sprite/symbol-defs.svg#icon-basket"></use> -->
+    <div class="footer__wrapper container">
+      <ul class="footer__menu">
+        <li class="footer__item">
+          <a href="#" class="footer__logo logo">
+            <img class="footer__img" src="./images/logo2x.png" alt="brand and company name" width="78" height="30">
+          </a>
+        </li>
+        <li class="footer__item">
+          <form class="footer-form footer__form" action="#" method="GET">
+            <label for="phoneNummber">
+              <svg class="icon footer-form__icon" width="20px" height="20px">
+                <use y="-5" x="-10" width="180%" height="170%" href="./images/icons-svg/symbol-defs.svg#icon-call">
+                </use>
               </svg>
-            </a>
-          </li>
-          <li class="item menu__item">
-            <a href="#" class="link section-icons__link">
-              <svg class="icon section-icons__icon" width="20px" height="20px">
-                <!-- <use href="./images/sprite/symbol-defs.svg#icon-basket"></use> -->
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-      </div>
+            </label>
+            <input class="footer-form__input" type="tel" name="phone" id="phoneNummber"
+              placeholder="+38 (000) 000 00 00" required autocomplete="tel-national">
+          </form>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link link">
+            <svg class="icon footer__icon">
+              <use y="-5" x="-10" width="180%" height="170%" href="./images/sprite/symbol-defs.svg#icon-instagram">
+              </use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="copyright footer__copyright">
-        <span class="copyright__symbol text-dark">&copy;</span>
-        <p class="copyright__text typographic-mr text-dark">MoGo free PSD template by 2016</p>
+        <p class="copyright__text typographic-mm text-dark">
+          <span class="copyright__symbol typographic-mm text-dark">&copy;</span> Все права защищены, 2019</p>
       </div>
     </div>
   </footer>
 
-  <!-- Сюда будет всталена ссылка на файл скриптов -->
-  <!-- inject:js -->
-  <!-- endinject -->
 </body>
 
 </html>

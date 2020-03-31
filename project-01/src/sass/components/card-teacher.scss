@@ -81,7 +81,8 @@
   padding-left: 16px;
   @extend %item;
 
-  &:hover {
-    color: #8c491d;
+  &:hover,
+  &:focus {
+    text-shadow: 1px 1px 5px #ff6b08;
   }
 }

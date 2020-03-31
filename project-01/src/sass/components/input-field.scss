@@ -1,0 +1,29 @@
+.input-field {
+  width: 280px;
+  border: 2px solid #ffffff;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 2.325;
+  background-color: transparent;
+  padding: 8px 5px 8px 14px;
+}
+
+.input-field::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 2.325;
+}
+
+.section-form__form input[name='name']:valid,
+.section-form__form input[type='tel']:valid {
+  outline: 2px solid #09ab09;
+  outline-offset: -2px;
+}
+
+.section-form__form input[type='text']:invalid,
+.section-form__form input[type='tel']:invalid {
+  outline: 2px solid #ff0000;
+  outline-offset: -2px;
+}

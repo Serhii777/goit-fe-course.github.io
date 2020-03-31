@@ -1,0 +1,47 @@
+.section-form {
+  background-color: #111517;
+  background-image: url(../../images/form-bgr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-form__wrapper {
+  padding: 56px 20px 58px;
+  margin: 0px;
+  text-align: center;
+}
+
+.section-form__title {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 1.86;
+  word-spacing: 4px;
+  padding: 0px 20px;
+  margin: 0px 0px 18px;
+
+  &--colortext {
+    color: #ff6b08;
+    padding: 0px;
+  }
+}
+
+.section-form__description {
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  line-height: 1.818;
+  padding: 0px 20px;
+  margin: 0px 0px 26px;
+
+  &--colortext {
+    color: #ff6b08;
+    padding: 0px;
+  }
+}
+
+.section-form__input:not(:nth-last-of-type(-2n+1)) {
+  margin-bottom: 20px;
+}
+
+.section-form__input:nth-last-of-type(-2n+1) {
+  margin-bottom: 56px;
+}

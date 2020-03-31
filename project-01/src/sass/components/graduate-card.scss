@@ -28,4 +28,7 @@
   color: #ff6b08;
 }
 
-// .graduate-card__link {}
+.graduate-card__link:hover,
+.graduate-card__link:focus {
+  text-shadow: 0px 0px 8px #ff6b08;
+}
