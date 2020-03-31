@@ -1,12 +1,38 @@
-// .footer-form {}
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-// .footer-form__icon {}
+  & input[type='tel']:valid {
+    outline: 2px solid #09ab09;
+    outline-offset: -2px;
+  }
+
+  & input[type='tel']:invalid {
+    outline: 2px solid #ff0000;
+    outline-offset: -2px;
+  }
+}
+
+.footer-form__label {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+}
+
+.footer-form__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
 
 .footer-form__input {
+  width: 204px;
   font-size: 18px;
-  font-family: "Montserrat";
-  color: rgb(17, 21, 23);
-  font-weight: bold;
+  color: #111517;
+  padding: 0px 0px 0px 8px;
+  // line-height: 1;
 
   &::-webkit-input-placeholder {
     font-size: 18px;
@@ -16,35 +42,9 @@
   }
 }
 
-.input-field {
-  width: 280px;
-  border: 2px solid #ffffff;
-  font-size: 13px;
-  color: #ffffff;
-  line-height: 2.325;
-  background-color: transparent;
-  padding: 8px 5px 8px 14px;
-}
-
 // .input {
 //   width: 230px;
 //   @include font-settings($primary-text-size, 1.6);
 //   margin: 0px;
 //   padding: 12px 0px 10px 12px;
-
-//   &::-webkit-input-placeholder {
-//     color: $input-text-color;
-//   }
 // }
-
-
-.footer-form__input input[type='tel']:valid {
-  outline: 2px solid #09ab09;
-  outline-offset: -2px;
-}
-
-.section-form__form input[type='text']:invalid,
-.section-form__form input[type='tel']:invalid {
-  outline: 2px solid #ff0000;
-  outline-offset: -2px;
-}
