@@ -2,14 +2,29 @@
 
 // .footer-form__icon {}
 
-// .footer-form__input {}
+.footer-form__input {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(17, 21, 23);
+  font-weight: bold;
 
+  &::-webkit-input-placeholder {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+  }
+}
 
-// .footer__field {
-//   display: flex;
-//   justify-content: flex-end;
-//   min-height: 40px;
-// }
+.input-field {
+  width: 280px;
+  border: 2px solid #ffffff;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 2.325;
+  background-color: transparent;
+  padding: 8px 5px 8px 14px;
+}
 
 // .input {
 //   width: 230px;
@@ -22,7 +37,14 @@
 //   }
 // }
 
-// .footer--input {
-//   border: 1px solid $input-border-color;
-//   border-right: 0px;
-// }
+
+.footer-form__input input[type='tel']:valid {
+  outline: 2px solid #09ab09;
+  outline-offset: -2px;
+}
+
+.section-form__form input[type='text']:invalid,
+.section-form__form input[type='tel']:invalid {
+  outline: 2px solid #ff0000;
+  outline-offset: -2px;
+}

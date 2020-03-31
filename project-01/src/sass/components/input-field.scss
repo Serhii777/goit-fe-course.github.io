@@ -6,14 +6,14 @@
   line-height: 2.325;
   background-color: transparent;
   padding: 8px 5px 8px 14px;
-}
 
-.input-field::-webkit-input-placeholder {
-  font-size: 13px;
-  font-family: "Montserrat";
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 2.325;
+  &::-webkit-input-placeholder {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2.325;
+  }
 }
 
 .section-form__form input[name='name']:valid,

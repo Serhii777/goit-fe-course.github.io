@@ -1,13 +1,15 @@
 .copyright {
+  padding: 28px 0px 28px;
   background-color: #111517;
 }
 
 .copyright__text {
   font-size: 11px;
-  font-family: "Montserrat";
-  color: rgba(253, 254, 254, 0.42);
-  line-height: 3.409;
+  color: hsla(180, 33%, 99%, 0.42);
   margin: 0px;
 }
 
-// .copyright__symbol {}
+.copyright__symbol {
+  font-size: 11px;
+  color: rgba(253, 254, 254, 0.42);
+}
