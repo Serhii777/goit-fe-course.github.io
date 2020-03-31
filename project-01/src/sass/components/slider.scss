@@ -1,7 +1,56 @@
-.slider{}
-.slider__item{}
-.slider__link-wrapper{}
-.slider__link{}
-.slider__img{}
-.slider__graduate-card{}
-.slider__image{}
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  //   height: 393px;
+  @extend %list;
+}
+
+.slider__item {
+  text-align: center;
+  @extend %link;
+}
+
+.slider__item--first-card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+  padding-bottom: 30px;
+  margin-bottom: 16px;
+
+}
+
+.slider__link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 0px 0px;
+  margin-bottom: 16px;
+}
+
+.slider__link {
+  display: block;
+  @extend %link;
+  font-size: 0px;
+}
+
+.slider__link--img {
+  margin-bottom: 22px;
+}
+
+// .slider__img {
+//   display: block;
+//   width: 82px;
+//   height: 82px;
+// }
+
+.slider__icon {
+  display: block;
+  width: 25px;
+  height: 14px;
+  //   width: 50px;
+  //   height: 28px;
+}
+
+// .slider__graduate-card {}
+
+// .slider__image {}

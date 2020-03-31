@@ -1,0 +1,27 @@
+.cards-slides__wrapper {
+  padding: 0px 48px;
+}
+
+.cards-slides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @extend %list;
+}
+
+// .cards-slides__item {}
+
+.cards-slides__link {
+  display: block;
+  @extend %link;
+  font-size: 0px;
+}
+
+.slider__item--fifth-card,
+.slider__item--sixth-card,
+.slider__item--seventh-card,
+.slider__item--eighth-card {
+  display: none;
+}
+
+// .cards-slides__image {}

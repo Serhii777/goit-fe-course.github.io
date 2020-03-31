@@ -1,5 +1,31 @@
-.graduate-card{}
-.graduate-card__title{}
-.graduate-card__description{}
-.graduate-card__text{}
-.graduate-card__link{}
+.graduate-card {
+  padding: 0px 28px;
+}
+
+.graduate-card__title {
+  font-size: 13px;
+  color: #ff6b08;
+  line-height: 2.144;
+  margin: 0px;
+}
+
+.graduate-card__description {
+  font-size: 11px;
+  color: #858585;
+  line-height: 1.515;
+  margin: 0px 0px 18px;
+
+}
+
+.graduate-card__text {
+  font-size: 11px;
+  color: #18191d;
+  line-height: 1.818;
+  margin: 0px;
+}
+
+.graduate-card__text--colortext {
+  color: #ff6b08;
+}
+
+// .graduate-card__link {}
