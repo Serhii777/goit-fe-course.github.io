@@ -4,21 +4,8 @@
   flex-direction: column;
   @extend %list;
   counter-reset: count-program;
-  padding: 0px 54px 0px 84px;
-  //   border-left: 2px solid #546264;
+  padding: 0px 50px 0px 83px;
   position: relative;
-
-  // &::before {
-  //   display: block;
-  //   content: '';
-  //   position: absolute;
-  //   width: 4px;
-  //   min-height: 1240px;
-  //   min-height: 91.5%;
-  //   background-color: #546264;
-  //   top: 14px;
-  //   left: 83px;
-  // }
 }
 
 .list-program__item {
@@ -32,32 +19,65 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgb(255, 107, 8);
+    background-color: #ff6b08;
     position: absolute;
     top: 15px;
-    left: -5px;
+    left: -6px;
     transform: translateY(-50%);
   }
 
-  // &:not(:nth-last-of-type(-3n+1)) {
-  //   border-left: 1px dotted #bbbbbb;
-  // }
+  &:not(:last-child) {
+    border-left: 2px solid #546264;
+  }
+
+  &:first-child {
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      background-color: #111517;
+      top: 0px;
+      left: -3px;
+    }
+  }
+
+  &:nth-last-of-type(-3n+1) {
+    border-left: 2px dotted #111517;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      border: none;
+      border-left: 2px solid #546264;
+      top: 0px;
+      left: -2px;
+    }
+  }
 }
 
 .list-program__item:not(:nth-last-of-type(-2n+1)) {
-  // border-left: 3px dotted #bbbbbb;
-  // margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
 // .list-program__wrapper {
 //   margin-bottom: 20px;
+//   border-left: 5px solid #546264;
 // }
 
-// .list-program__wrapper:nth-last-of-type(-n+1) {
-.list-program__item:not(:last-child) {
-  border-left: 5px dotted #bbbbbb;
-}
+// .list-program__wrapper:nth-last-child(-n+2) {
+// .list-program__item:not(:nth-last-child(1)) {
+// .list-program__wrapper:not(:nth-last-of-type(-n+1)) {
+// .list-program__wrapper:not(:nth-of-type(2n+1)) {
+// .list-program__wrapper:not(:nth-last-child(2n+1)) {
+// .list-program__wrapper:not(:nth-child(-2n+1)) {
+//   margin-bottom: 20px;
+//   border-left: 5px solid rgb(255, 255, 255);
+// }
 
 .list-program__title {
   font-size: 15px;
