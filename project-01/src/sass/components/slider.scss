@@ -9,14 +9,13 @@
 .slider__item {
   text-align: center;
   @extend %link;
-}
 
-.slider__item--first-card {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
-  padding-bottom: 30px;
-  margin-bottom: 16px;
-
+  &--first-card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    padding-bottom: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 .slider__link-wrapper {
@@ -31,11 +30,12 @@
   display: block;
   @extend %link;
   font-size: 0px;
+
+  &--img {
+    margin-bottom: 22px;
+  }
 }
 
-.slider__link--img {
-  margin-bottom: 22px;
-}
 
 .slider__img:hover,
 .slider__img:focus {
@@ -44,15 +44,9 @@
   transform: scale(1.12);
 }
 
-.slider__icon {
-  display: block;
-  width: 25px;
-  height: 14px;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.15);
-  }
+.slider__icon:hover,
+.slider__icon:hover:focus {
+  transform: scale(1.15);
 }
 
 // .slider__graduate-card {}

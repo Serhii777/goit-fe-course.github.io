@@ -8,18 +8,17 @@
   //   border-left: 2px solid #546264;
   position: relative;
 
-  &::before {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 2px;
-    // min-height: 1240px;
-    min-height: 91.5%;
-    background-color: #546264;
-    top: 14px;
-    left: 83px;
-
-  }
+  // &::before {
+  //   display: block;
+  //   content: '';
+  //   position: absolute;
+  //   width: 4px;
+  //   min-height: 1240px;
+  //   min-height: 91.5%;
+  //   background-color: #546264;
+  //   top: 14px;
+  //   left: 83px;
+  // }
 }
 
 .list-program__item {
@@ -38,12 +37,26 @@
     top: 15px;
     left: -5px;
     transform: translateY(-50%);
-
   }
+
+  // &:not(:nth-last-of-type(-3n+1)) {
+  //   border-left: 1px dotted #bbbbbb;
+  // }
 }
 
 .list-program__item:not(:nth-last-of-type(-2n+1)) {
-  margin-bottom: 20px;
+  // border-left: 3px dotted #bbbbbb;
+  // margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+// .list-program__wrapper {
+//   margin-bottom: 20px;
+// }
+
+// .list-program__wrapper:nth-last-of-type(-n+1) {
+.list-program__item:not(:last-child) {
+  border-left: 5px dotted #bbbbbb;
 }
 
 .list-program__title {

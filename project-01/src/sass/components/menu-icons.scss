@@ -18,23 +18,15 @@
   width: 58px;
   height: 58px;
   border: 2px solid #ff6b08;
-  background-repeat: no-repeat;
-  background-size: 36px 36px;
-  background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: 36px 36px;
+  // background-position: center;
   position: relative;
   margin: 0px 14px 0px 50px;
 
-  &--female {
-    background-image: url(../../images/icons-svg/female3x.svg);
-  }
-
-  &--mobile {
-    background-image: url(../../images/icons-svg/mobile3x.svg);
-  }
-
-  &--insurance {
-    background-image: url(../../images/icons-svg/insurance3x.svg);
-  }
+  // &--female {
+  // background-image: url(../../images/icons-svg/female3x.svg);
+  // }
 
   &::after {
     display: block;
@@ -48,8 +40,6 @@
 }
 
 .menu-icons__icon {
-  width: 36px;
-  height: 36px;
   fill: #ff6b08;
 }
 

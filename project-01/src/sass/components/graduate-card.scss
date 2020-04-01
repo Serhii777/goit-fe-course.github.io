@@ -14,7 +14,6 @@
   color: #858585;
   line-height: 1.515;
   margin: 0px 0px 18px;
-
 }
 
 .graduate-card__text {
@@ -22,11 +21,12 @@
   color: #18191d;
   line-height: 1.818;
   margin: 0px;
+
+  &--colortext {
+    color: #ff6b08;
+  }
 }
 
-.graduate-card__text--colortext {
-  color: #ff6b08;
-}
 
 .graduate-card__link:hover,
 .graduate-card__link:focus {
