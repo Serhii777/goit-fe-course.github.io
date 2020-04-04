@@ -9,7 +9,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
   width: 290px;
-  min-height: 267px;
+  min-height: 268px;
   padding: 30px 20px 0px;
   @extend %item;
 
@@ -81,4 +81,19 @@
   margin: 0px;
   padding: 0px 10px;
   transition: all 0.2s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-actions {
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .menu-actions__item:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 16px;
+  }
+
+  .menu-actions__item:nth-last-of-type(-n+2) {
+    margin-bottom: 40px;
+  }
 }

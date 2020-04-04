@@ -8,6 +8,7 @@
 
 .menu-problem__item {
   counter-increment: count-problem;
+  width: 230px;
 
   &::before {
     content: '0'counter(count-problem);
@@ -23,9 +24,10 @@
   margin-bottom: 10px;
 }
 
-.menu-problem__item:nth-last-of-type(-6n+1) {
+.menu-problem__item:nth-last-of-type(-n+1) {
   margin-bottom: 30px;
 }
+
 
 .menu-problem__text {
   font-size: 13px;
@@ -45,5 +47,22 @@
     background-color: #ff6b08;
     position: absolute;
     top: -16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-problem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 36px 76px 0px 106px;
+  }
+
+  .menu-problem__item:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 16px;
+  }
+
+  .menu-problem__item:nth-last-of-type(-n+2) {
+    margin-bottom: 40px;
   }
 }

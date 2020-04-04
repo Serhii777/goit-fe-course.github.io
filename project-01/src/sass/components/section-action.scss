@@ -15,3 +15,17 @@
 .section-action__items {
   margin-bottom: 53px;
 }
+
+@media screen and (min-width: 768px) {
+  .section-action__wrapper {
+    padding: 0px 82px 0px;
+    margin-bottom: 50px;
+  }
+
+  .section-action__title {
+    font-size: 26px;
+    color: rgb(24, 25, 29);
+    line-height: 1.269;
+    margin: 0px 0px 34px 0px;
+  }
+}

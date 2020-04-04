@@ -30,3 +30,34 @@
   font-size: $size;
   line-height: $height;
 }
+
+
+// @ min-screen(width) // shortcut for @media screen and (min-width ...)
+// @ max-screen(width) // shortcut for @media screen and (max-width ...)
+// @ screen(min-width, max-width) // shortcut for @media screen and (min-width ...) and (max-width ...)
+
+// @include screen(768, 1280) { ... }
+// @media screen and ( min-width: 768px ) and ( max-width: 1280px )
+// {
+//   ...
+// }
+
+// @include screen(320, 640)  { ... }
+// @media screen and ( min-width: 320px ) and ( max-width: 640px )
+// {
+//   ...
+// }
+
+// @media #{$format} {
+//   .menu {
+//     @media (max-width: $mobile) {
+//       width: 100%;
+//     }
+//     @media (max-width: $tablet) {
+//       width: 60%;
+//     }
+//     @media (max-width: $desktop) {
+//       width: 30%;
+//     }
+//   }
+// }

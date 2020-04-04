@@ -17,11 +17,10 @@
     <div class="header__wrapper container">
       <nav class="navigation header__navigation ">
         <a href="#" class="logo navigation__logo">
-          <img class="logo__img" src="./images/logo2x.png" alt="brand and company name" width="78" height="30">
+          <img class="img logo__img " src="./images/logo2x.png" alt="brand and company name"
+            srcset="images/logo-mob.png 320w, images/logo-tabl.png 768w, images/logo-desk.png 1280w"
+            sizes="(min-width: 768px) 768px, 100wv">
         </a>
-        <div class="burger navigation__burger">
-          <div class="burger__block"></div>
-        </div>
         <ul class="menu navigation--list">
           <li class="menu__item">
             <a class="menu__link" href="#">Программа обучения</a>
@@ -35,10 +34,14 @@
           <li class="menu__item">
             <a class="menu__link" href="#">контакты</a>
           </li>
-          <li class="menu__item">
-            <button class="menu__button" href="#">консультация по телефону</button>
+          <li class="menu__item menu__item--button">
+            <button class="button button--lighter menu__button typographic-tb" href="#">консультация по
+              телефону</button>
           </li>
         </ul>
+        <div class="burger navigation__burger">
+          <span class="burger__block"></span>
+        </div>
       </nav>
 
       <section class="section-training header__section-training">
@@ -52,7 +55,9 @@
               бесплатное занятие</button>
           </div>
           <div class="section-training__img">
-            <img class="img" src="./images/train-01.png" alt="Комплексная подготовка к ВНО по английскому языку">
+            <img class="img" src="./images/train-mob.png" alt="Комплексная подготовка к ВНО по английскому языку"
+              srcset="images/train-mob.png 320w, images/train-tabl.png 768w, images/train-desk.png 1280w, images/train-desk-large.png 1680w"
+              sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px">
           </div>
         </div>
       </section>
@@ -60,18 +65,18 @@
       <section class="section-icons header__section-icons">
         <div class="section-icons__wrapper">
           <ul class="menu-icons">
-            <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link menu-icons__link--female">
-                <svg class="icon menu-icons__icon" width="36px" height="36px">
+            <li class="menu-icons__item">
+              <a href="#" class="menu-icons__link menu-icons__link--female">
+                <svg class=" menu-icons__icon" width="36px" height="36px">
                   <use y="-1" x="-6" width="135%" height="130%" href="./images/icons-svg/symbol-defs.svg#icon-female">
                   </use>
                 </svg>
               </a>
               <p class="menu-icons__description">Адаптированная авторская программа ВНО</p>
             </li>
-            <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link menu-icons__link--mobile">
-                <svg class="icon menu-icons__icon" width="36px" height="36px">
+            <li class="menu-icons__item">
+              <a href="#" class="menu-icons__link menu-icons__link--mobile">
+                <svg class="menu-icons__icon" width="36px" height="36px">
                   <use y="-1" x="-6" width="135%" height="130%"
                     href="./images/icons-svg/symbol-defs.svg#icon-mobile-learning">
                   </use>
@@ -79,9 +84,9 @@
               </a>
               <p class="menu-icons__description">Современные методики обучения</p>
             </li>
-            <li class="item menu-icons__item">
-              <a href="#" class="link menu-icons__link menu-icons__link--insurance">
-                <svg class="icon menu-icons__icon" width="36px" height="36px">
+            <li class="menu-icons__item">
+              <a href="#" class="menu-icons__link menu-icons__link--insurance">
+                <svg class="menu-icons__icon" width="36px" height="36px">
                   <use y="-1" x="-6" width="135%" height="130%"
                     href="./images/icons-svg/symbol-defs.svg#icon-insurance">
                   </use>
@@ -93,7 +98,6 @@
         </div>
       </section>
 
-
     </div>
   </header>
 
@@ -104,9 +108,9 @@
 
       <section class="section-problem container">
         <div class="section-problem__wrapper">
-          <h2 class="section-problem__title typographic-mb">Главные проблемы учеников <br />
-            на English ВНО, которые мы
-            <span class="section-problem__title section-problem__title--colortext">помогаем</span> решить</h2>
+          <h2 class="section-problem__title typographic-meb">Главные проблемы учеников
+            на English ВНО, которые мы <span
+              class="section-problem__title section-problem__title--colortext">помогаем</span> решить</h2>
           <ul class="menu-problem section-problem__menu-problem items">
             <li class="menu-problem__item">
               <p class="menu-problem__text">Незнание грамматики</p>
@@ -132,7 +136,7 @@
 
       <section class="section-action">
         <div class="section-action__wrapper">
-          <h2 class="section-action__title typographic-mb">Как мы это делаем</h2>
+          <h2 class="section-action__title typographic-meb">Как мы это делаем</h2>
           <ul class="menu-actions section-action__items items">
             <li class="menu-actions__item">
               <a href="#" class="link menu-actions__link">
@@ -222,7 +226,7 @@
             </li>
             <li class="list-program__item">
               <div class="list-program__wrapper">
-              <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
                 <span class="list-program__segment">Grammar</span>
                 <p class="list-program__text typographic-mr ">
                   Pronouns <br /> Active Voice <br /> Passive Voice</p>
@@ -233,7 +237,7 @@
             </li>
             <li class="list-program__item">
               <div class="list-program__wrapper">
-              <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
                 <span class="list-program__segment">Grammar</span>
                 <p class="list-program__text typographic-mr ">
                   Modal verbs <br /> Infinitive <br /> Gerund <br /> Participle: 1, 2</p>
@@ -247,7 +251,7 @@
             </li>
             <li class="list-program__item">
               <div class="list-program__wrapper">
-              <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
                 <span class="list-program__segment">Grammar</span>
                 <p class="list-program__text typographic-mr ">
                   Clauses: Conditional <br /> and Wishes <br /> Direct / Reported speech <br />
@@ -262,7 +266,7 @@
             </li>
             <li class="list-program__item">
               <div class="list-program__wrapper">
-              <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
                 <span class="list-program__segment">
                   <span class="list-program__hidden-element">Grammar</span></span>
                 <p class="list-program__text typographic-mr ">

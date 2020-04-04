@@ -1,9 +1,23 @@
 .menu {
-  display: none;
-  // text-transform: uppercase;
-  // @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  @extend %list;
 }
 
+.menu__item {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  // .menu {
+  // padding-left: 240px;
+  // }
+
+  .menu__item--button {
+    display: block;
+  }
+}
 
 // .menu {
 //   display: flex;

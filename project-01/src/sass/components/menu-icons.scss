@@ -1,5 +1,8 @@
 .menu-icons {
+  // display: flex;
+  // flex-direction: column;
   margin: 0px;
+  padding-left: 50px;
   @extend %list;
 }
 
@@ -18,15 +21,9 @@
   width: 58px;
   height: 58px;
   border: 2px solid #ff6b08;
-  // background-repeat: no-repeat;
-  // background-size: 36px 36px;
-  // background-position: center;
+  @extend %link;
   position: relative;
-  margin: 0px 14px 0px 50px;
-
-  // &--female {
-  // background-image: url(../../images/icons-svg/female3x.svg);
-  // }
+  margin: 0px 14px 0px 0px;
 
   &::after {
     display: block;
@@ -44,7 +41,7 @@
 }
 
 .menu-icons__description {
-  width: 140px;
+  max-width: 120px;
   font-size: 13px;
   font-family: "Montserrat";
   color: rgb(24, 25, 29);
@@ -52,4 +49,21 @@
   line-height: 1.538;
   text-align: left;
   margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 0px;
+  }
+
+  .menu-icons__link {
+    margin-left: 0px;
+  }
 }

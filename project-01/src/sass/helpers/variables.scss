@@ -49,3 +49,23 @@ $primary-orange-color: #ff6b08;
 
 // $ligth-gradient-color: rgba(252, 227, 138, 0.9);
 // $dark-gradient-color: rgba(243, 129, 129, 0.9);
+
+$format: screen;
+$mobile: 320px; 
+$tablet: 768px;
+$notebook: 1280px;
+$desktop: 1680px;
+
+// @media #{$format} {
+//   .menu {
+//     @media (max-width: $mobile) {
+//       width: 100%;
+//     }
+//     @media (max-width: $tablet) {
+//       width: 60%;
+//     }
+//     @media (max-width: $desktop) {
+//       width: 30%;
+//     }
+//   }
+// }

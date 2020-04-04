@@ -1,5 +1,6 @@
 %button {
   border: 2px solid #ff6b08;
+  // border: none;
   margin: 0px;
   padding: 0px;
   text-transform: uppercase;
@@ -14,6 +15,7 @@
 }
 
 %link {
+  // display: inline-block;
   margin: 0px;
   text-decoration: none;
   transition: all 0.2s linear;
