@@ -55,10 +55,21 @@
   color: rgb(24, 25, 29);
   line-height: 1.818;
   margin: 0px;
-  word-spacing: 4px;
+  word-spacing: 3px;
+  white-space: pre-line;
 }
 
 .list-warranty__text--colortext {
   color: #ff6b08;
   word-spacing: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-warranty {
+    padding: 32px 0px 0px 6px;
+  }
+
+  .list-warranty__text {
+    white-space: initial;
+  }
 }

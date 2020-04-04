@@ -27,8 +27,27 @@
   }
 }
 
-
 .graduate-card__link:hover,
 .graduate-card__link:focus {
   text-shadow: 0px 0px 8px #ff6b08;
 }
+
+@media screen and (min-width: 768px) {
+  .graduate-card {
+    padding: 0px;
+    text-align: left;
+  }
+
+  .graduate-card__title {
+    font-size: 18px;
+    line-height: 1.62;
+    margin: 0px;
+  }
+
+  .graduate-card__description {
+    font-size: 12.5px;
+    line-height: 1.333;
+    margin: 0px 0px 18px;
+  }
+}
+

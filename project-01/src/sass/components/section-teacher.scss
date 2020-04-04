@@ -14,5 +14,18 @@
   color: #111517;
   line-height: 1.5;
   margin: 0px 0px 24px;
+}
 
+@media screen and (min-width: 768px) {
+  .section-teacher__wrapper {
+    padding: 0px 40px;
+    margin-bottom: 42px;
+  }
+
+
+  .section-teacher__title {
+    font-size: 26px;
+    line-height: 2.405;
+    margin-bottom: 20px;
+  }
 }

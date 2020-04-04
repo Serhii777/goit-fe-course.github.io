@@ -50,7 +50,7 @@
   color: #111517;
   word-spacing: 4px;
   margin: 0px;
-
+  white-space: pre-line;
 }
 
 .card__text {
@@ -59,6 +59,7 @@
   margin: 0px;
   padding: 0px 16px;
   position: relative;
+  white-space: pre-line;
 
   &::before {
     display: block;
@@ -84,5 +85,48 @@
   &:hover,
   &:focus {
     text-shadow: 1px 1px 5px #ff6b08;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    width: 398px;
+  }
+
+  .card__img {
+    // display: inline-block;
+    width: 246px;
+    height: 320px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 1.458;
+    margin: 0px 0px 24px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .card__description {
+    // word-spacing: 4px;
+    // margin: 0px;
+    white-space: initial;
+  }
+
+  .card__text {
+    margin-bottom: 14px;
+    padding: 0px;
+    white-space: initial;
+  }
+
+  .card__link {
+    padding-left: 0px;
   }
 }

@@ -28,7 +28,6 @@
   margin-bottom: 30px;
 }
 
-
 .menu-problem__text {
   font-size: 13px;
   font-family: "Montserrat";
@@ -38,6 +37,7 @@
   text-align: left;
   margin: 0px;
   position: relative;
+  white-space: pre-line;
 
   &::before {
     display: block;
@@ -55,7 +55,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 36px 76px 0px 106px;
+    padding: 24px 102px 0px 108px;
+  }
+
+  .menu-problem__item {
+    max-width: 212px;
   }
 
   .menu-problem__item:not(:nth-last-of-type(-3n+1)) {
@@ -63,6 +67,12 @@
   }
 
   .menu-problem__item:nth-last-of-type(-n+2) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
+
+  .menu-problem__text {
+    white-space: initial;
+    // white-space: pre;
+  }
+
 }

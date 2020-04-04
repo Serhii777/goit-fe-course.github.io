@@ -55,6 +55,7 @@
   margin: 0px 0px 34px 0px;
   position: relative;
   transition: all 0.2s linear;
+  white-space: pre-line;
 
   &::after {
     display: block;

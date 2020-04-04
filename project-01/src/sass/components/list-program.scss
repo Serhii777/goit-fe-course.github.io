@@ -44,7 +44,7 @@
   }
 
   &:nth-last-of-type(-3n+1) {
-    border-left: 2px dotted #111517;
+    border-left: 2px solid #111517;
 
     &::after {
       display: block;
@@ -64,21 +64,6 @@
   padding-bottom: 20px;
 }
 
-// .list-program__wrapper {
-//   margin-bottom: 20px;
-//   border-left: 5px solid #546264;
-// }
-
-// .list-program__wrapper:nth-last-child(-n+2) {
-// .list-program__item:not(:nth-last-child(1)) {
-// .list-program__wrapper:not(:nth-last-of-type(-n+1)) {
-// .list-program__wrapper:not(:nth-of-type(2n+1)) {
-// .list-program__wrapper:not(:nth-last-child(2n+1)) {
-// .list-program__wrapper:not(:nth-child(-2n+1)) {
-//   margin-bottom: 20px;
-//   border-left: 5px solid rgb(255, 255, 255);
-// }
-
 .list-program__title {
   font-size: 15px;
   line-height: 1.944;
@@ -95,6 +80,22 @@
     text-transform: uppercase;
     line-height: 1.944;
     margin-right: 8px;
+  }
+}
+
+.list-program__contents {
+  display: flex;
+  flex-direction: column;
+  @extend %list;
+  // margin-bottom: 20px;
+}
+
+.list-program__content {
+  width: 155px;
+  @extend %link;
+
+  &:not(:nth-last-of-type(-2n+1)) {
+    margin: 0px 0px 12px;
   }
 }
 
@@ -124,20 +125,44 @@
   opacity: 0;
 }
 
-
 .list-program__text {
   font-size: 11px;
   color: rgba(133, 133, 133, 0.502);
   line-height: 1.818;
   padding: 0px;
   margin: 0px;
+  white-space: pre-line;
 }
 
-.list-program__text:not(:nth-last-of-type(-2n+1)) {
-  margin: 0px 0px 8px;
+@media screen and (min-width: 768px) {
+  .list-program {
+    padding: 0px 50px 0px 90px;
+    position: relative;
+  }
+
+  .list-program__item {
+    padding-left: 50px;
+  }
+
+  .list-program__contents {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list-program__item:not(:nth-last-of-type(-2n+1)) {
+    padding-bottom: 38px;
+  }
+
+  .list-program__content:not(:nth-last-of-type(-2n+1)) {
+    margin: 0px 26px 0px 0px;
+  }
+
+
+  // .menu-actions__item:not(:nth-last-of-type(-3n+1)) {
+  //   margin-bottom: 16px;
+  // }
+
+  // .menu-actions__item:nth-last-of-type(-n+2) {
+  //   margin-bottom: 40px;
+  // }
 }
-
-
-//   .menu-actions__item:not(:nth-last-of-type(-3n+1)) {
-//     margin-bottom: 10px;
-//   }

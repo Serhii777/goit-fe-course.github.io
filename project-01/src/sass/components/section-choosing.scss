@@ -1,5 +1,4 @@
 .section-choosing {
-  display: flex;
   min-height: 638px;
 }
 
@@ -17,9 +16,30 @@
   line-height: 1.5;
   text-align: left;
   margin: 0px 0px 16px 0px;
-  padding: 0px 40px 0px 0px;
+  padding: 0px;
+  white-space: pre-line;
 }
 
 .section-choosing__menu-problem {
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .section-choosing {
+    min-height: 412px;
+  }
+
+  .section-choosing__wrapper {
+    height: 190px;
+    padding: 0px 40px;
+  }
+
+  .section-choosing__title {
+    font-size: 26px;
+    // line-height: 2.405;
+    text-align: center;
+    margin-bottom: 22px;
+    white-space: initial;
+  }
+
 }

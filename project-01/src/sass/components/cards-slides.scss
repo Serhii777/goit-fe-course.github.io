@@ -28,3 +28,16 @@
 .cards-slides__item--eighth-card {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .cards-slides__wrapper {
+    padding: 0px 90px;
+  }
+
+  .cards-slides__item--fifth-card,
+  .cards-slides__item--sixth-card,
+  .cards-slides__item--seventh-card,
+  .cards-slides__item--eighth-card {
+    display: block;
+  }
+}

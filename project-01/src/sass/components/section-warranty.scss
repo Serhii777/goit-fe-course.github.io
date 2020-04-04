@@ -20,3 +20,25 @@
 .section-warranty__items {
   margin-bottom: 22px;
 }
+
+@media screen and (min-width: 768px) {
+  .section-warranty__wrapper {
+    padding: 0px 40px;
+    margin-bottom: 48px;
+  }
+
+  .section-warranty__title {
+    font-size: 26px;
+    line-height: 2.405;
+    margin: 0px 0px 20px
+  }
+
+  .section-warranty__wrapper-list {
+    padding: 0px 60px;
+  }
+
+  .section-warranty__items {
+    margin-bottom: 30px;
+  }
+}
+
