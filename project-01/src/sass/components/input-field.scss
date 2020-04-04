@@ -27,3 +27,9 @@
   outline: 2px solid #ff0000;
   outline-offset: -2px;
 }
+
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 400px;
+  }
+}

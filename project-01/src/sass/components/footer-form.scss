@@ -46,3 +46,20 @@
 //   margin: 0px;
 //   padding: 12px 0px 10px 12px;
 // }
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    position: relative;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 29px;
+      background-color: #e0e0e0;
+      top: -2px;
+      right: -30px;
+    }
+  }
+}

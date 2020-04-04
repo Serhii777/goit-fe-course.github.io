@@ -31,6 +31,7 @@
   line-height: 1.818;
   padding: 0px 20px;
   margin: 0px 0px 26px;
+  white-space: pre-line;
 
   &--colortext {
     color: #ff6b08;
@@ -44,4 +45,31 @@
 
 .section-form__input:nth-last-of-type(-2n+1) {
   margin-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-form {
+    background-image: url(../../images/form-bgr-tabl.png);
+  }
+
+  .section-form__wrapper {
+    padding: 54px 100px 64px;
+  }
+
+  .section-form__title {
+    font-size: 22px;
+    line-height: 1.729;
+    margin: 0px 0px 20px;
+  }
+
+  .section-form__description {
+    font-size: 15px;
+    line-height: 1.333;
+    white-space: initial;
+    margin: 0px 0px 40px;
+  }
+
+  .section-form__input:nth-last-of-type(-2n+1) {
+    margin-bottom: 30px;
+  }
 }

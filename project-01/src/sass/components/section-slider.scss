@@ -24,13 +24,13 @@
   fill: #ff6b08;
   background: #ffffff;
 
-  &--left-arrow {
+  &--right-arrow {
     position: absolute;
     bottom: 20px;
     right: 20px;
   }
 
-  &--right-arrow {
+  &--left-arrow {
     position: absolute;
     bottom: 20px;
   }
@@ -58,5 +58,19 @@
     line-height: 2.405;
     margin: 0px 0px 28px 0px;
   }
-}
 
+  .section-slider__button {
+    width: 25px;
+    height: 14px;
+
+    &--right-arrow {
+      bottom: 208px;
+      right: 23px;
+    }
+
+    &--left-arrow {
+      bottom: 208px;
+      left: 23px;
+    }
+  }
+}
