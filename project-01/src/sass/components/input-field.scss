@@ -33,3 +33,18 @@
     width: 400px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .input-field {
+    width: 620px;
+    border: 1px solid #ffffff;
+    font-size: 21px;
+    line-height: 1.8;
+    padding: 16px 5px 16px 26px;
+  
+    &::-webkit-input-placeholder {
+      font-size: 21px;
+      line-height: 1.8;
+    }
+  }
+}

@@ -73,3 +73,38 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  // .section-form {
+  //   background-image: url(../../images/form-bgr-tabl.png);
+  // }
+
+  .section-form__wrapper {
+    padding: 78px 160px 88px;
+  }
+
+  .section-form__title {
+    font-size: 37.5px;
+    line-height: 1.334;
+    margin: 0px 0px 46px;
+  }
+
+  .section-form__description {
+    font-size: 18px;
+    line-height: 1.361;
+    margin: 0px 0px 54px;
+  }
+
+  .section-form__input:not(:nth-last-of-type(-2n+1)) {
+    margin-bottom: 28px;
+  }
+
+  .section-form__input:nth-last-of-type(-2n+1) {
+    margin-bottom: 56px;
+  }
+
+  .section-form__button{
+    width: 350px;
+    letter-spacing: 3.8px;
+  }
+}

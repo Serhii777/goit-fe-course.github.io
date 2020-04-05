@@ -3,7 +3,7 @@
 .section-slider__wrapper {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   margin-bottom: 54px;
   padding: 46px 20px 0px;
   position: relative;
@@ -49,8 +49,8 @@
 
 @media screen and (min-width: 768px) {
   .section-slider__wrapper {
-    margin-bottom: 75px;
     padding: 0px 40px;
+    margin-bottom: 75px;
   }
 
   .section-slider__title {
@@ -71,6 +71,34 @@
     &--left-arrow {
       bottom: 208px;
       left: 23px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-slider__wrapper {
+    padding: 0px 35px;
+    margin-bottom: 100px;
+  }
+
+  .section-slider__title {
+    font-size: 42px;
+    line-height: 1.489;
+    margin: 0px 0px 32px 0px;
+  }
+
+  .section-slider__button {
+    width: 25px;
+    height: 14px;
+
+    &--right-arrow {
+      bottom: 256px;
+      right: 58px;
+    }
+
+    &--left-arrow {
+      bottom: 256px;
+      left: 58px;
     }
   }
 }

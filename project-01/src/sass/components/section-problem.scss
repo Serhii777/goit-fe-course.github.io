@@ -53,3 +53,22 @@
   }
 }
 
+
+@media screen and (min-width: 1280px) {
+  .section-problem {
+    // min-height: 488px;
+    min-height: 690px;
+  }
+
+  .section-problem__wrapper {
+    min-height: 526px;
+    padding: 64px 35px 0px;
+    background-image: url(../../images/bgr-fire-desk.png);
+  }
+
+  .section-problem__title {
+    font-size: 42px;
+    line-height: 1.346;
+    margin-bottom: 40px;
+  }
+}

@@ -102,7 +102,6 @@
 .list-program__segment {
   display: block;
   font-size: 13px;
-  font-family: "Montserrat";
   color: rgb(255, 107, 8);
   line-height: 2.244;
   position: relative;
@@ -133,6 +132,7 @@
   margin: 0px;
   white-space: pre-line;
 }
+
 
 @media screen and (min-width: 768px) {
   .list-program {
@@ -165,4 +165,89 @@
   // .menu-actions__item:nth-last-of-type(-n+2) {
   //   margin-bottom: 40px;
   // }
+}
+
+@media screen and (min-width: 1280px) {
+  .list-program {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 35px 0px;
+    border-top: 1px solid #546264;
+  }
+
+  .list-program__item {
+    padding-left: 0px;
+    border-left: none;
+    max-width: 200px;
+
+    &::before {
+      top: -40px;
+      left: 0px;
+    }
+
+    &:not(:last-child) {
+      border-left: none;
+    }
+
+    &:first-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:nth-last-of-type(-3n+1) {
+      border-left: none;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .list-program__item:not(:nth-last-of-type(-2n+1)) {
+    padding-bottom: 0px;
+  }
+
+  .list-program__contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-program__content {
+    width: 100%;
+
+    // &:not(:nth-last-of-type(-2n+1)) {
+    //   margin: 0px 0px 12px;
+    // }
+  }
+
+  .list-program__content:not(:nth-last-of-type(-2n+1)) {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .list-program__title {
+    font-size: 19px;
+    line-height: 1.535;
+    margin: 0px 0px 26px;
+
+    &::before {
+      content: counter(count-program);
+      font-size: 19px;
+      line-height: 1.535;
+    }
+  }
+
+  .list-program__segment {
+    font-size: 18px;
+    line-height: 1.62;
+    margin: 0px 0px 10px 38px;
+  }
+
+  .list-program__text {
+    font-size: 18.75px;
+    line-height: 1.556;
+    padding: 0px;
+    margin: 0px;
+    white-space: initial;
+  }
 }

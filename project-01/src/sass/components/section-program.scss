@@ -7,13 +7,13 @@
 .section-program__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 46px;
   // background: #111517;
 }
 
 .section-program__title {
   font-size: 20px;
   line-height: 1.65;
-  padding-top: 46px;
   margin: 0px 0px 30px 0px;
   text-align: center;
 }
@@ -33,14 +33,13 @@
 
 @media screen and (min-width: 768px) {
   .section-program__wrapper {
-    padding: 0px 40px;
+    padding: 64px 40px 0px;
     margin-bottom: 150px;
   }
 
   .section-program__title {
     font-size: 26px;
     line-height: 2.405;
-    padding-top: 64px;
     margin-bottom: 44px;
     text-align: left;
   }
@@ -64,4 +63,34 @@
   // .menu-actions__item:nth-last-of-type(-n+2) {
   //   margin-bottom: 40px;
   // }
+}
+
+@media screen and (min-width: 1280px) {
+  // .section-program {
+  // }
+
+  .section-program__wrapper {
+    padding: 52px 0px 0px;
+    margin-bottom: 72px;
+  }
+
+  .section-program__title {
+    font-size: 42px;
+    line-height: 1.489;
+    padding-left: 35px;
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  // .section-program__list {
+  //   margin-bottom: 0px;
+  // }
+
+  .section-program__img {
+    width: 546px;
+    height: 364px;
+    background-image: url(../../images/pic-desk.png);
+    left: 0px;
+    bottom: -130px;
+  }
 }

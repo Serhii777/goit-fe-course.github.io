@@ -37,18 +37,21 @@
 }
 
 .menu-icons__icon {
+  width: 36px;
+  height: 36px;
   fill: #ff6b08;
 }
 
 .menu-icons__description {
-  max-width: 120px;
+  // display: block;
+  // max-width: 120px;
+  flex-basis: 120px;
   font-size: 13px;
-  font-family: "Montserrat";
   color: rgb(24, 25, 29);
-  font-weight: bold;
   line-height: 1.538;
   text-align: left;
   margin: 0px;
+  // padding-right: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,7 +59,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding-left: 0px;
+  }
+
+  .menu-icons__item {
+    flex-basis: 170px;
   }
 
   .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
@@ -66,4 +74,56 @@
   .menu-icons__link {
     margin-left: 0px;
   }
+
+  .menu-icons__description {
+    flex-basis: 90px;
+    margin: 0px;
+    // padding-right: 40px;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .menu-icons__item {
+    // box-sizing: content-box;
+    // flex-basis: 340px;
+    align-items: center;
+  }
+
+  .menu-icons__link {
+    width: 104px;
+    height: 104px;
+    margin: 0px;
+
+    &::after {
+      height: 72px;
+    }
+  }
+
+  .menu-icons__icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .menu-icons__description {
+    box-sizing: content-box;
+    // flex-basis: 274px;
+    // flex-basis: 230px;
+    min-width: 234px;
+    // max-width: 274px;
+    font-size: 18px;
+    line-height: 1.556;
+    margin: -18px;
+    z-index: 1;
+    // position: absolute;
+    // left: 80px;
+  }
+
+  // .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
+  //   margin-bottom: 0px;
+  // }
+
+  // .menu-icons__link {
+  //   margin-left: 0px;
+  // }
 }

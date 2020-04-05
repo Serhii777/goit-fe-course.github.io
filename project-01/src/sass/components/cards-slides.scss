@@ -41,3 +41,9 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .cards-slides__wrapper {
+    padding: 0px 236px;
+  }
+}

@@ -9,7 +9,6 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
   width: 290px;
-  min-height: 268px;
   padding: 30px 20px 0px;
   @extend %item;
 
@@ -43,7 +42,7 @@
 .menu-actions__icon {
   width: 50px;
   height: 50px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 18px 0px;
   fill: #ff6b08;
   transition: all 0.2s linear;
 }
@@ -52,7 +51,7 @@
   font-size: 13px;
   color: #111517;
   line-height: 1.538;
-  margin: 0px 0px 34px 0px;
+  margin: 0px 0px 32px 0px;
   position: relative;
   transition: all 0.2s linear;
   white-space: pre-line;
@@ -79,7 +78,7 @@
 .menu-actions__text {
   color: #858585;
   line-height: 1.818;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
   padding: 0px 10px;
   transition: all 0.2s linear;
 }
@@ -95,6 +94,34 @@
   }
 
   .menu-actions__item:nth-last-of-type(-n+2) {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-actions__item {
+    width: 390px;
+    // min-height: 342px;
+    padding: 38px 20px 22px;
+
+    &:nth-last-of-type(-n+3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .menu-actions__icon {
+    margin: 0px 0px 18px 0px;
+  }
+
+  .menu-actions__title {
+    font-size: 18px;
+    line-height: 1.62;
+    margin: 0px 0px 32px 0px;
+  }
+
+  .menu-actions__text {
+    font-size: 15px;
+    line-height: 2.083;
+    padding: 0px 16px;
   }
 }

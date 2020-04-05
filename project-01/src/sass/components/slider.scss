@@ -31,7 +31,10 @@
   @extend %link;
   font-size: 0px;
 
+
   &--img {
+    width: 80px;
+    height: 80px;
     margin-bottom: 22px;
   }
 }
@@ -71,6 +74,23 @@
   }
 
   .slider__link--img {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider {
+    width: 1070px;
+  }
+
+  .slider__item--first-card {
+    padding: 44px 86px 0px;
+    margin-bottom: 38px;
+  }
+
+  .slider__link--img {
+    width: 145px;
+    height: 145px;
     margin-bottom: 22px;
   }
 }

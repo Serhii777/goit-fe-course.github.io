@@ -30,9 +30,7 @@
 
 .menu-problem__text {
   font-size: 13px;
-  font-family: "Montserrat";
   color: rgb(24, 25, 29);
-  font-weight: bold;
   line-height: 1.538;
   text-align: left;
   margin: 0px;
@@ -75,4 +73,29 @@
     // white-space: pre;
   }
 
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-problem {
+    padding: 50px 100px 0px;
+  }
+
+  .menu-problem__item {
+    min-width: 284px;
+    // flex-basis: 284px;
+  }
+
+  .menu-problem__item:not(:nth-last-of-type(-2n+1)) {
+    margin-bottom: 34px;
+  }
+
+  .menu-problem__item:nth-last-of-type(-n+3) {
+    margin-bottom: 46px;
+  }
+
+  .menu-problem__text {
+    font-size: 18px;
+    line-height: 1.62;
+    white-space: initial;
+  }
 }

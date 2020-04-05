@@ -73,3 +73,32 @@
     white-space: initial;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .list-warranty {
+    padding: 46px 0px 0px 6px;
+    margin-bottom: 46px;
+  }
+
+  .list-warranty__item {
+    padding-left: 46px;
+
+    &::before {
+      width: 20px;
+      height: 27px;
+      top: 0px;
+      left: -7px;
+    }
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      padding-bottom: 26px;
+    }
+  }
+
+  .list-warranty__text {
+    font-size: 18px;
+    line-height: 1.62;
+    padding: 0px 20px 0px 0px;
+  }
+
+}

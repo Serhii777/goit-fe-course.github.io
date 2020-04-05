@@ -27,7 +27,7 @@
   }
 }
 
-.graduate-card__text--wide{
+.graduate-card__text--wide {
   display: none;
 }
 
@@ -56,8 +56,33 @@
     margin: 0px 0px 14px;
   }
 
-  .graduate-card__text--wide{
+  .graduate-card__text--wide {
     display: contents;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .graduate-card {
+    width: 692px;
+    margin-bottom: 42px;
+    //   padding: 0px 28px;
+  }
+
+  .graduate-card__title {
+    font-size: 25px;
+    line-height: 1.167;
+    margin: 0px 0px 16px;
+  }
+
+  .graduate-card__description {
+    font-size: 12.5px;
+    line-height: 1.333;
+    margin: 0px 0px 18px;
+  }
+
+  .graduate-card__text {
+    font-size: 16.667px;
+    line-height: 1.75;
+    padding: 0px 40px 0px 0px;
+  }
+}

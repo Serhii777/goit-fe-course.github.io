@@ -29,3 +29,17 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .section-teacher__wrapper {
+    padding: 80px 35px 0px;
+    margin-bottom: 76px;
+  }
+
+
+  .section-teacher__title {
+    font-size: 42px;
+    line-height: 1.489;
+    margin-bottom: 42px;
+  }
+}

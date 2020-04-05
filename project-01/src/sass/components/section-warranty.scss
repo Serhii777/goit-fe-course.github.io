@@ -42,3 +42,20 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .section-warranty__wrapper {
+    padding: 0px 35px;
+    margin-bottom: 84px;
+  }
+
+  .section-warranty__title {
+    font-size: 42px;
+    line-height: 1.489;
+    margin: 0px 0px 34px
+  }
+
+  .section-warranty__wrapper-list{
+    padding: 0px 116px;
+  }
+}
+

@@ -16,21 +16,16 @@
   font-size: 15px;
   line-height: 1.35;
   color: #18191d;
-  margin: 0px 0px 4px 0px;
+  margin: 0px 0px 34px 0px;
 
   &::first-line {
     font-weight: 500;
     color: #b9b9b9;
-    margin: 0px 0px 4px 0px;
   }
-}
 
-.section-training__point {
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.35;
-  color: #ff6b08;
-  margin: 0px 0px 34px 0px;
+  &--colortext {
+    color: #ff6b08;
+  }
 }
 
 .section-training__button {
@@ -41,6 +36,7 @@
   max-width: 216px;
   margin: 0px auto;
 }
+
 
 @media screen and (min-width: 768px) {
   .section-training__wrapper {
@@ -62,17 +58,39 @@
     line-height: 1.269;
   }
 
+  .section-training__slogan {
+    line-height: 1.4;
+  }
+
   .section-training__button {
     margin: 0px;
   }
 
-  .section-training__img{
+  .section-training__img {
     max-width: 370px;
     margin: 0px;
   }
 }
 
-// @media screen and (min-width: 1280px) {
-  
-// }
 
+@media screen and (min-width: 1280px) {
+  .section-training__content {
+    max-width: 498px;
+  }
+
+  .section-training__title {
+    font-size: 48px;
+    line-height: 1.208;
+  }
+
+  .section-training__slogan {
+    font-size: 18px;
+    line-height: 1.463;
+    margin-bottom: 62px;
+  }
+
+  .section-training__img {
+    max-width: 682px;
+    margin: 0px;
+  }
+}

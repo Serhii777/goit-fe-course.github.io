@@ -24,41 +24,26 @@
 
   .menu__item {
     display: block;
-    // @extend %link;
-
+    list-style: none;
+    
   }
-
+  
   .menu__item:not(:last-child) {
     margin-right: 44px;
   }
-
+  
   .menu__link {
     font-size: 12px;
-    font-family: "Tahoma";
     color: rgb(185, 185, 185);
-    font-weight: bold;
     text-transform: uppercase;
-    line-height: 9.167;
-    // @extend %link;
+    text-decoration: none;
   }
 
-  .menu__item:hover,
-  .menu__item:focus {
+  .menu__link:hover,
+  .menu__link:focus {
     color: rgb(255, 107, 8);
   }
 }
-
-
-// .menu {
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: flex-end;
-//   margin: 0px;
-// }
-
-// .menu__item {
-//   position: relative;
-//   @extend %item;
 
 //   &:not(:nth-child(7n)) {
 //     margin-right: 52px;

@@ -13,6 +13,7 @@
   padding: 0px;
   list-style: none;
 }
+// передается в item (li)
 
 %link {
   // display: inline-block;
@@ -20,11 +21,13 @@
   text-decoration: none;
   // transition: all 0.2s linear;
 }
+// передается в link (а)
 
 %item {
   cursor: pointer;
   transition: all 0.2s linear;
 }
+// передается в link (а) (если нужно)
 
 %icon {
   display: block;

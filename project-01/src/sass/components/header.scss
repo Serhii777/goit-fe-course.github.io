@@ -16,7 +16,7 @@
   // min-height: 945px;
   background-image: url('../../images/bgr-01.png');
   background-repeat: no-repeat;
-  background-position: 0px 10px;
+  background-size: contain;
   margin-bottom: 50px;
   padding: 0px 20px;
 }
@@ -37,12 +37,7 @@
 
 @media screen and (min-width: 768px) {
   .header__wrapper {
-    // height: 640px;
-    // min-height: 945px;
     background-image: url('../../images/bgr-tablet.png');
-    background-repeat: no-repeat;
-    // background-position: 0px 10px;
-    background-size: contain;
     margin-bottom: 54px;
     padding: 0px 40px;
   }
@@ -59,22 +54,16 @@
 
 @media screen and (min-width: 1280px) {
   .header__wrapper {
-    // height: 640px;
-    // min-height: 945px;
-    background-image: url('../../images/bgr-tablet.png');
-    background-repeat: no-repeat;
-    // background-position: 0px 10px;
-    background-size: contain;
-    margin-bottom: 54px;
-    padding: 0px 40px;
+    background-image: url('../../images/bgr-desk.png');
+    margin-bottom: 86px;
+    padding: 0px 35px;
   }
 
   .header__navigation {
-    margin-bottom: 62px;
-    padding: 34px 0px 0px;
+    margin-bottom: 44px;
   }
 
   .header__section-training {
-    margin-bottom: 116px;
+    margin-bottom: 128px;
   }
 }

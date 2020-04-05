@@ -61,7 +61,7 @@
   position: relative;
   white-space: pre-line;
 
-  &::before {
+  &--position::before {
     display: block;
     content: '';
     position: absolute;
@@ -75,9 +75,9 @@
 .card__link {
   display: block;
   font-size: 11px;
+  line-height: 2.652;
   color: #ff6b08;
   text-decoration: underline;
-  line-height: 2.652;
   margin: 0px;
   padding-left: 16px;
   @extend %item;
@@ -128,5 +128,75 @@
 
   .card__link {
     padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    width: 632px;
+  }
+
+  .card__img {
+    width: 493px;
+    height: 644px;
+  }
+
+  .card__title {
+    font-size: 29px;
+    line-height: 1;
+    margin: 0px 0px 34px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .card__items {
+    margin-bottom: 58px;
+    padding-left: 44px;
+  }
+
+  .card__item::before {
+    left: -44px;
+  }
+
+  .card__item:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 18px;
+  }
+
+  .card__description {
+    font-size: 16.667px;
+    line-height: 1.75;
+    padding-right: 130px;
+    word-spacing: 5px;
+    // margin: 0px;
+    // white-space: initial;
+  }
+
+  .card__text {
+    font-size: 16.667px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+    padding: 0px 34px 0px 0px;
+    word-wrap: break-word;
+    // hyphens: none;
+    word-spacing: 3px;
+    // white-space: initial;
+
+    &--position::before {
+      top: -30px;
+    }
+  }
+
+
+  .card__link {
+    font-size: 16.667px;
+    line-height: 1.75;
+    // padding-left: 0px;
   }
 }
