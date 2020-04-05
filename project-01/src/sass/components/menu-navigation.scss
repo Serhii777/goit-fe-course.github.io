@@ -10,14 +10,44 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .menu {
-  // padding-left: 240px;
-  // }
-
   .menu__item--button {
     display: block;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    align-items: center;
+    // @extend %list;
+
+  }
+
+  .menu__item {
+    display: block;
+    // @extend %link;
+
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .menu__link {
+    font-size: 12px;
+    font-family: "Tahoma";
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 9.167;
+    // @extend %link;
+  }
+
+  .menu__item:hover,
+  .menu__item:focus {
+    color: rgb(255, 107, 8);
+  }
+}
+
 
 // .menu {
 //   display: flex;

@@ -49,3 +49,9 @@
   transform: translateY(-50%);
   transition: all 0.1s linear;
 }
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+}

@@ -36,22 +36,22 @@
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1679px) {
-  .container {
-    width: 1280px;
-    margin: 0px auto;
-    background-color: rgb(174, 0, 255);
-  }
+// @media screen and (min-width: 1280px) and (max-width: 1679px) {
+//   .container {
+//     width: 1280px;
+//     margin: 0px auto;
+//     background-color: rgb(174, 0, 255);
+//   }
 
-  // .section-item:not(:nth-last-of-type(-2n+3)) {
-  //   margin-bottom: 34px;
-}
+//   // .section-item:not(:nth-last-of-type(-2n+3)) {
+//   //   margin-bottom: 34px;
+// }
 
 @media screen and (min-width: 1680px) {
   .container {
     margin: 0px auto;
     width: 1680px;
-    background-color: rgb(255, 0, 230);
+    background-color: rgb(247, 92, 244);
   }
 }
 

@@ -30,6 +30,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .button {
+    width: 300px;
+    padding: 26px 14px;
+  }
+}
+
 
 // .footer--button {
 //   font-size: $secondary-font-size;
