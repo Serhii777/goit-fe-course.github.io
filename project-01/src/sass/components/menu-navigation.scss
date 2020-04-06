@@ -1,12 +1,14 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   text-transform: uppercase;
   @extend %list;
 }
 
 .menu__item {
   display: none;
+  @extend %link;
 }
 
 @media screen and (min-width: 768px) {
@@ -17,31 +19,31 @@
 
 @media screen and (min-width: 1280px) {
   .menu {
-    align-items: center;
-    // @extend %list;
-
+    flex-basis: 910px;
+    justify-content: space-between;
   }
 
   .menu__item {
     display: block;
-    list-style: none;
-    
   }
-  
-  .menu__item:not(:last-child) {
-    margin-right: 44px;
-  }
-  
+
   .menu__link {
     font-size: 12px;
     color: rgb(185, 185, 185);
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
   }
 
   .menu__link:hover,
   .menu__link:focus {
     color: rgb(255, 107, 8);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .menu {
+    flex-basis: 1074px;
   }
 }
 

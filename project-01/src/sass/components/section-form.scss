@@ -6,8 +6,8 @@
 }
 
 .section-form__wrapper {
-  padding: 56px 20px 58px;
-  margin: 0px;
+  padding: 56px 20px 0px;
+  margin: 0px 0px 58px 0px;
   text-align: center;
 }
 
@@ -29,9 +29,8 @@
   font-size: 11px;
   color: rgb(255, 255, 255);
   line-height: 1.818;
-  padding: 0px 20px;
+  padding: 0px 22px;
   margin: 0px 0px 26px;
-  white-space: pre-line;
 
   &--colortext {
     color: #ff6b08;
@@ -53,7 +52,8 @@
   }
 
   .section-form__wrapper {
-    padding: 54px 100px 64px;
+    padding: 54px 100px 0px;
+    margin-bottom: 64px;
   }
 
   .section-form__title {
@@ -67,6 +67,7 @@
     line-height: 1.333;
     white-space: initial;
     margin: 0px 0px 40px;
+    white-space: pre-line;
   }
 
   .section-form__input:nth-last-of-type(-2n+1) {
@@ -75,12 +76,13 @@
 }
 
 @media screen and (min-width: 1280px) {
-  // .section-form {
-  //   background-image: url(../../images/form-bgr-tabl.png);
-  // }
+  .section-form {
+    background-image: url(../../images/form-bgr-desk.png);
+  }
 
   .section-form__wrapper {
-    padding: 78px 160px 88px;
+    padding: 78px 160px 0px;
+    margin-bottom: 88px;
   }
 
   .section-form__title {
@@ -92,7 +94,7 @@
   .section-form__description {
     font-size: 18px;
     line-height: 1.361;
-    margin: 0px 0px 54px;
+    margin: 0px 0px 52px;
   }
 
   .section-form__input:not(:nth-last-of-type(-2n+1)) {
@@ -103,8 +105,28 @@
     margin-bottom: 56px;
   }
 
-  .section-form__button{
+  .section-form__button {
     width: 350px;
     letter-spacing: 3.8px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .section-form {
+    background-image: url(../../images/form-bgr-desk-larg.png);
+  }
+
+  .section-form__wrapper {
+    padding: 120px 360px 0px;
+    margin-bottom: 100px;
+  }
+
+  .section-form__title {
+    margin: 0px 0px 62px;
+  }
+
+  .section-form__description {
+    font-size: 25px;
+    line-height: 1.5;
   }
 }

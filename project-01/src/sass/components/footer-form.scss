@@ -24,6 +24,13 @@
   display: block;
   width: 20px;
   height: 20px;
+  fill: #ff6b08;
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    background-color: #ff6b08;
+  }
 }
 
 .footer-form__input {
@@ -63,3 +70,28 @@
     }
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .footer-form::after {
+    top: 5px;
+    right: -30px;
+  }
+
+  .footer-form__input {
+    width: 326px;
+    font-size: 27px;
+    line-height: 1.385;
+    padding: 0px 0px 0px 18px;
+
+    &::-webkit-input-placeholder {
+      font-size: 27px;
+      line-height: 1.385;
+    }
+  }
+
+  .footer-form__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+

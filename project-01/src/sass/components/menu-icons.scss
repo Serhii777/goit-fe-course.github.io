@@ -86,8 +86,11 @@
 @media screen and (min-width: 1280px) {
   .menu-icons__item {
     // box-sizing: content-box;
-    // flex-basis: 340px;
+    // flex-basis: 310px;
+    // max-width: 400px;f
+    width: fit-content;
     align-items: center;
+    position: relative;
   }
 
   .menu-icons__link {
@@ -106,17 +109,21 @@
   }
 
   .menu-icons__description {
-    box-sizing: content-box;
-    // flex-basis: 274px;
-    // flex-basis: 230px;
-    min-width: 234px;
+    // position: absolute;
+    // flex-basis: 270px;
     // max-width: 274px;
+    // max-width: 420px;
+    // min-width: 280px;
+    width: 280px;
     font-size: 18px;
     line-height: 1.556;
-    margin: -18px;
+    // margin: -18px;
     z-index: 1;
-    // position: absolute;
-    // left: 80px;
+    left: 90px;
+
+    // &--size {
+    // width: 220px;
+    // }
   }
 
   // .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
@@ -126,4 +133,15 @@
   // .menu-icons__link {
   //   margin-left: 0px;
   // }
+}
+
+@media screen and (min-width: 1680px) {
+  .section-icons__wrapper {
+    padding-right: 106px;
+  }
+
+  .menu-icons__description {
+    font-size: 21px;
+    line-height: 1.6;
+  }
 }

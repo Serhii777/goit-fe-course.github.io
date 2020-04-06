@@ -94,3 +94,26 @@
     margin: 0px;
   }
 }
+
+@media screen and (min-width: 1680px) {
+  .section-training__content {
+    max-width: 610px;
+  }
+
+  .section-training__title {
+    font-size: 58.333px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .section-training__slogan {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 44px;
+  }
+
+  .section-training__img {
+    max-width: 840px;
+    margin: 0px;
+  }
+}

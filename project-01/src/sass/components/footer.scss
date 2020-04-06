@@ -38,19 +38,6 @@
   margin-bottom: 22px;
 }
 
-.footer-form__icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  fill: #ff6b08;
-
-  &:hover,
-  &:focus {
-    fill: #ffffff;
-    background-color: #ff6b08;
-  }
-}
-
 .footer__link {
   display: block;
   @extend %list;
@@ -87,7 +74,7 @@
 
   .footer__logo {
     width: 128px;
-    height: 47px;
+    height: 50px;
     margin: 0px 82px 0px 0px;
   }
 
@@ -101,5 +88,29 @@
 
   .footer__icon {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__wrapper {
+    padding: 46px 35px 0px;
+  }
+
+  .footer__menu {
+    margin-bottom: 52px;
+  }
+
+  .footer__logo {
+    margin-right: 252px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .footer__wrapper {
+    padding: 48px 155px 0px 187px;
+  }
+  
+  .footer__logo {
+    margin-right: 306px;
   }
 }

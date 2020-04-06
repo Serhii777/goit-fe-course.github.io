@@ -6,11 +6,23 @@
 
 .copyright__text {
   font-size: 11px;
-  color: hsla(180, 33%, 99%, 0.42);
+  color: #fcfdfd6b;
   margin: 0px;
 }
 
 .copyright__symbol {
   font-size: 11px;
-  color: rgba(253, 254, 254, 0.42);
+  color: #fdfefe6b;
 }
+
+@media screen and (min-width: 1280px) {
+  .copyright {
+    padding: 22px 0px;
+  }
+
+  .copyright__text {
+    font-size: 14.583px;
+    line-height: 2.571;
+  }
+}
+
