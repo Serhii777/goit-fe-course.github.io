@@ -85,10 +85,15 @@
 
 @media screen and (min-width: 1280px) {
   .menu-icons__item {
+    display: inline-block;
     // box-sizing: content-box;
     // flex-basis: 310px;
-    // max-width: 400px;f
-    width: fit-content;
+    width: 400px;
+    // width: fit-content(380px) fit-content(350px) fit-content(320px);
+    // width: fit-content(380px, 350px, 320px);
+    // width: auto;
+    // width: min-content;
+    // width: fit-content;
     align-items: center;
     position: relative;
   }
@@ -109,17 +114,23 @@
   }
 
   .menu-icons__description {
-    // position: absolute;
-    // flex-basis: 270px;
-    // max-width: 274px;
+    display: inline-block;
+    position: absolute;
+    // flex-basis: 300px;
+    // max-width: 300px;
     // max-width: 420px;
-    // min-width: 280px;
-    width: 280px;
+    min-width: 280px;
+    // width: auto;
+    // max-width: 280px;
+    // width: 320px;
+    // width: min-content(300px);
     font-size: 18px;
     line-height: 1.556;
     // margin: -18px;
     z-index: 1;
     left: 90px;
+    bottom: 25px;
+
 
     // &--size {
     // width: 220px;

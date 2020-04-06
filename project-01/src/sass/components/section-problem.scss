@@ -16,8 +16,13 @@
   line-height: 1.5;
   text-align: left;
   margin: 0px 0px 16px 0px;
-  padding: 0px 40px 0px 0px;
+  padding: 0px 50px 0px 0px;
   white-space: pre-line;
+
+  &--position{
+    // display: none;
+    padding-right: 0px;
+  }
 
   &--colortext {
     color: #ff6b08;
@@ -45,11 +50,19 @@
   .section-problem__title {
     font-size: 26px;
     line-height: 1.269;
-    // white-space: pre-line;
-    // white-space: pre;
-    // white-space: normal;
-    // word-wrap: break-word;
-    // white-space: pre-wrap;
+    padding: 0px 250px 0px 0px;
+    white-space: initial;
+    margin: 0px 0px 20px 0px;
+
+    &--position{
+      display: inline;
+      white-space: pre;
+      padding: 0px;
+    }
+
+    &--colortext {
+      padding-right: 0px;
+    }
   }
 }
 
@@ -62,13 +75,22 @@
 
   .section-problem__wrapper {
     min-height: 526px;
-    padding: 64px 35px 0px;
+    padding: 72px 35px 0px;
     background-image: url(../../images/bgr-fire-desk.png);
   }
 
   .section-problem__title {
     font-size: 42px;
     line-height: 1.346;
-    margin-bottom: 40px;
+    padding-right: 480px;
+    margin-bottom: 44px;
+
+    &--position{
+      padding: 0px;
+    }
+
+    &--colortext {
+      padding-right: 0px;
+    }
   }
 }
