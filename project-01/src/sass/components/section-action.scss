@@ -43,3 +43,16 @@
   }
 }
 
+@media screen and (min-width: 1680px) {
+  .section-action__wrapper {
+    padding: 0px 156px 0px 186px;
+    margin-bottom: 128px;
+  }
+
+  .section-action__title {
+    font-size: 46px;
+    line-height: 1.365;
+    //   text-align: left;
+    margin-bottom: 0px 0px 32px 0px;
+  }
+}

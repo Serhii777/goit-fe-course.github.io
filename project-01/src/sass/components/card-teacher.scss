@@ -131,6 +131,7 @@
   }
 }
 
+
 @media screen and (min-width: 1280px) {
   .card {
     flex-direction: row;
@@ -193,10 +194,15 @@
     }
   }
 
-
   .card__link {
     font-size: 16.667px;
     line-height: 1.75;
     // padding-left: 0px;
   }
 }
+
+
+@media screen and (min-width: 1680px) {
+  
+}
+

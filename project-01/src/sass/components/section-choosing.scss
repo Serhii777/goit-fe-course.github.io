@@ -55,3 +55,22 @@
     z-index: 2;
   }
 }
+
+
+@media screen and (min-width: 1680px) {
+  .section-choosing {
+    min-height: 620px;
+  }
+
+  .section-choosing__wrapper {
+    height: 300px;
+    padding: 0px 156px 0px 186px;
+  }
+
+  .section-choosing__title {
+    font-size: 46px;
+    line-height: 1.365;
+    margin-bottom: 50px;
+    z-index: 2;
+  }
+}

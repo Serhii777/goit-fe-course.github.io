@@ -94,3 +94,25 @@
     bottom: -130px;
   }
 }
+
+@media screen and (min-width: 1680px) {
+  .section-program__wrapper {
+    padding: 120px 140px 0px 186px;
+    margin-bottom: 86px;
+  }
+
+  .section-program__title {
+    font-size: 46px;
+    line-height: 1.365;
+    padding-left: 0px;
+    margin-bottom: 84px;
+  }
+  
+  .section-program__img {
+    width: 700px;
+    height: 485px;
+    background-image: url(../../images/pic-desk-larg.png);
+    left: 0px;
+    bottom: -246px;
+  }
+}

@@ -16,7 +16,7 @@
     font-family: "Montserrat";
     color: #ff6b08;
     line-height: 2.083;
-    margin: 30px 0px 0px 35px;
+    margin-left: 35px;
   }
 }
 
@@ -47,6 +47,10 @@
     position: absolute;
     top: -16px;
   }
+
+  &--position::before{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -73,7 +77,7 @@
     white-space: initial;
     letter-spacing: normal;
 
-    &--position{
+    &--position {
       padding-right: 60px;
     }
   }
@@ -81,16 +85,20 @@
 
 @media screen and (min-width: 1280px) {
   .menu-problem {
-    padding: 54px 100px 0px;
+    padding: 52px 100px 0px;
   }
 
   .menu-problem__item {
     min-width: 284px;
-    // flex-basis: 284px;
-  }
 
+    &::before {
+      font-size: 21px;
+      line-height: 1.6;
+    }
+  }
+    
   .menu-problem__item:not(:nth-last-of-type(-2n+1)) {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .menu-problem__item:nth-last-of-type(-n+3) {
@@ -100,6 +108,32 @@
   .menu-problem__text {
     font-size: 18px;
     line-height: 1.62;
+    padding-top: 6px;
     white-space: initial;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .menu-problem {
+    padding: 64px 86px 0px 96px;
+  }
+
+  .menu-problem__item {
+    min-width: 326px;
+  }
+  
+  .menu-problem__item:not(:nth-last-of-type(-2n+1)) {
+    margin-bottom: 34px;
+  }
+
+  .menu-problem__item:nth-last-of-type(-n+3) {
+    margin-bottom: 78px;
+  }
+
+  .menu-problem__text {
+    font-size: 21px;
+    line-height: 1.4;
+    white-space: initial;
+    padding-top: 6px;
   }
 }

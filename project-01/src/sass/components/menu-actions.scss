@@ -9,7 +9,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
   width: 290px;
-  padding: 30px 20px 0px;
+  padding: 30px 20px 20px;
   @extend %item;
 
   &:hover,
@@ -28,10 +28,10 @@
   &:focus .menu-actions__text {
     color: #ffffff;
   }
-}
 
-.menu-actions__item:not(:nth-last-of-type(-3n+1)) {
-  margin-bottom: 10px;
+  &:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 10px;
+  }
 }
 
 .menu-actions__link {
@@ -78,10 +78,11 @@
 .menu-actions__text {
   color: #858585;
   line-height: 1.818;
-  margin: 0px 0px 20px 0px;
+  margin: 0px;
   padding: 0px 10px;
   transition: all 0.2s linear;
 }
+
 
 @media screen and (min-width: 768px) {
   .menu-actions {
@@ -98,11 +99,15 @@
   }
 }
 
+
 @media screen and (min-width: 1280px) {
   .menu-actions__item {
     width: 390px;
-    // min-height: 342px;
-    padding: 38px 20px 22px;
+    padding: 38px 20px 26px;
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      margin-bottom: 18px;
+    }
 
     &:nth-last-of-type(-n+3) {
       margin-bottom: 0px;
@@ -110,18 +115,63 @@
   }
 
   .menu-actions__icon {
-    margin: 0px 0px 18px 0px;
+    margin: 0px 0px 16px 0px;
   }
 
   .menu-actions__title {
     font-size: 18px;
     line-height: 1.62;
-    margin: 0px 0px 32px 0px;
+    margin: 0px 0px 28px 0px;
+
+    &::after {
+      bottom: -15px;
+    }
   }
 
   .menu-actions__text {
     font-size: 15px;
     line-height: 2.083;
     padding: 0px 16px;
+  }
+}
+
+
+@media screen and (min-width: 1680px) {
+  .menu-actions__item {
+    width: 430px;
+    padding: 40px 40px 46px;
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      margin-bottom: 22px;
+    }
+
+    &:nth-last-of-type(-n+3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .menu-actions__icon {
+    margin: 0px 0px 24px 0px;
+  }
+
+  .menu-actions__title {
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0px 0px 24px 0px;
+
+    &::after {
+      bottom: -12px;
+    }
+  }
+
+  .menu-actions__text {
+    font-size: 18.75px;
+    line-height: 1.667;
+    padding: 0px 22px;
+
+    &--position {
+      margin-right: 22px;
+      padding: 0px 2px;
+    }
   }
 }

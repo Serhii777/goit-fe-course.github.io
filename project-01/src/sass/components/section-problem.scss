@@ -19,7 +19,7 @@
   padding: 0px 50px 0px 0px;
   white-space: pre-line;
 
-  &--position{
+  &--position {
     // display: none;
     padding-right: 0px;
   }
@@ -54,7 +54,7 @@
     white-space: initial;
     margin: 0px 0px 20px 0px;
 
-    &--position{
+    &--position {
       display: inline;
       white-space: pre;
       padding: 0px;
@@ -75,7 +75,7 @@
 
   .section-problem__wrapper {
     min-height: 526px;
-    padding: 72px 35px 0px;
+    padding: 70px 35px 0px;
     background-image: url(../../images/bgr-fire-desk.png);
   }
 
@@ -83,9 +83,37 @@
     font-size: 42px;
     line-height: 1.346;
     padding-right: 480px;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
 
-    &--position{
+    &--position {
+      padding: 0px;
+    }
+
+    &--colortext {
+      padding-right: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .section-problem {
+    // min-height: 488px;
+    min-height: 854px;
+  }
+
+  .section-problem__wrapper {
+    min-height: 560px;
+    padding: 108px 156px 0px 186px;
+    background-image: url(../../images/bgr-fire-desk-larg.png);
+  }
+
+  .section-problem__title {
+    font-size: 46px;
+    line-height: 1.365;
+    padding-right: 530px;
+    margin-bottom: 68px;
+
+    &--position {
       padding: 0px;
     }
 
