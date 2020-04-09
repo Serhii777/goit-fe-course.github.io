@@ -1,19 +1,11 @@
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
-  // min-height: 945px;
-
-  // @media (min-resolution: 192dpi),
-  // (min-resolution: 2dppx) {
-  //   .header {
-  //     background-image: linear-gradient(0deg, $ligth-gradient-color, $dark-gradient-color), url('../images/bgr@2x.png');
-  //   }
-  // }
 }
 
 .header__wrapper {
-  // height: 640px;
-  // min-height: 945px;
   background-image: url('../../images/bgr-01.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,11 +14,11 @@
 }
 
 .header__navigation {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .header__section-training {
-  margin-bottom: 86px;
+  margin-bottom: 90px;
 }
 
 // .header__title {
@@ -38,7 +30,7 @@
   .header__wrapper {
     background-image: url('../../images/bgr-tablet.png');
     margin-bottom: 54px;
-    padding: 34px 40px 0px;
+    padding: 32px 40px 0px;
   }
 
   .header__navigation {
@@ -54,7 +46,7 @@
   .header__wrapper {
     background-image: url('../../images/bgr-desk.png');
     margin-bottom: 86px;
-    padding: 0px 35px;
+    padding: 38px 35px 0px;
   }
 
   .header__navigation {
@@ -69,7 +61,7 @@
 @media screen and (min-width: 1680px) {
   .header__wrapper {
     background-image: url('../../images/bgr-desk-larg.png');
-    padding: 28px 48px 0px 186px;
+    padding: 28px 50px 0px 184px;
     margin-bottom: 126px;
   }
 
@@ -79,6 +71,6 @@
   }
 
   .header__section-training {
-    margin-bottom: 108px;
+    margin-bottom: 110px;
   }
 }

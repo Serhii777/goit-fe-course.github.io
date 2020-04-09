@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 1280px) {
   .menu {
-    flex-basis: 910px;
+    flex-basis: 908px;
     justify-content: space-between;
   }
 
@@ -29,10 +29,11 @@
 
   .menu__link {
     font-size: 12px;
+    line-height: 1.9;
     color: rgb(185, 185, 185);
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 
   .menu__link:hover,
@@ -43,9 +44,21 @@
 
 @media screen and (min-width: 1680px) {
   .menu {
-    flex-basis: 1074px;
+    flex-basis: 1072px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    line-height: 1.9;
+    // line-height: 7.857;
+    line-height: 1.857;
+    color: rgb(185, 185, 185);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
   }
 }
+
 
 //   &:not(:nth-child(7n)) {
 //     margin-right: 52px;

@@ -19,7 +19,7 @@
         <a href="#" class="logo navigation__logo">
           <img class="img logo__img " src="./images/logo-mob.png" alt="brand and company name"
             srcset="images/logo-mob.png 320w, images/logo-tabl.png 768w, images/logo-desk.png 1280w"
-            sizes="(min-width: 768px) 768px, 100wv">
+            sizes="(min-width: 768px) 768px, 320px,100wv">
         </a>
         <ul class="menu navigation--list">
           <li class="menu__item">
@@ -56,9 +56,18 @@
               бесплатное занятие</button>
           </div>
           <div class="section-training__img">
-            <img class="img" src="./images/train-mob.png" alt="Комплексная подготовка к ВНО по английскому языку"
+            <!-- <img class="img" src="./images/train-mob.png" alt="Комплексная подготовка к ВНО по английскому языку"
               srcset="images/train-mob.png 320w, images/train-tabl.png 768w, images/train-desk.png 1280w, images/train-desk-large.png 1680w"
-              sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px">
+              sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px"> -->
+
+
+            <picture>
+              <source srcset="images/train-desk-large.png" type="image/png" media="(min-width: 1680px)">
+              <source srcset="images/train-desk.png" type="image/png" media="(min-width: 1280px)">
+              <source srcset="images/train-tabl.png" type="image/png" media="(min-width: 768px)">
+              <img class="img card__image" src="./images/train-mob.png"
+                alt="Комплексная подготовка к ВНО по английскому языку">
+            </picture>
           </div>
         </div>
       </section>
@@ -111,7 +120,8 @@
       <section class="section-problem container">
         <div class="section-problem__wrapper">
           <h2 class="section-problem__title typographic-meb">Главные проблемы учеников
-            на English ВНО, которые <span class="section-problem__title section-problem__title--position">мы
+            на English ВНО, которые <br class="section-problem__title--newline" /><span
+              class="section-problem__title section-problem__title--position">мы
             </span><span class="section-problem__title section-problem__title--colortext">помогаем</span> решить</h2>
           <ul class="menu-problem section-problem__menu-problem items">
             <li class="menu-problem__item">
@@ -158,7 +168,7 @@
                 <svg class="icon menu-actions__icon">
                   <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-mobile-learning"></use>
                 </svg>
-                <h3 class="menu-actions__title typographic-mb">Аудиторное
+                <h3 class="menu-actions__title typographic-mb">Аудиторное<br class="menu-actions__title--location" />
                   и онлайн-обучение</h3>
                 <p class="menu-actions__text typographic-mr">Учитель поможет не <span
                     class="menu-actions__text menu-actions__text--position">только</span>
@@ -172,7 +182,7 @@
                   <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-open-book"></use>
                 </svg>
                 <h3 class="menu-actions__title typographic-mb">Привычка читать
-                  на английском языке</h3>
+                  <br class="menu-actions__title--location" />на английском языке</h3>
                 <p class="menu-actions__text typographic-mr">Статьи из источников, которые используются при разработке
                   настоящего ВНО, будут
                   приходить на телефон дважды в неделю.</p>
@@ -183,10 +193,10 @@
                 <svg class="icon menu-actions__icon">
                   <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-communication"></use>
                 </svg>
-                <h3 class="menu-actions__title typographic-mb">Психологическая
-                  поддержка</h3>
-                <p class="menu-actions__text typographic-mr">Мы научим тебя методикам прохождения тестирований, умению
-                  планировать свою
+                <h3 class="menu-actions__title typographic-mb">Психологическая<br class="menu-actions__ttitle--location" />                  поддержка</h3>
+                <p class="menu-actions__text typographic-mr">Мы научим тебя методикам прохождения тестирований, <br
+                    class="menu-actions__text--location" />умению планировать свою<br
+                    class="menu-actions__text--location" />
                   подготовку уверенности в себе</p>
               </a>
             </li>
@@ -208,9 +218,10 @@
                   <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-audio-book"></use>
                 </svg>
                 <h3 class="menu-actions__title typographic-mb">Умение воспринивать
-                  устную английскую речь</h3>
+                  устную <br class="menu-actions__title--newline" />английскую речь</h3>
                 <p class="menu-actions__text typographic-mr">“F.R.I.E.N.D.S” тебе не помогут.
-                  Ты будешь регулярно слушать и разбирать аудиозаписи в соответствии с изучаемой лексикой.</p>
+                  Ты будешь регулярно слушать <br class="menu-actions__text--location" />и разбирать аудиозаписи в
+                  соответствии с изучаемой лексикой.</p>
               </a>
             </li>
           </ul>
@@ -362,12 +373,12 @@
           <h2 class="section-teacher__title typographic-meb">Преподаватель</h2>
           <div class="card section-teacher__card">
             <div class="card__img">
-              <!-- <img src="./images/teacher.png" alt="" class="img"> -->
-
-              <img class="img" src="./images/teacher.png" alt="Елена Морева"
-                srcset="images/teacher.png 320w, images/teacher-tabl.png 768w, images/teacher-desk.png 1280w, images/teacher-desk-larg.png 1680w"
-                sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px">
-
+              <picture>
+                <source srcset="images/teacher-desk-larg.png" type="image/png" media="(min-width: 1680px)">
+                <source srcset="images/teacher-desk.png" type="image/png" media="(min-width: 1280px)">
+                <source srcset="images/teacher-tabl.png" type="image/png" media="(min-width: 768px)">
+                <img class="img card__image" src="./images/teacher.png" alt="Елена Морева">
+              </picture>
             </div>
             <div class="card__content">
               <h3 class="card__title typographic-meb">Елена Морева</h3>
@@ -446,12 +457,19 @@
             <li class="slider__item slider__item--first-card">
               <div class="slider__link-wrapper">
                 <a href="#" class="slider__link slider__link--img">
-                  <img class="img slider__img" src="./images/graduate1.png" alt="Тоня Кучеровская"
+                  <!-- <img class="img slider__img" src="./images/graduate1.png" alt="Тоня Кучеровская"
                     srcset="images/graduate1.png 320w, images/graduate7.png 1280w"
-                    sizes=" (min-width: 1280px) 1280px, 320px">
-                    <!-- sizes=" (min-width: 1280px) 1280px, (min-width: 768px) 768px, 100wv"> -->
-                    <!-- (max-width: 320px) 280px, (max-width: 480px) 440px,  800px" -->
-                    <!-- 100wv sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px"> -->
+                    sizes="(min-width: 1280px) 1280px, (min-width: 320px) 320px"> -->
+
+                  <!-- sizes="(max-width: 1280px) 100wv, 1280px"> -->
+                  <!-- sizes="(min-width: 320px) 320px, (min-width: 1280px) 1280px, 100wv"> -->
+                  <!-- (max-width: 320px) 280px, (max-width: 480px) 440px,  800px" -->
+                  <!-- 100wv sizes="(min-width: 1680px) 1680px, (min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px"> -->
+                  <picture>
+                    <source srcset="images/graduate7.png" type="image/png" media="(min-width: 1280px)">
+                    <source srcset="images/graduate1.png" type="image/png" media="(max-width: 1279px)">
+                    <img class="img slider__img" src="./images/graduate1.png" alt="Тоня Кучеровская">
+                  </picture>
                 </a>
                 <a href="#" class="slider__link slider__link--icon">
                   <svg class="slider__icon" width="26px" height="14px">

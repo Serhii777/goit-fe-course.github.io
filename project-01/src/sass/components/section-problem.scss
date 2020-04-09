@@ -5,7 +5,7 @@
 .section-problem__wrapper {
   display: flex;
   flex-direction: column;
-  height: 520px;
+  height: 516px;
   background-color: #111517;
   padding: 46px 20px 0px;
 }
@@ -15,9 +15,14 @@
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: left;
-  margin: 0px 0px 16px 0px;
-  padding: 0px 50px 0px 0px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 45px 0px 0px;
   white-space: pre-line;
+  letter-spacing: 1.2px;
+
+  &--newline {
+    display: none;
+  }
 
   &--position {
     // display: none;
@@ -26,21 +31,21 @@
 
   &--colortext {
     color: #ff6b08;
-    padding-right: 8px;
+    padding-right: 0px;
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .section-problem {
-    // min-height: 488px;
     min-height: 552px;
     background-color: #fff;
   }
 
   .section-problem__wrapper {
     width: 100%;
-    height: 334px;
-    padding: 60px 40px 0px 40px;
+    height: 328px;
+    padding: 54px 40px 0px 40px;
     background-image: url(../../images/bgr-fire.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -50,13 +55,19 @@
   .section-problem__title {
     font-size: 26px;
     line-height: 1.269;
-    padding: 0px 250px 0px 0px;
+    padding: 0px 200px 0px 0px;
     white-space: initial;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 24px 0px;
+    letter-spacing: 1.3px;
+
+    &--newline {
+      display: inline-block;
+      padding: 0px;
+    }
 
     &--position {
       display: inline;
-      white-space: pre;
+      // white-space: pre;
       padding: 0px;
     }
 
@@ -75,7 +86,7 @@
 
   .section-problem__wrapper {
     min-height: 526px;
-    padding: 70px 35px 0px;
+    padding: 68px 35px 0px;
     background-image: url(../../images/bgr-fire-desk.png);
   }
 
@@ -84,6 +95,7 @@
     line-height: 1.346;
     padding-right: 480px;
     margin-bottom: 42px;
+    letter-spacing: 1.78px;
 
     &--position {
       padding: 0px;
@@ -103,7 +115,7 @@
 
   .section-problem__wrapper {
     min-height: 560px;
-    padding: 108px 156px 0px 186px;
+    padding: 106px 156px 0px 186px;
     background-image: url(../../images/bgr-fire-desk-larg.png);
   }
 
@@ -111,7 +123,7 @@
     font-size: 46px;
     line-height: 1.365;
     padding-right: 530px;
-    margin-bottom: 68px;
+    margin-bottom: 64px;
 
     &--position {
       padding: 0px;
