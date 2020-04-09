@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  //   height: 393px;
   @extend %list;
 }
 
@@ -30,7 +29,6 @@
   display: block;
   @extend %link;
   font-size: 0px;
-
 
   &--img {
     width: 80px;
@@ -92,5 +90,13 @@
     width: 145px;
     height: 145px;
     margin-bottom: 22px;
+  }
+}
+
+
+@media screen and (min-width: 1680px) {
+  .slider__item--first-card {
+    //   padding: 44px 86px 0px;
+    margin-bottom: 42px;
   }
 }

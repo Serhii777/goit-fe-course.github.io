@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: left;
   @extend %list;
-  padding: 24px 0px 0px 6px;
+  padding: 24px 0px 0px;
 }
 
 .list-warranty__item {
@@ -16,6 +16,7 @@
     position: absolute;
     width: 13px;
     height: 18px;
+    background-color: #f1f1f1;
     background-image: url(../../images/icons-svg/fire3x.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +57,18 @@
   line-height: 1.818;
   margin: 0px;
   word-spacing: 3px;
-  white-space: pre-line;
+
+  &--position {
+    padding-right: 10px;
+  }
+
+  &--newline {
+    display: none;
+  }
+
+  &--location {
+    display: none;
+  }
 }
 
 .list-warranty__text--colortext {
@@ -66,28 +78,37 @@
 
 @media screen and (min-width: 768px) {
   .list-warranty {
-    padding: 32px 0px 0px 6px;
+    padding: 32px 0px 0px;
   }
 
   .list-warranty__text {
     white-space: initial;
+
+    &--position {
+      padding-right: 0px;
+    }
+
+    &--location {
+      display: block;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .list-warranty {
-    padding: 46px 0px 0px 6px;
+    padding: 46px 0px 0px;
     margin-bottom: 46px;
   }
 
   .list-warranty__item {
-    padding-left: 46px;
+    padding-left: 48px;
 
     &::before {
       width: 20px;
-      height: 27px;
+      height: 38px;
+      background-size: 20px 28px;
       top: 0px;
-      left: -7px;
+      left: -10px;
     }
 
     &:not(:nth-last-of-type(-3n+1)) {
@@ -99,6 +120,43 @@
     font-size: 18px;
     line-height: 1.62;
     padding: 0px 20px 0px 0px;
+
+    &--position {
+      padding-right: 0px;
+    }
+
+    &--placing {
+      padding-right: 0px;
+    }
+
+    &--location {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1680px) {
+  .list-warranty {
+    padding: 60px 0px 0px;
+    margin-bottom: 60px;
   }
 
+  .list-warranty__item {
+    padding-left: 48px;
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      padding-bottom: 26px;
+    }
+  }
+
+  .list-warranty__text {
+    font-size: 21px;
+    line-height: 1.4;
+    //   padding: 0px 20px 0px 0px;
+
+    &--newline {
+      display: block;
+    }
+  }
 }

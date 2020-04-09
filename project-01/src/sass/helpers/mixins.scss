@@ -31,6 +31,22 @@
   line-height: $height;
 }
 
+@mixin font-colors($size, $height) {
+  font-size: $size;
+  color: $color;
+}
+
+// @include font-colors(50px, green);
+
+@mixin width-percent($width-elem, $width-cont) {
+  width: $width-elem / $width-cont * 100%;
+}
+
+@mixin height-percent($height-elem, $height-cont) {
+  height: $height-elem / $height-cont * 100%;
+}
+
+// width: 300px / 960px * 100%;
 
 // @ min-screen(width) // shortcut for @media screen and (min-width ...)
 // @ max-screen(width) // shortcut for @media screen and (max-width ...)

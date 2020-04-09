@@ -33,6 +33,7 @@
   &--left-arrow {
     position: absolute;
     bottom: 20px;
+    left: 20px;
   }
 
   &:hover,
@@ -99,6 +100,37 @@
     &--left-arrow {
       bottom: 256px;
       left: 58px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1680px) {
+  .section-slider__wrapper {
+    padding: 0px;
+    margin-bottom: 126px;
+  }
+
+  .section-slider__title {
+    font-size: 46px;
+    line-height: 1.365;
+    margin: 0px 0px 44px 0px;
+  }
+
+  .section-slider__button {
+    width: 25px;
+    height: 14px;
+
+    &--right-arrow {
+      bottom: 262px;
+      // bottom: 256px;
+      right: 250px;
+      // right: 58px;
+    }
+
+    &--left-arrow {
+      bottom: 262px;
+      left: 250px;
     }
   }
 }

@@ -141,12 +141,15 @@
   .card__content {
     display: flex;
     flex-direction: column;
-    width: 632px;
+    // width: 632px;
+    @include width-percent(632px, 1210px);
   }
 
   .card__img {
-    width: 493px;
-    height: 644px;
+    // width: 493px;
+    @include width-percent(493px, 1210px);
+    // min-height: 644px;
+    @include height-percent(644px, 1210px);
   }
 
   .card__title {
@@ -163,6 +166,8 @@
   }
 
   .card__item::before {
+    width: 20px;
+    height: 16px;
     left: -44px;
   }
 
@@ -203,6 +208,22 @@
 
 
 @media screen and (min-width: 1680px) {
-  
-}
+  .card__content {
+    min-width: 676px;
+  }
 
+  .card__title {
+    margin: 0px 0px 36px;
+    padding-bottom: 16px;
+  }
+
+  .card__item:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 16px;
+  }
+
+  .card__text {
+    margin-bottom: 14px;
+    padding: 0px 34px 0px 0px;
+    word-spacing: 3px;
+  }
+}
