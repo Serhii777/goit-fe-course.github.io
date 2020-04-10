@@ -117,16 +117,28 @@
   }
 
   .section-form__wrapper {
-    padding: 120px 360px 0px;
+    padding: 120px 356px 0px;
     margin-bottom: 100px;
   }
 
   .section-form__title {
-    margin: 0px 0px 62px;
+    margin: 0px 0px 56px;
+    letter-spacing: 1.2px;
   }
 
   .section-form__description {
     font-size: 25px;
     line-height: 1.5;
+    margin: 0px 0px 51px;
+    letter-spacing: 1.2px;
   }
+
+  .section-form__input:not(:nth-last-of-type(-2n+1)) {
+    margin-bottom: 26px;
+  }
+
+  // .section-form__button {
+  //   max-width: 350px;
+  //   letter-spacing: 3.8px;
+  // }
 }

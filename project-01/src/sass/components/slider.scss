@@ -53,6 +53,7 @@
 
 // .slider__image {}
 
+
 @media screen and (min-width: 768px) {
   .slider {
     width: 100%;
@@ -61,7 +62,7 @@
   .slider__item--first-card {
     display: flex;
     justify-content: space-between;
-    padding: 44px 36px 0px;
+    padding: 36px 36px 0px;
     // padding-bottom: 32px;
     margin-bottom: 24px;
   }
@@ -77,13 +78,17 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .slider {
-    width: 1070px;
-  }
+  // .slider {
+  // width: 1070px;
+  // }
 
   .slider__item--first-card {
-    padding: 44px 86px 0px;
+    padding: 42px 86px 0px;
     margin-bottom: 38px;
+  }
+
+  .slider__link-wrapper {
+    padding-top: 6px;
   }
 
   .slider__link--img {
@@ -96,7 +101,7 @@
 
 @media screen and (min-width: 1680px) {
   .slider__item--first-card {
-    //   padding: 44px 86px 0px;
+    padding: 40px 82px 0px;
     margin-bottom: 42px;
   }
 }

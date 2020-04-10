@@ -8,29 +8,29 @@
   font-size: 20px;
   color: #111517;
   margin: 0px 0px 20px;
-
+  letter-spacing: 1px;
 }
 
 .section-warranty__wrapper-list {
   padding: 0px 20px 0px 26px;
   background: #f1f1f1;
-
 }
 
 .section-warranty__items {
   margin-bottom: 22px;
 }
 
+
 @media screen and (min-width: 768px) {
   .section-warranty__wrapper {
     padding: 0px 40px;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 
   .section-warranty__title {
     font-size: 26px;
     line-height: 2.405;
-    margin: 0px 0px 20px
+    margin: 0px 0px 10px
   }
 
   .section-warranty__wrapper-list {
@@ -45,16 +45,17 @@
 @media screen and (min-width: 1280px) {
   .section-warranty__wrapper {
     padding: 0px 35px;
-    margin-bottom: 82px;
+    margin-bottom: 78px;
   }
 
   .section-warranty__title {
     font-size: 42px;
     line-height: 1.489;
-    margin: 0px 0px 34px
+    margin: 0px 0px 30px;
+    letter-spacing: 1.7px;
   }
 
-  .section-warranty__wrapper-list{
+  .section-warranty__wrapper-list {
     padding: 0px 126px;
   }
 }
@@ -63,17 +64,18 @@
 @media screen and (min-width: 1680px) {
   .section-warranty__wrapper {
     padding: 0px 156px 0px 186px;
-    margin-bottom: 120px;
+    margin-bottom: 108px;
   }
 
   .section-warranty__title {
     font-size: 46px;
     line-height: 1.365;
-    margin: 0px 0px 42px
+    margin: 0px 0px 38px;
+    letter-spacing: 2.3px;
+    padding-right: 26px;
   }
-  
-  .section-warranty__wrapper-list{
+
+  .section-warranty__wrapper-list {
     padding: 0px 102px;
   }
 }
-

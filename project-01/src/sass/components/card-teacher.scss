@@ -5,8 +5,8 @@
 
 .card__img {
   width: 280px;
-  height: 214px;
-  margin-bottom: 16px;
+  height: 216px;
+  margin-bottom: 14px;
 }
 
 .card__title {
@@ -54,7 +54,7 @@
   margin: 0px;
   letter-spacing: 0.7px;
 
-  &--position{
+  &--position {
     padding-right: 30px;
   }
 }
@@ -62,10 +62,11 @@
 .card__text {
   font-size: 11px;
   line-height: 1.818;
-  margin: 0px;
+  margin: 0px 0px 16px 0px;
   padding: 0px 16px;
   position: relative;
-  white-space: pre-line;
+  // white-space: pre-line;
+  letter-spacing: 0.3px;
 
   &--position::before {
     display: block;
@@ -76,6 +77,10 @@
     background-color: #ff6b08;
     top: -20px;
   }
+
+  // &:not(:nth-last-of-type(-n+1)) {
+  //   margin-bottom: 30px;
+  // }
 }
 
 .card__link {
@@ -87,6 +92,7 @@
   margin: 0px;
   padding-left: 16px;
   @extend %item;
+  letter-spacing: 0.4px;
 
   &:hover,
   &:focus {
@@ -113,28 +119,31 @@
     height: 320px;
   }
 
+  .card__items {
+    margin-bottom: 36px;
+  }
+
   .card__title {
     font-size: 20px;
-    line-height: 1.458;
-    margin: 0px 0px 24px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #d1d1d1;
+    line-height: 1;
+    margin: 0px 0px 18px;
+    padding-bottom: 12px;
   }
 
   .card__description {
-    // word-spacing: 4px;
-    // margin: 0px;
-    white-space: initial;
+    padding-right: 10px;
+    letter-spacing: 1.3px;
   }
 
   .card__text {
-    margin-bottom: 14px;
-    padding: 0px;
+    margin-bottom: 18px;
+    padding: 0px 20px 0px 0px;
     white-space: initial;
   }
 
   .card__link {
     padding-left: 0px;
+    line-height: 1.652;
   }
 }
 
@@ -149,7 +158,7 @@
     display: flex;
     flex-direction: column;
     // width: 632px;
-    @include width-percent(632px, 1210px);
+    @include width-percent(628px, 1210px);
   }
 
   .card__img {
@@ -175,20 +184,22 @@
   .card__item::before {
     width: 20px;
     height: 16px;
-    left: -44px;
+    left: -40px;
   }
 
   .card__item:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .card__description {
     font-size: 16.667px;
     line-height: 1.75;
-    padding-right: 130px;
-    word-spacing: 5px;
-    // margin: 0px;
-    // white-space: initial;
+    padding-right: 104px;
+    letter-spacing: 1.1px;
+
+    &--position {
+      padding-right: 0px;
+    }
   }
 
   .card__text {
@@ -202,7 +213,7 @@
     // white-space: initial;
 
     &--position::before {
-      top: -30px;
+      top: -36px;
     }
   }
 
@@ -216,21 +227,42 @@
 
 @media screen and (min-width: 1680px) {
   .card__content {
-    min-width: 676px;
+    // min-width: 676px;
+    @include width-percent(650px, 1210px);
+  }
+
+  .card__img {
+    // width: 493px;
+    @include width-percent(478px, 1210px);
+    // min-height: 644px;
+    @include height-percent(644px, 1210px);
   }
 
   .card__title {
-    margin: 0px 0px 36px;
-    padding-bottom: 16px;
+    margin: 0px 0px 26px;
+    padding-bottom: 14px;
   }
 
   .card__item:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
+  }
+
+  .card__description {
+    padding: 0px 150px 0px 0px;
+
+    &--position {
+      padding-right: 0px;
+    }
   }
 
   .card__text {
     margin-bottom: 14px;
-    padding: 0px 34px 0px 0px;
+    padding: 0px 14px 0px 0px;
     word-spacing: 3px;
+
+    // всі, крім останнього
+    &:nth-last-of-type(-3n+1) {
+      margin-bottom: 28px;
+    }
   }
 }

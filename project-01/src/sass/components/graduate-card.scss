@@ -1,5 +1,5 @@
 .graduate-card {
-  padding: 0px 28px;
+  padding: 0px 26px;
 }
 
 .graduate-card__title {
@@ -7,23 +7,34 @@
   color: #ff6b08;
   line-height: 2.144;
   margin: 0px;
+  letter-spacing: 1.1px;
 }
 
 .graduate-card__description {
   font-size: 11px;
   color: #858585;
   line-height: 1.515;
-  margin: 0px 0px 18px;
+  margin: 0px 0px 16px;
+  letter-spacing: 0.7px;
 }
 
 .graduate-card__text {
   font-size: 11px;
   color: #18191d;
   line-height: 1.818;
+  padding: 0px 6px;
   margin: 0px;
 
   &--colortext {
     color: #ff6b08;
+  }
+
+  &--narrow {
+    display: block;
+  }
+
+  &--wide {
+    display: none;
   }
 }
 
@@ -36,42 +47,21 @@
   text-shadow: 0px 0px 8px #ff6b08;
 }
 
+
 @media screen and (min-width: 768px) {
   .graduate-card {
-    width: 472px;
+    max-width: 492px;
+    // @include width-percent(492px, 1210px);
     padding: 0px;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   .graduate-card__title {
     font-size: 18px;
     line-height: 1.62;
     margin: 0px 0px 12px;
-  }
-
-  .graduate-card__description {
-    font-size: 12.5px;
-    line-height: 1.333;
-    margin: 0px 0px 14px;
-  }
-
-  .graduate-card__text--wide {
-    display: contents;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .graduate-card {
-    width: 692px;
-    margin-bottom: 42px;
-    //   padding: 0px 28px;
-  }
-
-  .graduate-card__title {
-    font-size: 25px;
-    line-height: 1.167;
-    margin: 0px 0px 16px;
+    letter-spacing: 1.1px;
   }
 
   .graduate-card__description {
@@ -81,9 +71,44 @@
   }
 
   .graduate-card__text {
+    padding: 0px;
+    line-height: 1.9;
+    letter-spacing: 0.9px;
+
+    &--narrow {
+      display: none;
+    }
+
+    &--wide {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .graduate-card {
+    max-width: 714px;
+    margin-bottom: 42px;
+    //   padding: 0px 28px;
+  }
+
+  .graduate-card__title {
+    font-size: 25px;
+    line-height: 1.167;
+    margin: 0px 0px 10px;
+  }
+
+  .graduate-card__description {
+    font-size: 12.5px;
+    line-height: 1.333;
+    margin: 0px 0px 18px;
+    padding-right: 276px;
+  }
+
+  .graduate-card__text {
     font-size: 16.667px;
     line-height: 1.75;
-    padding: 0px 40px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 
