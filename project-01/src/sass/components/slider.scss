@@ -13,7 +13,7 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
     padding-bottom: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   .slider__link-wrapper {
-    padding: 20px 0px 0px;
+    padding: 24px 0px 0px;
     margin-bottom: 0px;
   }
 
@@ -84,7 +84,7 @@
 
   .slider__item--first-card {
     padding: 42px 86px 0px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   .slider__link-wrapper {
@@ -102,6 +102,6 @@
 @media screen and (min-width: 1680px) {
   .slider__item--first-card {
     padding: 40px 82px 0px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 }

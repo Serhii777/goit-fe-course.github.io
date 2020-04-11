@@ -6,18 +6,25 @@
 }
 
 .section-form__wrapper {
-  padding: 56px 20px 0px;
+  padding: 50px 20px 0px;
   margin: 0px 0px 58px 0px;
   text-align: center;
+}
+
+.section-form__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-form__title {
   font-size: 14px;
   color: rgb(255, 255, 255);
   line-height: 1.86;
-  word-spacing: 4px;
-  padding: 0px 20px;
-  margin: 0px 0px 18px;
+  // word-spacing: 4px;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+  margin: 0px 0px 20px;
 
   &--colortext {
     color: #ff6b08;
@@ -29,7 +36,8 @@
   font-size: 11px;
   color: rgb(255, 255, 255);
   line-height: 1.818;
-  padding: 0px 22px;
+  letter-spacing: 0.8px;
+  padding: 0px 6px;
   margin: 0px 0px 26px;
 
   &--colortext {
@@ -46,6 +54,7 @@
   margin-bottom: 56px;
 }
 
+
 @media screen and (min-width: 768px) {
   .section-form {
     background-image: url(../../images/form-bgr-tabl.png);
@@ -58,8 +67,8 @@
 
   .section-form__title {
     font-size: 22px;
-    line-height: 1.729;
-    margin: 0px 0px 20px;
+    line-height: 1.744;
+    margin: 0px 0px 26px;
   }
 
   .section-form__description {
@@ -68,12 +77,20 @@
     white-space: initial;
     margin: 0px 0px 40px;
     white-space: pre-line;
+    letter-spacing: 0.8px;
+    text-align: left;
+    padding-left: 56px;
+
+    &--colortext{
+      padding: 0px;
+    }
   }
 
   .section-form__input:nth-last-of-type(-2n+1) {
     margin-bottom: 30px;
   }
 }
+
 
 @media screen and (min-width: 1280px) {
   .section-form {
@@ -88,13 +105,17 @@
   .section-form__title {
     font-size: 37.5px;
     line-height: 1.334;
-    margin: 0px 0px 46px;
+    margin: 0px 0px 42px;
+    letter-spacing: 1.8px;
   }
 
   .section-form__description {
     font-size: 18px;
     line-height: 1.361;
     margin: 0px 0px 52px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    padding-left: 0px;
   }
 
   .section-form__input:not(:nth-last-of-type(-2n+1)) {
@@ -102,14 +123,10 @@
   }
 
   .section-form__input:nth-last-of-type(-2n+1) {
-    margin-bottom: 56px;
-  }
-
-  .section-form__button {
-    width: 350px;
-    letter-spacing: 3.8px;
+    margin-bottom: 58px;
   }
 }
+
 
 @media screen and (min-width: 1680px) {
   .section-form {
@@ -117,13 +134,13 @@
   }
 
   .section-form__wrapper {
-    padding: 120px 356px 0px;
+    padding: 118px 356px 0px;
     margin-bottom: 100px;
   }
 
   .section-form__title {
     margin: 0px 0px 56px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.6px;
   }
 
   .section-form__description {
@@ -136,9 +153,4 @@
   .section-form__input:not(:nth-last-of-type(-2n+1)) {
     margin-bottom: 26px;
   }
-
-  // .section-form__button {
-  //   max-width: 350px;
-  //   letter-spacing: 3.8px;
-  // }
 }

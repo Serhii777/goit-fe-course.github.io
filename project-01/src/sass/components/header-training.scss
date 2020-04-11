@@ -1,7 +1,7 @@
 .section-training__content {
   display: flex;
   flex-direction: column;
-  
+  align-items: start;
 }
 
 .section-training__title {
@@ -9,7 +9,7 @@
   font-size: 20px;
   line-height: 1.45;
   color: #18191d;
-  margin: 0px 0px 28px 0px;
+  margin: 0px 0px 26px 0px;
   letter-spacing: 0.6px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .section-training__button {
-  margin: 0px auto 34px;
+  margin: 0px 0px 34px;
 }
 
 .section-training__img {
@@ -46,7 +46,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // align-items: center;
   }
 
   .section-training__content {
@@ -81,18 +80,24 @@
 
 
 @media screen and (min-width: 1280px) {
+  .section-training__wrapper {
+    padding: 0px 35px;
+  }
+
   .section-training__content {
     max-width: 498px;
-    padding-top: 52px;
+    padding-top: 53px;
   }
-  
+
   .section-training__title {
     font-size: 48px;
     line-height: 1.208;
     letter-spacing: 1.05px;
+    margin: 0px 0px 28px 0px;
   }
 
   .section-training__slogan {
+    min-width: 480px;
     font-size: 18px;
     line-height: 1.463;
     margin-bottom: 63px;
@@ -104,27 +109,34 @@
     margin: 0px;
   }
 
-  .section-training__button{
+  .section-training__button {
     letter-spacing: 2.2px;
   }
 }
 
 @media screen and (min-width: 1680px) {
+  .section-training__wrapper {
+    padding: 0px;
+  }
+
   .section-training__content {
     max-width: 610px;
-    padding-top: 72px;
+    padding-top: 70px;
   }
 
   .section-training__title {
     font-size: 58.333px;
     line-height: 1.34;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 1.4px;
   }
-
+  
   .section-training__slogan {
     font-size: 21px;
     line-height: 1.6;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
+    min-width: 540px;
+    letter-spacing: 1px;
   }
 
   .section-training__img {

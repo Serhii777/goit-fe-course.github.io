@@ -1,5 +1,5 @@
 .button {
-  max-width: 250px;
+  // max-width: 250px;
   font-size: 11px;
   line-height: $main-text-height;
   @extend %button;
@@ -9,19 +9,20 @@
     color: $primary-white-color;
     background-color: $primary-orange-color;
     letter-spacing: 1.3px;
-    
+
     &:hover,
     &:focus {
       color: $primary-orange-color;
       background-color: $primary-white-color;
     }
   }
-  
+
   &--lighter {
     color: #ff6b08;
     background-color: $primary-white-color;
     border: 2px solid #ff6b08;
     letter-spacing: 1.3px;
+    padding: 16px 16px;
 
     &:hover,
     &:focus {
@@ -34,13 +35,25 @@
 
 @media screen and (min-width: 1280px) {
   .button {
-    max-width: 300px;
     font-size: 12px;
-    padding: 25px 5px;
+    padding: 26px 5px 25px 5px;
 
     &--light {
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       padding: 25px 15px;
+      letter-spacing: 3.5px;
+    }
+
+    &--lighter {
+      color: #ff6b08;
+      background-color: $primary-white-color;
+      border: 2px solid #ff6b08;
+      letter-spacing: 1.3px;
+      padding: 24px 36px;
+    }
+
+    &--longer{
+      padding: 25px 25px;
     }
   }
 }
@@ -48,19 +61,22 @@
 @media screen and (min-width: 1680px) {
   .button {
     max-width: 350px;
-    // width: 350px;
     font-size: 14px;
-    // letter-spacing: 5px;
     padding: 24px 5px;
 
     &--light {
-      letter-spacing: 0px;
-      padding: 25px 5px;
+      padding: 24px 26px 23px 25px;
+      letter-spacing: 4px;
     }
-    
+
     &--lighter {
-      letter-spacing: 1.7px;
       padding: 24px 36px;
+      letter-spacing: 1.7px;
+    }
+
+    &--longer{
+      padding: 24px 15px 23px 15px;
+      letter-spacing: 2.9px;
     }
   }
 }

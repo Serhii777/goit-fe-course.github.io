@@ -34,7 +34,7 @@
 }
 
 .footer-form__input {
-  width: 204px;
+  // max-width: 214px;
   font-size: 18px;
   color: #111517;
   padding: 0px 0px 0px 8px;
@@ -44,6 +44,7 @@
     font-family: "Montserrat";
     color: rgb(17, 21, 23);
     font-weight: bold;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -66,7 +67,16 @@
       height: 29px;
       background-color: #e0e0e0;
       top: -2px;
-      right: -30px;
+      right: -24px;
+    }
+  }
+
+  .footer-form__input {
+    // max-width: 304px;
+    padding: 0px 0px 0px 8px;
+
+    &::-webkit-input-placeholder {
+      letter-spacing: 1.8px;
     }
   }
 }
@@ -74,18 +84,19 @@
 @media screen and (min-width: 1280px) {
   .footer-form::after {
     top: 5px;
-    right: -30px;
+    right: -26px;
   }
 
   .footer-form__input {
-    width: 326px;
+    max-width: 326px;
     font-size: 27px;
     line-height: 1.385;
-    padding: 0px 0px 0px 18px;
+    padding: 0px 0px 0px 16px;
 
     &::-webkit-input-placeholder {
       font-size: 27px;
       line-height: 1.385;
+      letter-spacing: 1.3px;
     }
   }
 
@@ -94,4 +105,3 @@
     height: 34px;
   }
 }
-

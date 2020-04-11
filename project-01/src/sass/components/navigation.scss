@@ -11,8 +11,17 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .navigation {
+    padding: 0px 35px;
+  }
+
   .navigation__logo {
     margin-right: 0px;
   }
 }
 
+@media screen and (min-width: 1680px) {
+  .navigation {
+    padding: 0px 106px 0px 0px;
+  }
+}

@@ -1,6 +1,6 @@
 .menu-icons {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   padding-left: 50px;
   @extend %list;
@@ -8,6 +8,7 @@
 
 .menu-icons__item {
   display: flex;
+  flex-direction: row;
 
   &:not(:nth-last-of-type(-3n+1)) {
     margin-bottom: 24px;
@@ -43,8 +44,6 @@
 }
 
 .menu-icons__description {
-  // display: block;
-  // max-width: 120px;
   flex-basis: 120px;
   font-size: 13px;
   color: rgb(24, 25, 29);
@@ -54,17 +53,24 @@
   // padding-right: 40px;
 }
 
+
 @media screen and (min-width: 768px) {
   .menu-icons {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .menu-icons__item {
-    flex-basis: 170px;
+    position: relative;
+    flex-basis: 160px;
+
+    &--third {
+      left: -20px;
+    }
   }
 
   .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
@@ -78,24 +84,44 @@
   .menu-icons__description {
     flex-basis: 90px;
     margin: 0px;
-    // padding-right: 40px;
   }
 }
 
 
 @media screen and (min-width: 1280px) {
+  .menu-icons {
+    padding: 0px 0px 0px 35px;
+  }
+
   .menu-icons__item {
-    display: inline-block;
-    // box-sizing: content-box;
-    // flex-basis: 310px;
-    width: 400px;
-    // width: fit-content(380px) fit-content(350px) fit-content(320px);
-    // width: fit-content(380px, 350px, 320px);
-    // width: auto;
-    // width: min-content;
-    // width: fit-content;
     align-items: center;
-    position: relative;
+
+    &--first {
+      left: 0px;
+      flex-basis: 384px;
+
+      .menu-icons__description {
+        flex-basis: 298px;
+      }
+    }
+
+    &--second {
+      left: -12px;
+      flex-basis: 350px;
+
+      .menu-icons__description {
+        flex-basis: 264px;
+      }
+    }
+
+    &--third {
+      left: -32px;
+      flex-basis: 322px;
+
+      .menu-icons__description {
+        flex-basis: 236px;
+      }
+    }
   }
 
   .menu-icons__link {
@@ -114,41 +140,52 @@
   }
 
   .menu-icons__description {
-    display: inline-block;
-    position: absolute;
-    // flex-basis: 300px;
-    // max-width: 300px;
-    // max-width: 420px;
-    min-width: 280px;
-    // width: auto;
-    // max-width: 280px;
-    // width: 320px;
-    // width: min-content(300px);
     font-size: 18px;
     line-height: 1.556;
-    // margin: -18px;
+    margin: -18px;
     z-index: 1;
-    left: 90px;
-    bottom: 25px;
-
-
-    // &--size {
-    // width: 220px;
-    // }
+    letter-spacing: 1px;
   }
-
-  // .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
-  //   margin-bottom: 0px;
-  // }
-
-  // .menu-icons__link {
-  //   margin-left: 0px;
-  // }
 }
 
 @media screen and (min-width: 1680px) {
+  .menu-icons {
+    padding: 0px;
+  }
+
   .section-icons__wrapper {
     padding-right: 106px;
+  }
+
+  .menu-icons__item {
+    align-items: center;
+
+    &--first {
+      left: 0px;
+      flex-basis: 430px;
+
+      .menu-icons__description {
+        flex-basis: 344px;
+      }
+    }
+
+    &--second {
+      left: -6px;
+      flex-basis: 336px;
+
+      .menu-icons__description {
+        flex-basis: 250px;
+      }
+    }
+
+    &--third {
+      left: -12px;
+      flex-basis: 366px;
+
+      .menu-icons__description {
+        flex-basis: 280px;
+      }
+    }
   }
 
   .menu-icons__description {

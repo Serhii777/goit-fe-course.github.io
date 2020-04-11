@@ -2,7 +2,7 @@
   @extend %list;
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  padding: 18px 28px 0px;
+  padding: 16px 28px 0px;
   counter-reset: count-problem;
 }
 
@@ -55,12 +55,13 @@
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .menu-problem {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 18px 90px 0px 108px;
+    padding: 28px 90px 0px 108px;
   }
 
   .menu-problem__item {
@@ -151,7 +152,7 @@
 
 @media screen and (min-width: 1680px) {
   .menu-problem {
-    padding: 58px 0px 0px 96px;
+    padding: 61px 0px 0px 96px;
   }
 
   .menu-problem__item {
