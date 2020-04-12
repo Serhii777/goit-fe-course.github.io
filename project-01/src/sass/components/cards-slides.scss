@@ -1,5 +1,13 @@
 .cards-slides__wrapper {
   padding: 0px 48px;
+
+  @include tablet {
+    padding: 0px 90px;
+  }
+
+  @include desktop {
+    padding: 0px 236px;
+  }
 }
 
 .cards-slides {
@@ -27,23 +35,9 @@
 .cards-slides__item--seventh-card,
 .cards-slides__item--eighth-card {
   display: none;
-}
 
-@media screen and (min-width: 768px) {
-  .cards-slides__wrapper {
-    padding: 0px 90px;
-  }
-
-  .cards-slides__item--fifth-card,
-  .cards-slides__item--sixth-card,
-  .cards-slides__item--seventh-card,
-  .cards-slides__item--eighth-card {
+  @include tablet {
     display: block;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .cards-slides__wrapper {
-    padding: 0px 236px;
-  }
-}

@@ -3,7 +3,6 @@
   width: 24px;
   height: 12px;
   position: relative;
-  // margin-top: 2px;
 
   &::before,
   &::after {
@@ -38,6 +37,10 @@
   &:hover .burger__block {
     transform: scale(0);
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .burger__block {
@@ -49,10 +52,4 @@
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.1s linear;
-}
-
-@media screen and (min-width: 1280px) {
-  .burger {
-    display: none;
-  }
 }

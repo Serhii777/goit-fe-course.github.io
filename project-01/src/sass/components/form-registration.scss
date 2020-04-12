@@ -14,6 +14,28 @@
     font-weight: bold;
     line-height: 2.325;
   }
+
+  @include tablet {
+    min-width: 400px;
+    // flex: 1 1 400px;}
+
+    @include desktop {
+      width: 620px;
+      border: 1px solid #ffffff;
+      font-size: 21px;
+      line-height: 1.8;
+      padding: 16px 5px 16px 26px;
+
+      &::-webkit-input-placeholder {
+        font-size: 21px;
+        line-height: 1.8;
+      }
+    }
+
+    @include desktop-wide {
+      padding: 17px 5px 17px 26px;
+    }
+  }
 }
 
 .section-form__form input[name='name']:valid,
@@ -26,33 +48,4 @@
 .section-form__form input[type='tel']:invalid {
   outline: 2px solid #ff0000;
   outline-offset: -2px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .input-field {
-    min-width: 400px;
-    // flex: 1 1 400px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .input-field {
-    width: 620px;
-    border: 1px solid #ffffff;
-    font-size: 21px;
-    line-height: 1.8;
-    padding: 16px 5px 16px 26px;
-
-    &::-webkit-input-placeholder {
-      font-size: 21px;
-      line-height: 1.8;
-    }
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .input-field {
-    padding: 17px 5px 17px 26px;
-  }
 }

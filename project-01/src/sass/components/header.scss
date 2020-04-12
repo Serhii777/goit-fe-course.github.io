@@ -11,14 +11,56 @@
   background-size: contain;
   margin-bottom: 54px;
   padding: 26px 20px 0px;
+
+  @include tablet {
+    background-image: url('../../images/bgr-tablet.png');
+    margin-bottom: 54px;
+    padding: 32px 40px 0px;
+  }
+
+  @include desktop {
+    background-image: url('../../images/bgr-desk.png');
+    margin-bottom: 86px;
+    padding: 38px 0px 0px;
+  }
+
+  @include desktop-wide {
+    background-image: url('../../images/bgr-desk-larg.png');
+    padding: 28px 50px 0px 184px;
+    margin-bottom: 126px;
+  }
 }
 
 .header__navigation {
   margin-bottom: 52px;
+
+  @include tablet {
+    margin-bottom: 62px;
+  }
+
+  @include desktop {
+    margin-bottom: 44px;
+  }
+
+  @include desktop-wide {
+    margin-bottom: 48px;
+  }
 }
 
 .header__section-training {
   margin-bottom: 90px;
+
+  @include tablet {
+    margin-bottom: 114px;
+  }
+
+  @include desktop {
+    margin-bottom: 130px;
+  }
+
+  @include desktop-wide {
+    margin-bottom: 110px;
+  }
 }
 
 // .header__title {
@@ -26,50 +68,26 @@
 //   margin: 0px 0px 98px;
 // }
 
-@media screen and (min-width: 768px) {
-  .header__wrapper {
-    background-image: url('../../images/bgr-tablet.png');
-    margin-bottom: 54px;
-    padding: 32px 40px 0px;
-  }
+// @media screen and (min-width: 768px) {
+//   .header__wrapper {}
 
-  .header__navigation {
-    margin-bottom: 62px;
-  }
+//   .header__navigation {}
 
-  .header__section-training {
-    margin-bottom: 114px;
-  }
-}
+//   .header__section-training {}
+// }
 
-@media screen and (min-width: 1280px) {
-  .header__wrapper {
-    background-image: url('../../images/bgr-desk.png');
-    margin-bottom: 86px;
-    padding: 38px 0px 0px;
-  }
+// @media screen and (min-width: 1280px) {
+//   .header__wrapper {}
 
-  .header__navigation {
-    margin-bottom: 44px;
-  }
+//   .header__navigation {}
 
-  .header__section-training {
-    margin-bottom: 130px;
-  }
-}
+//   .header__section-training {}
+// }
 
-@media screen and (min-width: 1680px) {
-  .header__wrapper {
-    background-image: url('../../images/bgr-desk-larg.png');
-    padding: 28px 50px 0px 184px;
-    margin-bottom: 126px;
-  }
+// @media screen and (min-width: 1680px) {
+//   .header__wrapper {}
 
-  .header__navigation {
-    margin-bottom: 48px;
-  }
+//   .header__navigation {}
 
-  .header__section-training {
-    margin-bottom: 110px;
-  }
-}
+//   .header__section-training {}
+// }

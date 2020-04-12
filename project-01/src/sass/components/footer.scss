@@ -8,12 +8,37 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 0px 0px;
+
+  @include tablet {
+    padding: 32px 40px 0px;
+    align-items: start;
+  }
+
+  @include desktop {
+    padding: 48px 35px 0px;
+  }
+
+  @include desktop-wide {
+    padding: 48px 155px 0px 187px;
+  }
 }
 
 .footer__menu {
   display: flex;
   flex-direction: column;
   @extend %list;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  @include desktop {
+    margin-bottom: 48px;
+  }
 }
 
 .footer__item {
@@ -23,6 +48,10 @@
 
   &--logo {
     order: 2;
+
+    @include tablet {
+      order: 0;
+    }
   }
 }
 
@@ -31,11 +60,29 @@
   height: 30px;
   font-size: 0px;
   margin-bottom: 17px;
+
+  @include tablet {
+    width: 128px;
+    min-height: 50px;
+    margin: 0px 86px 0px 0px;
+  }
+
+  @include desktop {
+    margin-right: 256px;
+  }
+
+  @include desktop-wide {
+    margin-right: 306px;
+  }
 }
 
 .footer__form {
   padding: 0px;
   margin-bottom: 22px;
+
+  @include tablet {
+    margin: 0px 54px 0px 0px;
+  }
 }
 
 .footer__link {
@@ -57,63 +104,8 @@
   &:focus {
     transform: scale(1.15);
   }
-}
 
-
-@media screen and (min-width: 768px) {
-  .footer__wrapper {
-    padding: 32px 40px 0px;
-    align-items: start;
-  }
-
-  .footer__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-
-  .footer__logo {
-    width: 128px;
-    min-height: 50px;
-    margin: 0px 86px 0px 0px;
-  }
-
-  .footer__item--logo {
-    order: 0;
-  }
-
-  .footer__form {
-    margin: 0px 54px 0px 0px;
-  }
-
-  .footer__icon {
+  @include tablet {
     margin-bottom: 0px;
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .footer__wrapper {
-    padding: 48px 35px 0px;
-  }
-
-  .footer__menu {
-    margin-bottom: 48px;
-  }
-
-  .footer__logo {
-    margin-right: 256px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .footer__wrapper {
-    padding: 48px 155px 0px 187px;
-  }
-  
-  .footer__logo {
-    margin-right: 306px;
   }
 }

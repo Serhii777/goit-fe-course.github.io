@@ -1,5 +1,19 @@
 .graduate-card {
   padding: 0px 26px;
+
+  @include tablet {
+    max-width: 492px;
+    // @include width-percent(492px, 1210px);
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 42px;
+  }
+
+  @include desktop {
+    max-width: 714px;
+    margin-bottom: 42px;
+    //   padding: 0px 28px;}
+  }
 }
 
 .graduate-card__title {
@@ -8,6 +22,19 @@
   line-height: 2.144;
   margin: 0px;
   letter-spacing: 1.1px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.62;
+    margin: 0px 0px 12px;
+    letter-spacing: 1.1px;
+  }
+
+  @include desktop {
+    font-size: 25px;
+    line-height: 1.167;
+    margin: 0px 0px 10px;
+  }
 }
 
 .graduate-card__description {
@@ -16,6 +43,19 @@
   line-height: 1.515;
   margin: 0px 0px 14px;
   letter-spacing: 0.7px;
+
+  @include tablet {
+    font-size: 12.5px;
+    line-height: 1.333;
+    margin: 0px 0px 18px;
+  }
+
+  @include desktop {
+    font-size: 12.5px;
+    line-height: 1.333;
+    margin: 0px 0px 18px;
+    padding-right: 276px;
+  }
 }
 
 .graduate-card__text {
@@ -36,41 +76,8 @@
   &--wide {
     display: none;
   }
-}
 
-.graduate-card__text--wide {
-  display: none;
-}
-
-.graduate-card__link:hover,
-.graduate-card__link:focus {
-  text-shadow: 0px 0px 8px #ff6b08;
-}
-
-
-@media screen and (min-width: 768px) {
-  .graduate-card {
-    max-width: 492px;
-    // @include width-percent(492px, 1210px);
-    padding: 0px;
-    text-align: left;
-    margin-bottom: 42px;
-  }
-
-  .graduate-card__title {
-    font-size: 18px;
-    line-height: 1.62;
-    margin: 0px 0px 12px;
-    letter-spacing: 1.1px;
-  }
-
-  .graduate-card__description {
-    font-size: 12.5px;
-    line-height: 1.333;
-    margin: 0px 0px 18px;
-  }
-
-  .graduate-card__text {
+  @include tablet {
     padding: 0px;
     line-height: 1.9;
     letter-spacing: 0.9px;
@@ -83,34 +90,15 @@
       display: block;
     }
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .graduate-card {
-    max-width: 714px;
-    margin-bottom: 42px;
-    //   padding: 0px 28px;
-  }
-
-  .graduate-card__title {
-    font-size: 25px;
-    line-height: 1.167;
-    margin: 0px 0px 10px;
-  }
-
-  .graduate-card__description {
-    font-size: 12.5px;
-    line-height: 1.333;
-    margin: 0px 0px 18px;
-    padding-right: 276px;
-  }
-
-  .graduate-card__text {
+  @include desktop {
     font-size: 16.667px;
     line-height: 1.75;
     padding: 0px 0px 0px 0px;
   }
 }
 
-
-@media screen and (min-width: 1680px) {}
+.graduate-card__link:hover,
+.graduate-card__link:focus {
+  text-shadow: 0px 0px 8px #ff6b08;
+}

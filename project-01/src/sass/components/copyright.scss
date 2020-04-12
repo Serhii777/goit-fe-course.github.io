@@ -2,6 +2,18 @@
   padding: 28px 0px 28px;
   background-color: #111517;
   text-align: left;
+
+  @include tablet {
+    padding: 30px 0px 28px;
+  }
+
+  @include desktop {
+    padding: 14px 0px;
+  }
+
+  @include desktop-wide {
+    padding: 14px 0px;
+  }
 }
 
 .copyright__text {
@@ -9,6 +21,18 @@
   color: #fcfdfd6b;
   margin: 0px;
   letter-spacing: 0.6px;
+
+  @include desktop {
+    font-size: 14.583px;
+    line-height: 2.571;
+    letter-spacing: 0.9px;
+  }
+
+  @include desktop-wide {
+    font-size: 14.583px;
+    line-height: 2.571;
+    letter-spacing: 0.9px;
+  }
 }
 
 .copyright__symbol {
@@ -16,34 +40,3 @@
   color: #fdfefe6b;
 }
 
-
-@media screen and (min-width: 768px) {
-  .copyright {
-    padding: 30px 0px 28px;
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .copyright {
-    padding: 14px 0px;
-  }
-
-  .copyright__text {
-    font-size: 14.583px;
-    line-height: 2.571;
-    letter-spacing: 0.9px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .copyright {
-    padding: 14px 0px;
-  }
-
-  .copyright__text {
-    font-size: 14.583px;
-    line-height: 2.571;
-    letter-spacing: 0.9px;
-  }
-}

@@ -1,4 +1,4 @@
-$main-font-stack: 'Montserrat', 'Tahoma', sans-serif;
+$main-font-stack: 'Montserrat','Tahoma', sans-serif;
 $font-family-monts: 'Montserrat', sans-serif;
 $main-font-tahoma: 'Tahoma', sans-serif;
 
@@ -50,11 +50,11 @@ $primary-orange-color: #ff6b08;
 // $ligth-gradient-color: rgba(252, 227, 138, 0.9);
 // $dark-gradient-color: rgba(243, 129, 129, 0.9);
 
-$format: screen;
-$mobile: 320px; 
-$tablet: 768px;
-$notebook: 1280px;
-$desktop: 1680px;
+$screen-format: screen;
+$screen-mobile: 320px;
+$screen-tablet: 768px;
+$screen-desktop: 1280px;
+$screen-desktop-wide: 1680px;
 
 // @media #{$format} {
 //   .menu {
@@ -69,3 +69,9 @@ $desktop: 1680px;
 //     }
 //   }
 // }
+
+@include tablet {}
+
+@include desktop {}
+
+@include desktop-wide {}

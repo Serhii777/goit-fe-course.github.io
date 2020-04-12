@@ -12,6 +12,26 @@
     outline: 2px solid #ff0000;
     outline-offset: -2px;
   }
+
+  @include tablet {
+    position: relative;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 29px;
+      background-color: #e0e0e0;
+      top: -2px;
+      right: -24px;
+
+      @include desktop {
+        top: 5px;
+        right: -26px;
+      }
+    }
+  }
 }
 
 .footer-form__label {
@@ -31,6 +51,11 @@
     fill: #ffffff;
     background-color: #ff6b08;
   }
+
+  @include desktop {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer-form__input {
@@ -46,32 +71,8 @@
     font-weight: bold;
     letter-spacing: 0.6px;
   }
-}
 
-// .input {
-//   width: 230px;
-//   @include font-settings($primary-text-size, 1.6);
-//   margin: 0px;
-//   padding: 12px 0px 10px 12px;
-// }
-
-@media screen and (min-width: 768px) {
-  .footer-form {
-    position: relative;
-
-    &::after {
-      display: block;
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 29px;
-      background-color: #e0e0e0;
-      top: -2px;
-      right: -24px;
-    }
-  }
-
-  .footer-form__input {
+  @include tablet {
     // max-width: 304px;
     padding: 0px 0px 0px 8px;
 
@@ -79,15 +80,8 @@
       letter-spacing: 1.8px;
     }
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .footer-form::after {
-    top: 5px;
-    right: -26px;
-  }
-
-  .footer-form__input {
+  @include desktop {
     max-width: 326px;
     font-size: 27px;
     line-height: 1.385;
@@ -99,9 +93,11 @@
       letter-spacing: 1.3px;
     }
   }
-
-  .footer-form__icon {
-    width: 34px;
-    height: 34px;
-  }
 }
+
+// .input {
+//   width: 230px;
+//   @include font-settings($primary-text-size, 1.6);
+//   margin: 0px;
+//   padding: 12px 0px 10px 12px;
+// }
