@@ -4,50 +4,52 @@
   align-items: center;
   text-transform: uppercase;
   @extend %list;
+
+  // @include tablet {}
+
+  @include desktop {
+    flex-basis: 908px;
+    justify-content: space-between;
+  }
+
+  @include desktop-wide {
+    flex-basis: 1072px;
+  }
 }
 
 .menu__item {
   display: none;
   @extend %link;
-}
 
-@media screen and (min-width: 768px) {
-  .menu__item--button {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .menu {
-    flex-basis: 908px;
-    justify-content: space-between;
+  @include tablet {
+    &--button {
+      display: block;
+    }
   }
 
-  .menu__item {
+  @include desktop {
     display: block;
   }
 
-  .menu__link {
+  @include desktop-wide {}
+}
+
+.menu__link {
+  @include desktop {
     font-size: 12px;
     line-height: 1.9;
     color: rgb(185, 185, 185);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+      color: rgb(255, 107, 8);
+    }
   }
 
-  .menu__link:hover,
-  .menu__link:focus {
-    color: rgb(255, 107, 8);
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .menu {
-    flex-basis: 1072px;
-  }
-
-  .menu__link {
+  @include desktop-wide {
     font-size: 14px;
     line-height: 1.9;
     // line-height: 7.857;
@@ -58,46 +60,3 @@
     letter-spacing: 1px;
   }
 }
-
-
-//   &:not(:nth-child(7n)) {
-//     margin-right: 52px;
-//   }
-// }
-
-// .menu__link {
-//   @extend %link;
-//   font-size: 14px;
-
-//   &::after {
-//     position: absolute;
-//     content: '';
-//     width: 0;
-//     height: 3px;
-//     background: $primary-yelow-color;
-//     bottom: -12px;
-//     left: 50%;
-//     transition: all 0.2s linear;
-//   }
-
-//   &:hover::after,
-//   &:focus::after {
-//     width: 100%;
-//     left: 0;
-//   }
-
-//   &:hover,
-//   &:focus {
-//     color: $primary-yelow-color;
-//   }
-// }
-
-// .menu__icon {
-//   @extend %icon;
-//   fill: $primary-white-color;
-
-//   &:hover,
-//   &:focus {
-//     fill: $primary-yelow-color;
-//   }
-// }

@@ -9,6 +9,23 @@
   flex-direction: column;
   padding-top: 46px;
   // background: #111517;
+
+  @include tablet {
+    padding: 47px 40px 0px;
+    margin-bottom: 160px;
+  }
+
+  @include desktop {
+    padding: 66px 0px 0px;
+    min-height: 720px;
+    margin-bottom: 66px;
+  }
+
+  @include desktop-wide {
+    padding: 116px 0px 0px 0px;
+    min-height: 836px;
+    margin-bottom: 76px;
+  }
 }
 
 .section-program__title {
@@ -17,10 +34,39 @@
   margin: 0px 0px 23px 0px;
   text-align: center;
   letter-spacing: 1.2px;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 2.405;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  @include desktop {
+    font-size: 42px;
+    line-height: 1.489;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+
+  @include desktop-wide {
+    font-size: 46px;
+    line-height: 1.365;
+    padding-left: 186px;
+    margin-bottom: 82px;
+  }
 }
 
 .section-program__list {
   margin-bottom: 34px;
+
+  @include tablet {
+    margin-bottom: 0px;
+  }
+
+  @include desktop-wide {}
 }
 
 .section-program__img {
@@ -30,82 +76,24 @@
   position: absolute;
   right: 0px;
   bottom: -90px;
-}
 
-
-@media screen and (min-width: 768px) {
-  .section-program__wrapper {
-    padding: 45px 40px 0px;
-    margin-bottom: 160px;
-  }
-
-  .section-program__title {
-    font-size: 26px;
-    line-height: 2.405;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .section-program__list {
-    margin-bottom: 0px;
-  }
-
-  .section-program__img {
+  @include tablet {
     width: 404px;
     height: 282px;
     background-image: url(../../images/pic-tabl.png);
     right: 0px;
     bottom: 52px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  // .section-program {
-  // }
-
-  .section-program__wrapper {
-    padding: 66px 0px 0px;
-    min-height: 720px;
-    margin-bottom: 66px;
-  }
-
-  .section-program__title {
-    font-size: 42px;
-    line-height: 1.489;
-    padding-left: 35px;
-    margin-bottom: 30px;
-    text-align: left;
-    letter-spacing: 2px;
-  }
-
-  // .section-program__list {
-  //   margin-bottom: 0px;
-  // }
-
-  .section-program__img {
+  @include desktop {
     width: 546px;
     height: 364px;
     background-image: url(../../images/pic-desk.png);
     left: 0px;
     bottom: -136px;
   }
-}
 
-@media screen and (min-width: 1680px) {
-  .section-program__wrapper {
-    padding: 116px 0px 0px 0px;
-    min-height: 836px;
-    margin-bottom: 76px;
-  }
-
-  .section-program__title {
-    font-size: 46px;
-    line-height: 1.365;
-    padding-left: 186px;
-    margin-bottom: 82px;
-  }
-
-  .section-program__img {
+  @include desktop-wide {
     width: 700px;
     height: 485px;
     background-image: url(../../images/pic-desk-larg.png);

@@ -2,26 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-@media screen and (min-width: 768px) {
-  .navigation__logo {
-    margin-right: 204px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .navigation {
+  @include desktop {
     padding: 0px 35px;
   }
 
-  .navigation__logo {
-    margin-right: 0px;
+  @include desktop-wide {
+    padding: 0px 106px 0px 0px;
   }
 }
 
-@media screen and (min-width: 1680px) {
-  .navigation {
-    padding: 0px 106px 0px 0px;
+.navigation__logo {
+  @include tablet {
+    margin-right: 204px;
+  }
+
+  @include desktop {
+    margin-right: 0px;
   }
 }

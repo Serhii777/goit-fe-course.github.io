@@ -28,8 +28,8 @@
   }
 
   @include desktop {
-    padding: 78px 160px 0px;
-    margin-bottom: 88px;
+    padding: 76px 160px 0px;
+    margin-bottom: 86px;
   }
 
   @include desktop-wide {
@@ -98,7 +98,7 @@
     white-space: pre-line;
     letter-spacing: 0.8px;
     text-align: left;
-    padding-left: 56px;
+    padding-left: 12px;
 
     &--colortext {
       padding: 0px;
@@ -126,7 +126,7 @@
   margin-bottom: 20px;
 
   @include tablet {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @include desktop {
@@ -139,7 +139,11 @@
 }
 
 .section-form__input:nth-last-of-type(-2n+1) {
-  margin-bottom: 53px;
+  margin-bottom: 52px;
+
+  @include tablet {
+    margin-bottom: 28px;
+  }
 
   @include desktop {
     margin-bottom: 58px;

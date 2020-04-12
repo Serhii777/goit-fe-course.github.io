@@ -83,7 +83,7 @@
   }
 
   @include desktop-wide {
-    margin: 0px 0px 26px;
+    margin: 0px 0px 30px;
     padding-bottom: 14px;
   }
 }
@@ -98,7 +98,7 @@
   }
 
   @include desktop {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
     padding-left: 44px;
   }
 }
@@ -124,17 +124,17 @@
       height: 16px;
       left: -40px;
     }
+
+    @include desktop-wide {
+      left: -38px;
+    }
   }
 
   &:not(:nth-last-of-type(-3n+1)) {
     margin-bottom: 16px;
 
-    // @include desktop {
-    //   margin-bottom: 16px;
-    // }
-
     @include desktop-wide {
-      margin-bottom: 17px;
+      margin-bottom: 16px;
     }
   }
 }
@@ -151,15 +151,15 @@
   }
 
   @include tablet {
-    padding-right: 10px;
-    letter-spacing: 1.3px;
+    padding-right: 20px;
+    letter-spacing: 0.7px;
   }
 
   @include desktop {
     font-size: 16.667px;
     line-height: 1.75;
-    padding-right: 104px;
-    letter-spacing: 1.1px;
+    padding-right: 108px;
+    letter-spacing: 1px;
 
     &--position {
       padding-right: 0px;
@@ -168,12 +168,16 @@
 
   @include desktop-wide {
     padding: 0px 150px 0px 0px;
+    
+    &--position {
+      padding-right: 0px;
+    }
   }
 }
 
 .card__text {
   font-size: 11px;
-  line-height: 1.818;
+  line-height: 1.881;
   margin: 0px 0px 16px 0px;
   padding: 0px 16px;
   position: relative;
@@ -199,7 +203,7 @@
     font-size: 16.667px;
     line-height: 1.75;
     margin-bottom: 16px;
-    padding: 0px 34px 0px 0px;
+    padding: 0px 28px 0px 0px;
     word-wrap: break-word;
     word-spacing: 3px;
 
@@ -209,13 +213,17 @@
   }
 
   @include desktop-wide {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
     padding: 0px 14px 0px 0px;
     word-spacing: 3px;
 
+    &--position::before {
+      top: -30px;
+    }
+
     // всі, крім останнього
     &:nth-last-of-type(-3n+1) {
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
   }
 }

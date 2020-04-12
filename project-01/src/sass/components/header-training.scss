@@ -70,9 +70,9 @@
 .section-training__slogan {
   text-align: left;
   font-size: 15px;
-  line-height: 1.35;
+  line-height: 1.386;
   color: #18191d;
-  margin: 0px 0px 34px 0px;
+  margin: 0px 0px 36px 0px;
   letter-spacing: 0.623px;
 
   &::first-line {
@@ -86,7 +86,6 @@
 
   @include tablet {
     line-height: 1.35;
-    // padding-top: 10px;
     margin-bottom: 32px;
   }
 
@@ -101,7 +100,7 @@
   @include desktop-wide {
     font-size: 21px;
     line-height: 1.6;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     min-width: 540px;
     letter-spacing: 1px;
   }

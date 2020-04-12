@@ -1,5 +1,15 @@
 .section-choosing {
   min-height: 636px;
+
+  @include tablet {
+    min-height: 412px;
+  }
+
+  // @include desktop {}
+
+  @include desktop-wide {
+    min-height: 610px;
+  }
 }
 
 .section-choosing__wrapper {
@@ -8,6 +18,22 @@
   height: 398px;
   background: #111517;
   padding: 0px 20px;
+
+  @include tablet {
+    height: 198px;
+    // min-height: 190px;
+    padding: 0px 40px;
+  }
+
+  @include desktop {
+    height: auto;
+    padding: 0px 35px;
+  }
+
+  @include desktop-wide {
+    height: 306px;
+    padding: 0px 156px 0px 186px;
+  }
 }
 
 .section-choosing__title {
@@ -18,64 +44,34 @@
   margin: 0px 0px 16px 0px;
   padding: 0px;
   white-space: pre-line;
-}
+  letter-spacing: 1.2px;
 
-.section-choosing__menu-problem {
-  z-index: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .section-choosing {
-    min-height: 412px;
-  }
-
-  .section-choosing__wrapper {
-    height: 198px;
-    // min-height: 190px;
-    padding: 0px 40px;
-  }
-
-  .section-choosing__title {
+  @include tablet {
     font-size: 26px;
     text-align: center;
     margin-bottom: 22px;
     white-space: initial;
     letter-spacing: 1.5px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .section-choosing__wrapper {
-    height: auto;
-    padding: 0px 35px;
-  }
-
-  .section-choosing__title {
+  @include desktop {
     font-size: 42px;
     line-height: 1.346;
     margin-bottom: 32px;
     z-index: 2;
     letter-spacing: 2px;
   }
-}
 
-
-@media screen and (min-width: 1680px) {
-  .section-choosing {
-    min-height: 610px;
-  }
-
-  .section-choosing__wrapper {
-    height: 306px;
-    padding: 0px 156px 0px 186px;
-  }
-
-  .section-choosing__title {
+  @include desktop-wide {
     font-size: 46px;
     line-height: 1.365;
     padding-right: 30px;
     margin-bottom: 46px;
     z-index: 2;
-    letter-spacing: 2.5px;
   }
 }
+
+.section-choosing__menu-problem {
+  z-index: 1;
+}
+

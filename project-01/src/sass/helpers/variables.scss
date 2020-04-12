@@ -56,22 +56,21 @@ $screen-tablet: 768px;
 $screen-desktop: 1280px;
 $screen-desktop-wide: 1680px;
 
-// @media #{$format} {
-//   .menu {
-//     @media (max-width: $mobile) {
-//       width: 100%;
-//     }
-//     @media (max-width: $tablet) {
-//       width: 60%;
-//     }
-//     @media (max-width: $desktop) {
-//       width: 30%;
-//     }
-//   }
-// }
+// breakpoints
+// Small tablets and large smartphones (landscape view)
+// $screen-mobile: 320px;
 
-@include tablet {}
+// Small tablets (portrait view)
+// $screen-tablet: 768px;
 
-@include desktop {}
+// Tablets and small desktops
+// $screen-desktop: 1280px;
 
-@include desktop-wide {}
+// Large tablets and desktops
+// $screen-desktop-wide: 1680px;
+
+
+$screen-mob: 360px;
+$screen-tabl: 808px;
+$screen-desk: 1320px;
+$screen-desk-wide: 1720px;

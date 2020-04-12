@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @include tablet {
+    padding: 0px 40px;
+    margin-bottom: 44px;}
+
+  @include desktop {
+    padding: 0px 35px;
+    margin-bottom: 78px;}
+
+  @include desktop-wide {
+    padding: 0px 156px 0px 186px;
+    margin-bottom: 110px;}
 }
 
 .section-warranty__title {
@@ -9,73 +21,43 @@
   color: #111517;
   margin: 0px 0px 22px;
   letter-spacing: 1px;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 2.405;
+    margin: 0px 0px 10px}
+
+  @include desktop {
+    font-size: 42px;
+    line-height: 1.489;
+    margin: 0px 0px 28px;
+    letter-spacing: 1.7px;}
+
+  @include desktop-wide {
+    font-size: 46px;
+    line-height: 1.365;
+    margin: 0px 0px 38px;
+    letter-spacing: 2.3px;
+    padding-right: 26px;}
 }
 
 .section-warranty__wrapper-list {
   padding: 0px 20px 0px 26px;
   background: #f1f1f1;
+
+  @include tablet {
+    padding: 0px 55px 0px 66px;}
+
+  @include desktop {
+    padding: 0px 126px;}
+
+  @include desktop-wide {
+    padding: 0px 102px;}
 }
 
 .section-warranty__items {
   margin-bottom: 22px;
-}
 
-
-@media screen and (min-width: 768px) {
-  .section-warranty__wrapper {
-    padding: 0px 40px;
-    margin-bottom: 44px;
-  }
-
-  .section-warranty__title {
-    font-size: 26px;
-    line-height: 2.405;
-    margin: 0px 0px 10px
-  }
-
-  .section-warranty__wrapper-list {
-    padding: 0px 55px 0px 66px;
-  }
-
-  .section-warranty__items {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section-warranty__wrapper {
-    padding: 0px 35px;
-    margin-bottom: 78px;
-  }
-
-  .section-warranty__title {
-    font-size: 42px;
-    line-height: 1.489;
-    margin: 0px 0px 30px;
-    letter-spacing: 1.7px;
-  }
-
-  .section-warranty__wrapper-list {
-    padding: 0px 126px;
-  }
-}
-
-
-@media screen and (min-width: 1680px) {
-  .section-warranty__wrapper {
-    padding: 0px 156px 0px 186px;
-    margin-bottom: 110px;
-  }
-
-  .section-warranty__title {
-    font-size: 46px;
-    line-height: 1.365;
-    margin: 0px 0px 38px;
-    letter-spacing: 2.3px;
-    padding-right: 26px;
-  }
-
-  .section-warranty__wrapper-list {
-    padding: 0px 102px;
-  }
+  @include tablet {
+    margin-bottom: 30px;}
 }

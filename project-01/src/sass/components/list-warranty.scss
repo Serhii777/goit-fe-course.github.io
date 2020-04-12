@@ -4,6 +4,20 @@
   text-align: left;
   @extend %list;
   padding: 24px 0px 0px;
+
+  @include tablet {
+    padding: 34px 0px 0px;
+  }
+
+  @include desktop {
+    padding: 44px 0px 0px;
+    margin-bottom: 46px;
+  }
+
+  @include desktop-wide {
+    padding: 60px 0px 0px;
+    margin-bottom: 56px;
+  }
 }
 
 .list-warranty__item {
@@ -49,6 +63,40 @@
   &:not(:nth-last-of-type(-3n+1)) {
     border-left: 1px dotted #bbbbbb;
   }
+
+  @include tablet {
+    &:not(:nth-last-of-type(-3n+1)) {
+      padding-bottom: 18px;
+    }
+  }
+
+  @include desktop {
+    padding-left: 48px;
+
+    &::before {
+      width: 20px;
+      height: 38px;
+      background-size: 20px 28px;
+      top: 0px;
+      left: -10px;
+    }
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      padding-bottom: 24px;
+    }
+  }
+
+  @include desktop-wide {
+    padding-left: 48px;
+
+    &::before {
+      top: -4px;
+    }
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      padding-bottom: 24px;
+    }
+  }
 }
 
 .list-warranty__text {
@@ -73,25 +121,13 @@
   &--newstring {
     display: none;
   }
-}
 
-.list-warranty__text--colortext {
-  color: #ff6b08;
-  word-spacing: 5px;
-}
-
-@media screen and (min-width: 768px) {
-  .list-warranty {
-    padding: 34px 0px 0px;
+  &--colortext {
+    color: #ff6b08;
+    word-spacing: 5px;
   }
 
-  .list-warranty__item {
-    &:not(:nth-last-of-type(-3n+1)) {
-      padding-bottom: 18px;
-    }
-  }
-
-  .list-warranty__text {
+  @include tablet {
     white-space: initial;
 
     &--position {
@@ -102,31 +138,8 @@
       display: block;
     }
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .list-warranty {
-    padding: 44px 0px 0px;
-    margin-bottom: 46px;
-  }
-
-  .list-warranty__item {
-    padding-left: 48px;
-
-    &::before {
-      width: 20px;
-      height: 38px;
-      background-size: 20px 28px;
-      top: 0px;
-      left: -10px;
-    }
-
-    &:not(:nth-last-of-type(-3n+1)) {
-      padding-bottom: 24px;
-    }
-  }
-
-  .list-warranty__text {
+  @include desktop {
     font-size: 18px;
     line-height: 1.62;
     padding: 0px;
@@ -143,29 +156,13 @@
     &--location {
       display: none;
     }
-    
+
     &--newstring {
       display: block;
     }
   }
-}
 
-
-@media screen and (min-width: 1680px) {
-  .list-warranty {
-    padding: 60px 0px 0px;
-    margin-bottom: 56px;
-  }
-
-  .list-warranty__item {
-    padding-left: 48px;
-
-    &:not(:nth-last-of-type(-3n+1)) {
-      padding-bottom: 24px;
-    }
-  }
-
-  .list-warranty__text {
+  @include desktop-wide {
     font-size: 21px;
     line-height: 1.4;
     letter-spacing: 0.7px;
@@ -173,6 +170,10 @@
 
     &--newline {
       display: block;
+    }
+
+    &--newstring {
+      display: none;
     }
   }
 }

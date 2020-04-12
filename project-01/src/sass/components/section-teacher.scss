@@ -7,6 +7,19 @@
   flex-direction: column;
   padding: 0px 20px;
   margin-bottom: 44px;
+
+  @include tablet {
+    padding: 0px 40px;
+    margin-bottom: 38px;
+  }
+
+  @include desktop {
+    padding: 84px 35px 0px;
+    margin-bottom: 74px;}
+
+  @include desktop-wide {
+    padding: 0px 240px 0px 186px;
+    margin-bottom: 104px;}
 }
 
 .section-teacher__title {
@@ -15,48 +28,20 @@
   line-height: 1.5;
   margin: 0px 0px 22px;
   letter-spacing: 1.2px;
-}
 
-@media screen and (min-width: 768px) {
-  .section-teacher__wrapper {
-    padding: 0px 40px;
-    margin-bottom: 38px;
-  }
-
-  .section-teacher__title {
+  @include tablet {
     font-size: 26px;
     line-height: 2.405;
-    margin-bottom: 14px;
-  }
-}
+    margin-bottom: 14px;}
 
-@media screen and (min-width: 1280px) {
-  .section-teacher__wrapper {
-    padding: 80px 35px 0px;
-    margin-bottom: 72px;
-  }
-
-
-  .section-teacher__title {
+  @include desktop {
     font-size: 42px;
     line-height: 1.489;
-    margin-bottom: 45px;
-    letter-spacing: 1.8px;
-  }
-}
+    margin-bottom: 44px;
+    letter-spacing: 1.8px;}
 
-
-@media screen and (min-width: 1680px) {
-  .section-teacher__wrapper {
-    padding: 0px 240px 0px 186px;
-    margin-bottom: 104px;
-  }
-
-
-  .section-teacher__title {
+  @include desktop-wide {
     font-size: 46px;
     line-height: 1.365;
-    margin-bottom: 68px;
-  }
+    margin-bottom: 68px;}
 }
-

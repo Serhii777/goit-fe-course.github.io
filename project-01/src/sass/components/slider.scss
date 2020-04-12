@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 280px;
   @extend %list;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .slider__item {
@@ -15,6 +19,25 @@
     padding-bottom: 32px;
     margin-bottom: 18px;
   }
+
+  @include tablet {
+    &--first-card {
+      display: flex;
+      justify-content: space-between;
+      padding: 36px 36px 0px;
+      margin-bottom: 24px;
+
+      @include desktop {
+        padding: 42px 86px 0px;
+        margin-bottom: 36px;
+      }
+
+      @include desktop-wide {
+        padding: 40px 82px 0px;
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 .slider__link-wrapper {
@@ -23,6 +46,17 @@
   align-items: center;
   padding: 22px 0px 0px;
   margin-bottom: 16px;
+
+  @include tablet {
+    padding: 24px 0px 0px;
+    margin-bottom: 0px;
+  }
+
+  @include desktop {
+    padding-top: 6px;
+  }
+
+  @include desktop-wide {}
 }
 
 .slider__link {
@@ -34,6 +68,16 @@
     width: 80px;
     height: 80px;
     margin-bottom: 22px;
+
+    @include tablet {
+      margin-bottom: 22px;
+    }
+
+    @include desktop {
+      width: 145px;
+      height: 145px;
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -47,61 +91,4 @@
 .slider__icon:hover,
 .slider__icon:hover:focus {
   transform: scale(1.15);
-}
-
-// .slider__graduate-card {}
-
-// .slider__image {}
-
-
-@media screen and (min-width: 768px) {
-  .slider {
-    width: 100%;
-  }
-
-  .slider__item--first-card {
-    display: flex;
-    justify-content: space-between;
-    padding: 36px 36px 0px;
-    // padding-bottom: 32px;
-    margin-bottom: 24px;
-  }
-
-  .slider__link-wrapper {
-    padding: 24px 0px 0px;
-    margin-bottom: 0px;
-  }
-
-  .slider__link--img {
-    margin-bottom: 22px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  // .slider {
-  // width: 1070px;
-  // }
-
-  .slider__item--first-card {
-    padding: 42px 86px 0px;
-    margin-bottom: 36px;
-  }
-
-  .slider__link-wrapper {
-    padding-top: 6px;
-  }
-
-  .slider__link--img {
-    width: 145px;
-    height: 145px;
-    margin-bottom: 22px;
-  }
-}
-
-
-@media screen and (min-width: 1680px) {
-  .slider__item--first-card {
-    padding: 40px 82px 0px;
-    margin-bottom: 40px;
-  }
 }

@@ -2,13 +2,37 @@
   @extend %list;
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  padding: 16px 28px 0px;
+  padding: 16px 10px 0px 28px;
   counter-reset: count-problem;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 76px 0px 108px;
+
+    &--select {
+      padding: 18px 76px 0px 108px;
+    }
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    padding: 46px 0px 0px 100px;
+
+    &--select {
+      padding: 44px 36px 0px 98px;
+    }
+  }
+
+  @include desktop-wide {
+    padding: 61px 0px 0px 96px;
+  }
 }
 
 .menu-problem__item {
   counter-increment: count-problem;
-  width: 230px;
+  width: 234px;
 
   &::before {
     content: '0'counter(count-problem);
@@ -18,16 +42,109 @@
     line-height: 2.083;
     margin-left: 35px;
   }
-}
 
-// всі, крім останнього
-.menu-problem__item:not(:nth-last-of-type(-3n+1)) {
-  margin-bottom: 12px;
-}
+  // всі, крім останнього
+  &:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 11px;
+  }
 
-// останній
-.menu-problem__item:nth-last-of-type(-n+1) {
-  margin-bottom: 30px;
+  &--selection:not(:nth-last-of-type(-3n+1)) {
+    margin-bottom: 12px;
+  }
+
+  // останній
+  &:nth-last-of-type(-n+1) {
+    margin-bottom: 30px;
+  }
+
+  @include tablet {
+    max-width: 320px;
+
+
+    // всі, крім 2-x останніх
+    &:not(:nth-last-of-type(-3n+1)) {
+      margin-bottom: 20px;
+    }
+
+    // 2 останні
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include desktop {
+    min-width: 290px;
+
+    &--selection {
+      padding-right: 0px;
+    }
+
+    &::before {
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    // 1 і 4 елементи
+    &:not(:nth-last-of-type(3n+2)) {
+      margin-right: 60px;
+    }
+
+    //2, 3, 5 і 6 елементи
+    &:not(:nth-last-child(3n)) {
+      margin-right: 84px;
+
+      // &--selection {
+      // margin-right: 74px;
+      // }
+    }
+
+    // 3 і 6 елементи
+    &:nth-of-type(3n) {
+      margin-right: 0px;
+      min-width: 300px;
+    }
+
+    // 1, 2 і 3 елементи
+    &:not(:nth-last-of-type(-2n+1)) {
+      margin-bottom: 34px;
+    }
+
+    // 4, 5 і 6 елементи
+    &:nth-last-of-type(-n+3) {
+      margin-bottom: 46px;
+    }
+  }
+
+  @include desktop-wide {
+    min-width: 356px;
+    margin: 0;
+
+    // 1 і 4 елементи
+    &:not(:nth-last-of-type(3n+2)) {
+      margin-right: 42px;
+    }
+
+    // 2 і 5 елементи
+    &:nth-child(3n+2) {
+      margin-right: 78px;
+    }
+
+    // 3 і 6 елементи
+    &:nth-of-type(3n) {
+      margin-right: 0px;
+      min-width: 356px;
+    }
+
+    // 1, 2 і 3 елементи
+    &:not(:nth-last-of-type(-2n+1)) {
+      margin-bottom: 38px;
+    }
+
+    // 4, 5 і 6 елементи
+    &:nth-last-of-type(-n+3) {
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .menu-problem__text {
@@ -38,7 +155,7 @@
   margin: 0px;
   position: relative;
   white-space: pre-line;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.7px;
 
   &::before {
     display: block;
@@ -53,87 +170,21 @@
   &--position::before {
     display: none;
   }
-}
 
-
-@media screen and (min-width: 768px) {
-  .menu-problem {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 28px 90px 0px 108px;
-  }
-
-  .menu-problem__item {
-    max-width: 218px;
-  }
-
-  .menu-problem__item:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 20px;
-  }
-
-  .menu-problem__item:nth-last-of-type(-n+2) {
-    margin-bottom: 30px;
-  }
-
-  .menu-problem__text {
+  @include tablet {
     white-space: initial;
-    letter-spacing: 1.1px;
+    letter-spacing: 0.6px;
+
+    &--format {
+      letter-spacing: 1.1px;
+    }
 
     &--position {
-      padding-right: 60px;
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .menu-problem {
-    justify-content: flex-start;
-    padding: 30px 90px 0px 108px;
-  }
-
-  .menu-problem {
-    // padding: 46px 130px 0px 100px;
-    padding: 46px 0px 0px 100px;
-  }
-
-  .menu-problem__item {
-    min-width: 290px;
-
-
-    &::before {
-      font-size: 21px;
-      line-height: 1.55;
+      padding-right: 70px;
     }
   }
 
-  // 1 і 4 елементи
-  .menu-problem__item:not(:nth-last-of-type(3n+2)) {
-    margin-right: 60px;
-  }
-
-  //2, 3, 5 і 6 елементи
-  .menu-problem__item:not(:nth-last-child(3n)) {
-    margin-right: 80px;
-  }
-
-  // 3 і 6 елементи
-  .menu-problem__item:nth-of-type(3n) {
-    margin-right: 0px;
-    min-width: 300px;
-  }
-
-  // 1, 2 і 3 елементи
-  .menu-problem__item:not(:nth-last-of-type(-2n+1)) {
-    margin-bottom: 34px;
-  }
-
-  // 4, 5 і 6 елементи
-  .menu-problem__item:nth-last-of-type(-n+3) {
-    margin-bottom: 46px;
-  }
-
-  .menu-problem__text {
+  @include desktop {
     font-size: 18px;
     line-height: 1.6;
     padding-top: 6px;
@@ -148,45 +199,8 @@
       top: -16px;
     }
   }
-}
 
-@media screen and (min-width: 1680px) {
-  .menu-problem {
-    padding: 61px 0px 0px 96px;
-  }
-
-  .menu-problem__item {
-    min-width: 356px;
-    margin: 0;
-  }
-
-  // 1 і 4 елементи
-  .menu-problem__item:not(:nth-last-of-type(3n+2)) {
-    margin-right: 42px;
-  }
-
-  // 2 і 5 елементи
-  .menu-problem__item:nth-child(3n+2) {
-    margin-right: 78px;
-  }
-
-  // 3 і 6 елементи
-  .menu-problem__item:nth-of-type(3n) {
-    margin-right: 0px;
-    min-width: 356px;
-  }
-
-  // 1, 2 і 3 елементи
-  .menu-problem__item:not(:nth-last-of-type(-2n+1)) {
-    margin-bottom: 38px;
-  }
-
-  // 4, 5 і 6 елементи
-  .menu-problem__item:nth-last-of-type(-n+3) {
-    margin-bottom: 78px;
-  }
-
-  .menu-problem__text {
+  @include desktop-wide {
     font-size: 21px;
     line-height: 1.4;
     white-space: initial;

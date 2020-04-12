@@ -1,6 +1,8 @@
 .footer {
   display: flex;
+  flex-direction: column;
   background: #ffffff;
+  // background-color: #111517;
 }
 
 .footer__wrapper {
@@ -27,6 +29,7 @@
   display: flex;
   flex-direction: column;
   @extend %list;
+  background: #ffffff;
 
   @include tablet {
     display: flex;

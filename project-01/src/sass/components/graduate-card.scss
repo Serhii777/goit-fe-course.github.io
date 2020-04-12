@@ -62,8 +62,9 @@
   font-size: 11px;
   color: #18191d;
   line-height: 1.818;
-  padding: 0px 6px;
+  padding: 0px 2px;
   margin: 0px;
+  letter-spacing: 0.6px;
 
   &--colortext {
     color: #ff6b08;
@@ -78,9 +79,9 @@
   }
 
   @include tablet {
-    padding: 0px;
+    padding-right: 10px;
     line-height: 1.9;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.7px;
 
     &--narrow {
       display: none;
@@ -94,7 +95,8 @@
   @include desktop {
     font-size: 16.667px;
     line-height: 1.75;
-    padding: 0px 0px 0px 0px;
+    letter-spacing: 0.7px;
+    padding: 0px 20px 0px 0px;
   }
 }
 

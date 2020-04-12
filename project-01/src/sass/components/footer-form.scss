@@ -59,7 +59,7 @@
 }
 
 .footer-form__input {
-  // max-width: 214px;
+  max-width: 214px;
   font-size: 18px;
   color: #111517;
   padding: 0px 0px 0px 8px;
@@ -69,11 +69,11 @@
     font-family: "Montserrat";
     color: rgb(17, 21, 23);
     font-weight: bold;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.4px;
   }
 
   @include tablet {
-    // max-width: 304px;
+    max-width: 304px;
     padding: 0px 0px 0px 8px;
 
     &::-webkit-input-placeholder {

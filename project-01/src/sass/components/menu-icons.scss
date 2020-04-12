@@ -4,6 +4,29 @@
   margin: 0px;
   padding-left: 50px;
   @extend %list;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+
+  @include desktop {
+    padding: 0px 0px 0px 35px;
+  }
+
+  @include desktop-wide {
+    padding: 0px;
+  }
+}
+
+.section-icons__wrapper {
+  @include desktop-wide {
+    padding-right: 106px;
+  }
 }
 
 .menu-icons__item {
@@ -13,87 +36,21 @@
   &:not(:nth-last-of-type(-3n+1)) {
     margin-bottom: 24px;
   }
-}
 
-.menu-icons__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 58px;
-  height: 58px;
-  border: 2px solid #ff6b08;
-  @extend %link;
-  position: relative;
-  margin: 0px 14px 0px 0px;
-
-  &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 36px;
-    background: #ffffff;
-    right: -2px;
-  }
-}
-
-.menu-icons__icon {
-  width: 36px;
-  height: 36px;
-  fill: #ff6b08;
-}
-
-.menu-icons__description {
-  flex-basis: 120px;
-  font-size: 13px;
-  color: rgb(24, 25, 29);
-  line-height: 1.538;
-  text-align: left;
-  margin: 0px;
-  // padding-right: 40px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .menu-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-  }
-
-  .menu-icons__item {
+  @include tablet {
     position: relative;
     flex-basis: 160px;
 
     &--third {
       left: -20px;
     }
+
+    &:not(:nth-last-of-type(-3n+1)) {
+      margin-bottom: 0px;
+    }
   }
 
-  .menu-icons__item:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 0px;
-  }
-
-  .menu-icons__link {
-    margin-left: 0px;
-  }
-
-  .menu-icons__description {
-    flex-basis: 90px;
-    margin: 0px;
-  }
-}
-
-
-@media screen and (min-width: 1280px) {
-  .menu-icons {
-    padding: 0px 0px 0px 35px;
-  }
-
-  .menu-icons__item {
+  @include desktop {
     align-items: center;
 
     &--first {
@@ -124,40 +81,7 @@
     }
   }
 
-  .menu-icons__link {
-    width: 104px;
-    height: 104px;
-    margin: 0px;
-
-    &::after {
-      height: 72px;
-    }
-  }
-
-  .menu-icons__icon {
-    width: 46px;
-    height: 46px;
-  }
-
-  .menu-icons__description {
-    font-size: 18px;
-    line-height: 1.556;
-    margin: -18px;
-    z-index: 1;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .menu-icons {
-    padding: 0px;
-  }
-
-  .section-icons__wrapper {
-    padding-right: 106px;
-  }
-
-  .menu-icons__item {
+  @include desktop-wide {
     align-items: center;
 
     &--first {
@@ -187,8 +111,84 @@
       }
     }
   }
+}
 
-  .menu-icons__description {
+.menu-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border: 2px solid #ff6b08;
+  @extend %link;
+  position: relative;
+  margin: 0px 14px 0px 0px;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background: #ffffff;
+    right: -2px;
+  }
+
+  @include tablet {
+    margin-left: 0px;
+  }
+
+  @include desktop {
+    width: 104px;
+    height: 104px;
+    margin: 0px;
+
+    &::after {
+      height: 72px;
+    }
+  }
+
+  @include desktop-wide {}
+}
+
+.menu-icons__icon {
+  width: 36px;
+  height: 36px;
+  fill: #ff6b08;
+
+  @include tablet {}
+
+  @include desktop {
+    width: 46px;
+    height: 46px;
+  }
+
+  @include desktop-wide {}
+}
+
+.menu-icons__description {
+  flex-basis: 120px;
+  font-size: 13px;
+  color: rgb(24, 25, 29);
+  line-height: 1.538;
+  text-align: left;
+  margin: 0px;
+  // padding-right: 40px;
+
+  @include tablet {
+    flex-basis: 90px;
+    margin: 0px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.556;
+    margin: -18px;
+    z-index: 1;
+    letter-spacing: 1px;
+  }
+
+  @include desktop-wide {
     font-size: 21px;
     line-height: 1.6;
   }

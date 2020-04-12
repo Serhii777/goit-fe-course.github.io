@@ -85,42 +85,30 @@
 // }
 
 
-// Small tablets and large smartphones (landscape view)
-$screen-mobile: 320px;
-
-// Small tablets (portrait view)
-$screen-tablet: 768px;
-
-// Tablets and small desktops
-$screen-desktop: 1280px;
-
-// Large tablets and desktops
-$screen-desktop-wide: 1680px;
-
 // Small devices
 @mixin mobile {
-  @media (min-width: #{$screen-mobile}) {
+  @media (min-width: #{$screen-mob}) {
     @content;
   }
 }
 
 // Medium devices
 @mixin tablet {
-  @media (min-width: #{$screen-tablet}) {
+  @media (min-width: #{$screen-tabl}) {
     @content;
   }
 }
 
 // Large devices
 @mixin desktop {
-  @media (min-width: #{$screen-desktop}) {
+  @media (min-width: #{$screen-desk}) {
     @content;
   }
 }
 
 // Extra large devices
 @mixin desktop-wide {
-  @media (min-width: #{$screen-desktop-wide}) {
+  @media (min-width: #{$screen-desk-wide}) {
     @content;
   }
 }
