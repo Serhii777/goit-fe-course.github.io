@@ -1,9 +1,9 @@
 .copyright {
-  // width: 100%;
+  width: 100%;
   padding: 30px 30px 28px;
-  background-color: #111517;
+  background-color: $first-lightdark-color;
   text-align: center;
-  
+
   @include tablet {
     padding: 30px 40px 28px;
     text-align: left;
@@ -19,26 +19,26 @@
 }
 
 .copyright__text {
-  font-size: 11px;
-  color: #fcfdfd6b;
+  // font-size: 11px;
+  // color: $second-white-color;
   margin: 0px;
   letter-spacing: 0.6px;
 
   @include desktop {
-    font-size: 14.583px;
-    line-height: 2.571;
-    letter-spacing: 0.9px;
+    @include font-settings(14.583px, 2.571, 0.9px);
+    // font-size: 14.583px;
+    // line-height: 2.571;
+    // letter-spacing: 0.9px;
   }
 
-  @include desktop-wide {
-    font-size: 14.583px;
-    line-height: 2.571;
-    letter-spacing: 0.9px;
-  }
+  // @include desktop-wide {
+  //   font-size: 14.583px;
+  //   line-height: 2.571;
+  //   letter-spacing: 0.9px;
+  // }
 }
 
-.copyright__symbol {
-  font-size: 11px;
-  color: #fdfefe6b;
-}
-
+// .copyright__symbol {
+// font-size: 11px;
+// color: #fdfefe6b;
+// }

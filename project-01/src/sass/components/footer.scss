@@ -1,15 +1,21 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
+  @include center-flex('col-ver');
+  // display: flex;
+  // flex-direction: column;
+  background: $first-white-color;
   // background-color: #111517;
+
+  @include tablet {
+    align-items: start;
+  }
 }
 
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0px 0px;
+  @include center-flex('col-ver');
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  padding: 23px 0px 0px;
 
   @include tablet {
     padding: 32px 40px 0px;
@@ -26,16 +32,18 @@
 }
 
 .footer__menu {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col-ver');
+  // display: flex;
+  // flex-direction: column;
   @extend %list;
-  background: #ffffff;
+  background: $first-white-color;
 
   @include tablet {
-    display: flex;
-    flex-direction: row;
+    @include center-flex('ver');
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
     justify-content: flex-start;
-    align-items: center;
     margin-bottom: 36px;
   }
 
@@ -45,8 +53,9 @@
 }
 
 .footer__item {
-  display: flex;
-  justify-content: center;
+  @include center-flex('hor');
+  // display: flex;
+  // justify-content: center;
   @extend %link;
 
   &--logo {
@@ -81,7 +90,7 @@
 
 .footer__form {
   padding: 0px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 
   @include tablet {
     margin: 0px 54px 0px 0px;
@@ -97,9 +106,10 @@
   display: block;
   width: 37px;
   height: 37px;
-  background-image: url(../../images/icons-svg/instagram.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include bgr-image('../../images/icons-svg/instagram.svg', cover, no-repeat);
+  // background-image: url(../../images/icons-svg/instagram.svg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
   font-size: 0px;
   margin-bottom: 20px;
 

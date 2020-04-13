@@ -1,32 +1,32 @@
 .button {
-  font-size: 11px;
+  font-size: $first-text-size;
   line-height: $main-text-height;
   @extend %button;
   padding: 16px 12px;
 
   &--light {
-    color: $primary-white-color;
-    background-color: $primary-orange-color;
+    color: $first-white-color;
+    background-color: $first-orange-color;
     letter-spacing: 1.3px;
 
     &:hover,
     &:focus {
-      color: $primary-orange-color;
-      background-color: $primary-white-color;
+      color: $first-orange-color;
+      background-color: $first-white-color;
     }
   }
 
   &--lighter {
-    color: #ff6b08;
-    background-color: $primary-white-color;
-    border: 2px solid #ff6b08;
+    color: $first-orange-color;
+    background-color: $first-white-color;
+    border: 2px solid $first-orange-color;
     letter-spacing: 1.3px;
     padding: 16px 16px;
 
     &:hover,
     &:focus {
-      color: $primary-white-color;
-      background-color: #ff6b08;
+      color: $first-white-color;
+      background-color: $first-orange-color;
       border: 2px solid #ffffff;
     }
 
@@ -36,20 +36,15 @@
   }
 
   @include desktop {
-    font-size: 12px;
+    font-size: $second-text-size;
     padding: 26px 5px 25px 5px;
 
     &--light {
-      letter-spacing: 3px;
       padding: 25px 15px;
       letter-spacing: 3.5px;
     }
 
     &--lighter {
-      color: #ff6b08;
-      background-color: $primary-white-color;
-      border: 2px solid #ff6b08;
-      letter-spacing: 1.3px;
       padding: 24px 36px;
     }
 
@@ -60,7 +55,7 @@
 
   @include desktop-wide {
     max-width: 350px;
-    font-size: 14px;
+    font-size: $fourth-text-size;
     padding: 24px 5px;
 
     &--light {

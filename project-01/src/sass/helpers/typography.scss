@@ -1,3 +1,4 @@
+// font-family and weight
 .typographic-meb {
   font-family: $font-family-monts;
   font-weight: $font-weight-extrabold;
@@ -29,31 +30,35 @@
   text-align: center;
 }
 
+// text-color
 .text-white {
-  color: $primary-white-color;
+  color: $first-white-color;// #ffffff;
+}
+
+.text-light {
+  color: $second-white-color;// #ffffff;
+}
+
+.text-orange {
+  color: $first-orange-color;// #ff6b08;
 }
 
 .text-lightgrey {
-  color: $primary-lightgrey-color;
+  color: $first-lightgrey-color;// #b9b9b9;
 }
 
 .text-grey {
-  color: $primary-grey-color;
+  color: $first-grey-color;// #858585;
 }
 
 .text-lightdark {
-  color: $secondary-dark-color;
+  color: $first-lightdark-color;// #111517;
 }
 
 .text-dark {
-  color: $primary-dark-color;
+  color: $first-dark-color;// #18191d;
 }
 
-
-// .text-orange {
-//   color: $primary-orange-color;
-// }
-
-// .title {
-//   text-transform: uppercase;
-// }
+.text-black {
+  color: $first-black-color;// #000000;
+}

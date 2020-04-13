@@ -1,31 +1,28 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
+  @include center-flex('col-ver');
+  // flex-direction: column;
+  background-color: $first-white-color;
 }
 
 .header__wrapper {
-  background-image: url('../../images/bgr-01.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+  @include bgr-image('../../images/bgr-01.png', contain, no-repeat);
   margin-bottom: 52px;
   padding: 26px 20px 0px;
 
   @include tablet {
-    background-image: url('../../images/bgr-tablet.png');
+    @include bgr-image('../../images/bgr-tablet.png', contain, no-repeat);
     margin-bottom: 54px;
     padding: 32px 40px 0px;
   }
 
   @include desktop {
-    background-image: url('../../images/bgr-desk.png');
+    @include bgr-image('../../images/bgr-desk.png', contain, no-repeat);
     margin-bottom: 86px;
     padding: 38px 0px 0px;
   }
 
   @include desktop-wide {
-    background-image: url('../../images/bgr-desk-larg.png');
+    @include bgr-image('../../images/bgr-desk-larg.png', contain, no-repeat);
     padding: 28px 50px 0px 184px;
     margin-bottom: 126px;
   }

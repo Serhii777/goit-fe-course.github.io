@@ -1,28 +1,32 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
 
   @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
+    @include center-flex('spbtw');
+    // justify-content: space-between;
   }
 
-  @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  // @include desktop {
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 }
 
 .card__content {
   @include tablet {
-    display: flex;
-    flex-direction: column;
+    @include center-flex('col');
+    // display: flex;
+    // flex-direction: column;
+    // max-width: 398px;
     width: 398px;
+    // @include width-percent(398px, 1210px);
   }
 
   @include desktop {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     // width: 632px;
     @include width-percent(628px, 1210px);
   }
@@ -36,6 +40,8 @@
 .card__img {
   width: 280px;
   height: 214px;
+  // @include width-percent(280px, 1210px);
+  // @include height-percent(214px, 1210px);
   margin-bottom: 18px;
 
   @include tablet {
@@ -59,24 +65,26 @@
 }
 
 .card__title {
-  font-size: 16px;
-  color: #111517;
-  line-height: 1.823;
+  @include font-settings($sixth-text-size, 1.823, 1.2px);
+  // font-size: 16px;
+  // line-height: 1.823;
+  // letter-spacing: 1.2px;
   margin: 0px 0px 16px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #d1d1d1;
-  letter-spacing: 1.2px;
+  border-bottom: 1px solid $second-lightgrey-color;
 
   @include tablet {
-    font-size: 20px;
-    line-height: 1;
+    @include font-height($tenth-text-size, 1);
+    // font-size: 20px;
+    // line-height: 1;
     margin: 0px 0px 18px;
     padding-bottom: 12px;
   }
 
   @include desktop {
-    font-size: 29px;
-    line-height: 1;
+    font-size: $twenty-nine-text-size;
+    // font-size: 29px;
+    // line-height: 1;
     margin: 0px 0px 34px;
     padding-bottom: 10px;
     border-bottom: 1px solid #d1d1d1;
@@ -106,18 +114,20 @@
 .card__item {
   @extend %link;
   position: relative;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
 
   &::before {
-    display: block;
-    content: '';
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     position: absolute;
     width: 16px;
     height: 12px;
-    background-image: url(../../images/icons-svg/check3x.svg);
+    @include bgr-image('../../images/icons-svg/check3x.svg', cover, no-repeat);
+    // background-image: url(../../images/icons-svg/check3x.svg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
     left: -34px;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @include desktop {
       width: 20px;
@@ -140,11 +150,12 @@
 }
 
 .card__description {
-  font-size: 13px;
-  line-height: 1.5;
-  color: #111517;
+  @include font-settings($third-text-size, 1.5, 0.7px);
+  // font-size: 13px;
+  // line-height: 1.5;
+  // letter-spacing: 0.7px;
+  // color: #111517;
   margin: 0px;
-  letter-spacing: 0.7px;
 
   &--position {
     padding-right: 30px;
@@ -152,14 +163,19 @@
 
   @include tablet {
     padding-right: 20px;
-    letter-spacing: 0.7px;
+    // letter-spacing: 0.7px;
+
+    &--position {
+      padding-right: 0px;
+    }
   }
 
   @include desktop {
-    font-size: 16.667px;
-    line-height: 1.75;
+    @include font-settings(16.667px, 1.75, 1px);
+    // font-size: 16.667px;
+    // line-height: 1.75;
+    // letter-spacing: 1px;
     padding-right: 108px;
-    letter-spacing: 1px;
 
     &--position {
       padding-right: 0px;
@@ -168,7 +184,7 @@
 
   @include desktop-wide {
     padding: 0px 150px 0px 0px;
-    
+
     &--position {
       padding-right: 0px;
     }
@@ -176,20 +192,20 @@
 }
 
 .card__text {
-  font-size: 11px;
-  line-height: 1.881;
+  @include font-settings($first-text-size, 1.881, 0.3px);
+  // font-size: 11px;
+  // line-height: 1.881;
+  // letter-spacing: 0.3px;
   margin: 0px 0px 16px 0px;
   padding: 0px 16px;
   position: relative;
-  letter-spacing: 0.3px;
 
   &--position::before {
-    display: block;
-    content: '';
+    @include pseudo($display: block);
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
+    background-color: $first-orange-color;
     top: -20px;
   }
 
@@ -200,8 +216,9 @@
   }
 
   @include desktop {
-    font-size: 16.667px;
-    line-height: 1.75;
+    @include font-height(16.667px, 1.75);
+    // font-size: 16.667px;
+    // line-height: 1.75;
     margin-bottom: 16px;
     padding: 0px 28px 0px 0px;
     word-wrap: break-word;
@@ -215,7 +232,7 @@
   @include desktop-wide {
     margin-bottom: 18px;
     padding: 0px 14px 0px 0px;
-    word-spacing: 3px;
+    // word-spacing: 3px;
 
     &--position::before {
       top: -30px;
@@ -230,18 +247,19 @@
 
 .card__link {
   display: block;
-  font-size: 11px;
-  line-height: 2.152;
-  color: #ff6b08;
+  @include font-settings($first-text-size,  2.152, 0.4px);
+  // font-size: 11px;
+  // line-height: 2.152;
+  // letter-spacing: 0.4px;
+  // color: #ff6b08;
   text-decoration: underline;
   margin: 0px;
   padding-left: 16px;
   @extend %item;
-  letter-spacing: 0.4px;
 
   &:hover,
   &:focus {
-    text-shadow: 1px 1px 5px #ff6b08;
+    text-shadow: 1px 1px 5px $first-orange-color;
   }
 
   @include tablet {
@@ -250,7 +268,8 @@
   }
 
   @include desktop {
-    font-size: 16.667px;
-    line-height: 1.75;
+    @include font-height(16.667px, 1.75);
+    // font-size: 16.667px ;
+    // line-height: 1.75;
   }
 }

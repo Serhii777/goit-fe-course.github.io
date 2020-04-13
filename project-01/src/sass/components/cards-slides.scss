@@ -11,9 +11,7 @@
 }
 
 .cards-slides {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @include center-flex('spbtw');
   @extend %list;
 }
 
@@ -25,9 +23,9 @@
 
 .cards-slides__image:hover,
 .cards-slides__image:hover {
-  border: 2px solid #ff6b08;
+  border: 2px solid $first-orange-color;
   border-radius: 50%;
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .cards-slides__item--fifth-card,

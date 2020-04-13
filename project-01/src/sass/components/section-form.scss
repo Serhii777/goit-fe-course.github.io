@@ -1,8 +1,9 @@
 .section-form {
-  background-color: #111517;
-  background-image: url(../../images/form-bgr.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $first-lightdark-color;
+  @include bgr-image('../../images/form-bgr.png', cover, no-repeat);
+  // background-image: url(../../images/form-bgr.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
   @include tablet {
     background-image: url(../../images/form-bgr-tabl.png);
@@ -39,36 +40,40 @@
 }
 
 .section-form__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include center-flex('col-ver');
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .section-form__title {
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  line-height: 1.86;
+  @include font-settings($fourth-text-size, 1.86, 1px);
+  // font-size: 14px;
+  // color: #ffffff;
+  // line-height: 1.86;
   // word-spacing: 4px;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   padding: 0px 10px;
   margin: 0px 0px 20px;
 
   &--colortext {
-    color: #ff6b08;
+    color: $first-orange-color;
     padding: 0px;
   }
 
   @include tablet {
-    font-size: 22px;
-    line-height: 1.744;
+    @include font-height($twenty-two-text-size, 1.744);
+    // font-size: 22px;
+    // line-height: 1.744;
     margin: 0px 0px 26px;
   }
 
   @include desktop {
-    font-size: 37.5px;
-    line-height: 1.334;
+    @include font-settings(37.5px, 1.334, 1.8px);
+    // font-size: 37.5px;
+    // line-height: 1.334;
+    // letter-spacing: 1.8px;
     margin: 0px 0px 42px;
-    letter-spacing: 1.8px;
   }
 
   @include desktop-wide {
@@ -78,25 +83,26 @@
 }
 
 .section-form__description {
-  font-size: 11px;
-  color: rgb(255, 255, 255);
-  line-height: 1.818;
-  letter-spacing: 0.8px;
+  @include font-settings($first-text-size, 1.818, 0.8px);
+  // font-size: 11px;
+  // color: #ffffff;
+  // line-height: 1.818;
+  // letter-spacing: 0.8px;
   padding: 0px 6px;
   margin: 0px 0px 26px;
 
   &--colortext {
-    color: #ff6b08;
+    color: $first-orange-color;
     padding: 0px;
   }
 
   @include tablet {
-    font-size: 15px;
-    line-height: 1.333;
-    white-space: initial;
+    @include font-height($fifth-text-size, 1.333);
+    // font-size: 15px;
+    // line-height: 1.333;
+    // letter-spacing: 0.8px;
     margin: 0px 0px 40px;
     white-space: pre-line;
-    letter-spacing: 0.8px;
     text-align: left;
     padding-left: 12px;
 
@@ -106,19 +112,21 @@
   }
 
   @include desktop {
-    font-size: 18px;
-    line-height: 1.361;
+    @include font-height($eigth-text-size, 1.361);
+    // font-size: 18px;
+    // line-height: 1.361;
+    // letter-spacing: 0.8px;
     margin: 0px 0px 52px;
-    letter-spacing: 0.8px;
     text-align: center;
     padding-left: 0px;
   }
 
   @include desktop-wide {
-    font-size: 25px;
-    line-height: 1.5;
+    @include font-settings($twenty-five-text-size, 1.5, 1.2px);
+    // font-size: 25px;
+    // line-height: 1.5;
+    // letter-spacing: 1.2px;
     margin: 0px 0px 51px;
-    letter-spacing: 1.2px;
   }
 }
 
@@ -139,7 +147,7 @@
 }
 
 .section-form__input:nth-last-of-type(-2n+1) {
-  margin-bottom: 52px;
+  margin-bottom: 53px;
 
   @include tablet {
     margin-bottom: 28px;

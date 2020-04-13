@@ -1,15 +1,16 @@
 .footer-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include center-flex('hor');
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
 
   & input[type='tel']:valid {
-    outline: 2px solid #09ab09;
+    outline: 2px solid $first-green-color;
     outline-offset: -2px;
   }
 
   & input[type='tel']:invalid {
-    outline: 2px solid #ff0000;
+    outline: 2px solid $first-red-color;
     outline-offset: -2px;
   }
 
@@ -17,13 +18,14 @@
     position: relative;
 
     &::after {
-      display: block;
-      content: '';
+      @include pseudo($display: block);
+      // display: block;
+      // content: '';
       position: absolute;
       width: 1px;
       height: 29px;
-      background-color: #e0e0e0;
-      top: -2px;
+      background-color: $third-white-color;
+      top: 5px;
       right: -24px;
 
       @include desktop {
@@ -35,21 +37,22 @@
 }
 
 .footer-form__label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include center-flex('ver');
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
 }
 
 .footer-form__icon {
   display: block;
   width: 20px;
   height: 20px;
-  fill: #ff6b08;
+  fill: $first-orange-color;
 
   &:hover,
   &:focus {
-    fill: #ffffff;
-    background-color: #ff6b08;
+    fill: $first-white-color;
+    background-color: $first-orange-color;
   }
 
   @include desktop {
@@ -59,17 +62,23 @@
 }
 
 .footer-form__input {
-  max-width: 214px;
-  font-size: 18px;
-  color: #111517;
+  max-width: 218px;
+  @include font-settings($eigth-text-size, 2.083, 0.8px);
+  // font-size: 18px;
+  // color: #111517;
+  // line-height: 2.083;
+  // letter-spacing: 0.4px;
   padding: 0px 0px 0px 8px;
 
   &::-webkit-input-placeholder {
-    font-size: 18px;
-    font-family: "Montserrat";
-    color: rgb(17, 21, 23);
-    font-weight: bold;
-    letter-spacing: 0.4px;
+    @include font-settings($eigth-text-size, 2.083, 0.8px);
+    // font-size: 18px;
+    // line-height: 2.083;
+    // letter-spacing: 0.4px;
+    @include font-family-settings($font-family-monts, $font-weight-bold, $first-lightdark-color);
+    // font-family: 'Montserrat';
+    // font-weight: bold;
+    // color: #111517;
   }
 
   @include tablet {
@@ -83,21 +92,16 @@
 
   @include desktop {
     max-width: 326px;
-    font-size: 27px;
-    line-height: 1.385;
+    @include font-height($twenty-seven-text-size, 1.385);
+    // font-size: 27px;
+    // line-height: 1.385;
     padding: 0px 0px 0px 16px;
 
     &::-webkit-input-placeholder {
-      font-size: 27px;
-      line-height: 1.385;
-      letter-spacing: 1.3px;
+      @include font-settings($twenty-seven-text-size, 1.385, 1.3px);
+      // font-size: 27px;
+      // line-height: 1.385;
+      // letter-spacing: 1.3px;
     }
   }
 }
-
-// .input {
-//   width: 230px;
-//   @include font-settings($primary-text-size, 1.6);
-//   margin: 0px;
-//   padding: 12px 0px 10px 12px;
-// }
