@@ -1,7 +1,5 @@
 .navigation {
   @include center-flex('spbtw');
-  // display: flex;
-  // justify-content: space-between;
   align-items: center;
 
   @include desktop {

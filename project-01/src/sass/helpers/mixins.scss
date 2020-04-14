@@ -32,11 +32,11 @@
   @else if $type=='spbtw' {
     flex-direction: row;
     justify-content: space-between;
-    // align-items: center;
   }
 }
 
 // @include center-flex('spbtw');
+
 
 @mixin pseudo($display: inline-block, $content: '') {
   display: $display;
@@ -46,6 +46,7 @@
 // @include pseudo(inline-block, '\2107');
 // @include pseudo($display: block);
 
+
 @mixin absolute-tl($position, $top, $left) {
   position: $position;
   top: $top;
@@ -53,6 +54,7 @@
 }
 
 // @include absolute-tl(absolute, 2px, -2px);
+
 
 @mixin absolute-tr($position, $top, $right) {
   position: $position;
@@ -62,6 +64,7 @@
 
 // @include absolute-tr(absolute, 2px, -2px);
 
+
 @mixin font-family-settings($family, $weight, $color) {
   font-family: $family;
   font-weight: $weight;
@@ -69,6 +72,7 @@
 }
 
 // @include font-family-settings('Montserrat', bold,  #111517);
+
 
 @mixin font-settings($size, $height, $letter-spacing) {
   font-size: $size;
@@ -78,6 +82,7 @@
 
 // @include font-settings($primary-text-size, 1.6, 1.2px);
 
+
 @mixin font-colors($size, $color) {
   font-size: $size;
   color: $color;
@@ -85,12 +90,14 @@
 
 // @include font-colors(50px, green);
 
+
 @mixin font-height($size, $height) {
   font-size: $size;
   line-height: $height;
 }
 
 // @include font-height($primary-text-size, 1.6);
+
 
 @mixin line-letter($height, $letter-spacing) {
   line-height: $height;
@@ -107,12 +114,14 @@
 // @include width-percent(493px, 1210px);
 // width: 300px / 960px * 100%;
 
+
 @mixin height-percent($height-elem, $height-cont) {
   height: $height-elem / $height-cont * 100%;
 }
 
 // @include height-percent(644px, 1210px);
 // height: 300px / 960px * 100%;
+
 
 @mixin bgr-image($path, $size, $repeat) {
   background-image: url($path);
@@ -122,6 +131,7 @@
 }
 
 // @include bgr-image('../../images/bgr-01.png', contain, no-repeat, center);
+
 
 // Mixins for Media Queries
 // Small devices

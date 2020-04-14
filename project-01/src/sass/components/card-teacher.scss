@@ -1,38 +1,22 @@
 .card {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
 
   @include tablet {
     @include center-flex('spbtw');
-    // justify-content: space-between;
   }
-
-  // @include desktop {
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
 }
 
 .card__content {
   @include tablet {
     @include center-flex('col');
-    // display: flex;
-    // flex-direction: column;
-    // max-width: 398px;
     width: 398px;
-    // @include width-percent(398px, 1210px);
   }
 
   @include desktop {
-    // display: flex;
-    // flex-direction: column;
-    // width: 632px;
     @include width-percent(628px, 1210px);
   }
 
   @include desktop-wide {
-    // min-width: 676px;
     @include width-percent(650px, 1210px);
   }
 }
@@ -40,8 +24,6 @@
 .card__img {
   width: 280px;
   height: 214px;
-  // @include width-percent(280px, 1210px);
-  // @include height-percent(214px, 1210px);
   margin-bottom: 18px;
 
   @include tablet {
@@ -50,41 +32,30 @@
   }
 
   @include desktop {
-    // width: 493px;
     @include width-percent(493px, 1210px);
-    // min-height: 644px;
     @include height-percent(644px, 1210px);
   }
 
   @include desktop-wide {
-    // width: 493px;
     @include width-percent(478px, 1210px);
-    // min-height: 644px;
     @include height-percent(644px, 1210px);
   }
 }
 
 .card__title {
   @include font-settings($sixth-text-size, 1.823, 1.2px);
-  // font-size: 16px;
-  // line-height: 1.823;
-  // letter-spacing: 1.2px;
   margin: 0px 0px 16px;
   padding-bottom: 4px;
   border-bottom: 1px solid $second-lightgrey-color;
 
   @include tablet {
     @include font-height($tenth-text-size, 1);
-    // font-size: 20px;
-    // line-height: 1;
     margin: 0px 0px 20px;
     padding-bottom: 12px;
   }
 
   @include desktop {
     font-size: $twenty-nine-text-size;
-    // font-size: 29px;
-    // line-height: 1;
     margin: 0px 0px 34px;
     padding-bottom: 10px;
     border-bottom: 1px solid #d1d1d1;
@@ -114,19 +85,13 @@
 .card__item {
   @extend %link;
   position: relative;
-  // background-repeat: no-repeat;
 
   &::before {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     position: absolute;
     width: 16px;
     height: 12px;
     @include bgr-image('../../images/icons-svg/check3x.svg', cover, no-repeat);
-    // background-image: url(../../images/icons-svg/check3x.svg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
     left: -34px;
 
     @include desktop {
@@ -151,10 +116,6 @@
 
 .card__description {
   @include font-settings($third-text-size, 1.5, 0.7px);
-  // font-size: 13px;
-  // line-height: 1.5;
-  // letter-spacing: 0.7px;
-  // color: #111517;
   margin: 0px;
 
   &--position {
@@ -163,7 +124,6 @@
 
   @include tablet {
     padding-right: 20px;
-    // letter-spacing: 0.7px;
 
     &--position {
       padding-right: 0px;
@@ -172,9 +132,6 @@
 
   @include desktop {
     @include font-settings(16.667px, 1.75, 1px);
-    // font-size: 16.667px;
-    // line-height: 1.75;
-    // letter-spacing: 1px;
     padding-right: 108px;
 
     &--position {
@@ -193,9 +150,6 @@
 
 .card__text {
   @include font-settings($first-text-size, 1.881, 0.3px);
-  // font-size: 11px;
-  // line-height: 1.881;
-  // letter-spacing: 0.3px;
   margin: 0px 0px 16px 0px;
   padding: 0px 16px;
   position: relative;
@@ -217,8 +171,6 @@
 
   @include desktop {
     @include font-height(16.667px, 1.75);
-    // font-size: 16.667px;
-    // line-height: 1.75;
     margin-bottom: 16px;
     padding: 0px 28px 0px 0px;
     word-wrap: break-word;
@@ -232,7 +184,6 @@
   @include desktop-wide {
     margin-bottom: 18px;
     padding: 0px 14px 0px 0px;
-    // word-spacing: 3px;
 
     &--position::before {
       top: -30px;
@@ -248,10 +199,6 @@
 .card__link {
   display: block;
   @include font-settings($first-text-size,  2.152, 0.4px);
-  // font-size: 11px;
-  // line-height: 2.152;
-  // letter-spacing: 0.4px;
-  // color: #ff6b08;
   text-decoration: underline;
   margin: 0px;
   padding-left: 16px;
@@ -269,7 +216,5 @@
 
   @include desktop {
     @include font-height(16.667px, 1.75);
-    // font-size: 16.667px ;
-    // line-height: 1.75;
   }
 }

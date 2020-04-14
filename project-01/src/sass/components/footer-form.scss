@@ -1,8 +1,5 @@
 .footer-form {
   @include center-flex('hor');
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
 
   & input[type='tel']:valid {
     outline: 2px solid $first-green-color;
@@ -19,8 +16,6 @@
 
     &::after {
       @include pseudo($display: block);
-      // display: block;
-      // content: '';
       position: absolute;
       width: 1px;
       height: 29px;
@@ -38,9 +33,6 @@
 
 .footer-form__label {
   @include center-flex('ver');
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
 }
 
 .footer-form__icon {
@@ -64,21 +56,11 @@
 .footer-form__input {
   max-width: 218px;
   @include font-settings($eigth-text-size, 2.083, 0.8px);
-  // font-size: 18px;
-  // color: #111517;
-  // line-height: 2.083;
-  // letter-spacing: 0.4px;
   padding: 0px 0px 0px 8px;
 
   &::-webkit-input-placeholder {
     @include font-settings($eigth-text-size, 2.083, 0.8px);
-    // font-size: 18px;
-    // line-height: 2.083;
-    // letter-spacing: 0.4px;
     @include font-family-settings($font-family-monts, $font-weight-bold, $first-lightdark-color);
-    // font-family: 'Montserrat';
-    // font-weight: bold;
-    // color: #111517;
   }
 
   @include tablet {
@@ -93,15 +75,10 @@
   @include desktop {
     max-width: 326px;
     @include font-height($twenty-seven-text-size, 1.385);
-    // font-size: 27px;
-    // line-height: 1.385;
     padding: 0px 0px 0px 16px;
 
     &::-webkit-input-placeholder {
       @include font-settings($twenty-seven-text-size, 1.385, 1.3px);
-      // font-size: 27px;
-      // line-height: 1.385;
-      // letter-spacing: 1.3px;
     }
   }
 }

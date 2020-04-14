@@ -3,24 +3,20 @@
 
   @include tablet {
     min-height: 552px;
-    background-color: #fff;
+    background-color: $first-white-color;
   }
 
   @include desktop {
-    // min-height: 488px;
     min-height: 690px;
   }
 
   @include desktop-wide {
-    // min-height: 488px;
     min-height: 854px;
   }
 }
 
 .section-problem__wrapper {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
   flex-wrap: nowrap;
   height: 516px;
   background-color: $first-lightdark-color;
@@ -31,9 +27,6 @@
     height: 328px;
     padding: 56px 40px 0px 40px;
     @include bgr-image('../../images/bgr-fire.png', contain, no-repeat);
-    // background-image: url(../../images/bgr-fire.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
     background-position: 0 0;
   }
 
@@ -52,76 +45,61 @@
 
 .section-problem__title {
   @include font-settings($tenth-text-size, 1.578, 1.2px);
-  // font-size: 20px;
-  // line-height: 1.578;
-  // letter-spacing: 1.2px;
-  // color: rgb(255, 255, 255);
   text-align: left;
   margin: 0px 0px 12px 0px;
   padding: 0px 45px 0px 0px;
   white-space: pre-line;
-  
+
   &--newline {
     display: none;
   }
-  
+
   &--position {
-    // display: none;
     padding-right: 0px;
   }
-  
+
   &--colortext {
-    color: #ff6b08;
+    color: $first-orange-color;
     padding-right: 0px;
   }
-  
+
   @include tablet {
     @include font-settings($twenty-six-text-size, 1.269, 1.3px);
-    // font-size: 26px;
-    // line-height: 1.269;
-    // letter-spacing: 1.3px;
     padding: 0px 200px 0px 0px;
     white-space: initial;
     margin: 0px 0px 24px 0px;
-    
+
     &--newline {
       display: inline-block;
       padding: 0px;
     }
-    
+
     &--position {
       display: inline;
-      // white-space: pre;
       padding: 0px;
     }
-    
+
     &--colortext {
       padding-right: 0px;
     }
   }
-  
+
   @include desktop {
     @include font-settings($forty-two-text-size, 1.346, 1.78px);
-    // font-size: 42px;
-    // line-height: 1.346;
-    // letter-spacing: 1.78px;
     padding-right: 480px;
     margin-bottom: 42px;
-    
+
     &--position {
       padding: 0px;
     }
-    
+
     &--colortext {
       padding-right: 0px;
     }
   }
-  
+
   @include desktop-wide {
     @include font-settings($forty-six-text-size, 1.365, 1.8px);
-    // font-size: 46px;
-    // line-height: 1.365;
-    // letter-spacing: 1.8px;
     padding-right: 530px;
     margin-bottom: 64px;
 

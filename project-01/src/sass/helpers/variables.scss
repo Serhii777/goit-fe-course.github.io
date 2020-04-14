@@ -30,11 +30,6 @@ $font-weight-medium: 500;
 $font-weight-regular: 400;
 
 
-// $font-weight-light: 300;
-
-// $font-style-italic: italic;
-
-
 // font-size
 $first-text-size: 11px;
 $second-text-size: 12px;
@@ -47,13 +42,6 @@ $eigth-text-size: 18px;
 $ninth-text-size: 19px;
 $tenth-text-size: 20px;
 
-// Переназвати та вставити в код
-// $custom-font-size: 12.5px;
-// $custom-font-size: 16.667px;
-// $custom-font-size: 18.75px;
-// $custom-font-size: 37.5px;
-// $custom-font-size: 58.333px;
-
 $twenty-one-text-size: 21px;
 $twenty-two-text-size: 22px;
 $twenty-five-text-size: 25px;
@@ -61,27 +49,30 @@ $twenty-six-text-size: 26px;
 $twenty-seven-text-size: 27px;
 $twenty-nine-text-size: 29px;
 
-
 $forty-two-text-size: 42px;
 $forty-six-text-size: 46px;
 $forty-eight-text-size: 48px;
 
+// Переназвати та вставити в код
+$custom-first-text-size: 12.5px;
+$custom-second-text-size: 16.667px;
+$custom-third-text-size: 18.75px;
+$custom-fourth-text-size: 37.5px;
+$custom-fifth-text-size: 58.333px;
 
-// $tenth-font-size: 20px;
-// $tenth-font-size: 20px;
 
-
+// line-height
 $main-text-height: 1.2;
 $primary-text-height: 1.35;
 $primary-font-height: 1.5;
 $secondary-text-height: 1.8;
 
+
+// color
 $first-white-color: #ffffff;
 $second-white-color: #fdfefe;
 $third-white-color: #e0e0e0;
 $fourth-white-color: #f1f1f1;
-// Прозорість
-// $first-white-opacity-color:
 $first-lightgrey-color: #d1d1d1;
 $second-lightgrey-color: #b9b9b9;
 $third-lightgrey-color: #bbbbbb;
@@ -97,18 +88,3 @@ $second-lightdark-opacity-color: #1d1d1b0a;
 $third-lightdark-opacity-color: #1d1d1b17;
 $first-dark-color: #18191d;
 $first-black-color: #000000;
-
-
-// $background-light-color: rgb(149, 225, 211);
-// $background-lighter-color: rgba(0, 0, 0, 0);
-
-// $border-light-color: rgb(229, 229, 229);
-
-// $button-light-color: rgb(255, 255, 255);
-// $button-accent-color: rgb(234, 240, 239);
-
-// $input-text-color: rgb(204, 204, 204);
-// $input-border-color: rgb(231, 231, 231);
-
-// $ligth-gradient-color: rgba(252, 227, 138, 0.9);
-// $dark-gradient-color: rgba(243, 129, 129, 0.9);

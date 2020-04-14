@@ -1,9 +1,6 @@
 .footer {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
   background: $first-white-color;
-  // background-color: #111517;
 
   @include tablet {
     align-items: start;
@@ -12,9 +9,6 @@
 
 .footer__wrapper {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   padding: 22px 0px 0px;
 
   @include tablet {
@@ -33,16 +27,11 @@
 
 .footer__menu {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
   @extend %list;
   background: $first-white-color;
 
   @include tablet {
     @include center-flex('ver');
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
     justify-content: flex-start;
     margin-bottom: 36px;
   }
@@ -54,8 +43,6 @@
 
 .footer__item {
   @include center-flex('hor');
-  // display: flex;
-  // justify-content: center;
   @extend %link;
 
   &--logo {
@@ -107,9 +94,6 @@
   width: 37px;
   height: 37px;
   @include bgr-image('../../images/icons-svg/instagram.svg', cover, no-repeat);
-  // background-image: url(../../images/icons-svg/instagram.svg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
   font-size: 0px;
   margin-bottom: 20px;
 

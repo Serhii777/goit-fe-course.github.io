@@ -7,9 +7,6 @@
 
   @include tablet {
     @include center-flex('spbtw');
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
     padding: 30px 76px 0px 108px;
 
     &--select {
@@ -38,12 +35,7 @@
   &::before {
     content: '0'counter(count-problem);
     @include font-height($fourth-text-size, 2.083);
-    // font-size: 14px;
-    // line-height: 2.083;
     @include font-family-settings($font-family-monts, $font-weight-medium, $first-orange-color);
-    // font-family: "Montserrat";
-    // font-weight: 500;
-    // color: #ff6b08;
     margin-left: 35px;
   }
 
@@ -96,10 +88,6 @@
     //2, 3, 5 і 6 елементи
     &:not(:nth-last-child(3n)) {
       margin-right: 84px;
-
-      // &--selection {
-      // margin-right: 74px;
-      // }
     }
 
     // 3 і 6 елементи
@@ -153,49 +141,38 @@
 
 .menu-problem__text {
   @include font-settings($third-text-size, 1.538, 0.7px);
-  // font-size: 13px;
-  // line-height: 1.538;
-  // letter-spacing: 0.7px;
-  // color: #18191d;
   text-align: left;
   margin: 0px;
   position: relative;
   white-space: pre-line;
-  
+
   &::before {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     width: 25px;
     height: 2px;
     background-color: $first-orange-color;
     @include absolute-tl(absolute, -16px, 0px);
-    // position: absolute;
-    // top: -16px;
   }
-  
+
   &--position::before {
     display: none;
   }
-  
+
   @include tablet {
     white-space: initial;
     letter-spacing: 0.6px;
-    
+
     &--format {
       letter-spacing: 1.1px;
     }
-    
+
     &--position {
       padding-right: 70px;
     }
   }
-  
+
   @include desktop {
     @include font-settings($eigth-text-size, 1.6, 1.15px);
-    // font-size: 18px;
-    // line-height: 1.6;
-    // letter-spacing: 1.15px;
     padding-top: 6px;
     white-space: initial;
 
@@ -210,8 +187,6 @@
 
   @include desktop-wide {
     @include font-height($twenty-one-text-size, 1.4);
-    // font-size: 21px;
-    // line-height: 1.4;
     white-space: initial;
     padding-top: 8px;
 

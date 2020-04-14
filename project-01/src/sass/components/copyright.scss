@@ -19,26 +19,10 @@
 }
 
 .copyright__text {
-  // font-size: 11px;
-  // color: $second-white-color;
   margin: 0px;
   letter-spacing: 0.6px;
 
   @include desktop {
     @include font-settings(14.583px, 2.571, 0.9px);
-    // font-size: 14.583px;
-    // line-height: 2.571;
-    // letter-spacing: 0.9px;
   }
-
-  // @include desktop-wide {
-  //   font-size: 14.583px;
-  //   line-height: 2.571;
-  //   letter-spacing: 0.9px;
-  // }
 }
-
-// .copyright__symbol {
-// font-size: 11px;
-// color: #fdfefe6b;
-// }

@@ -1,13 +1,9 @@
 .menu-actions {
   @include center-flex('hor');
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   @extend %list;
 
   @include tablet {
     @include center-flex('spbtw');
-    // justify-content: space-between;
     margin-bottom: 0px;
   }
 }
@@ -110,10 +106,6 @@
 
 .menu-actions__title {
   @include font-settings($third-text-size, 1.538, 1.07px);
-  // font-size: 13px;
-  // line-height: 1.538;
-  // letter-spacing: 1.07px;
-  // color: $first-lightdark-color;
   margin: 0px 0px 36px 0px;
   padding: 0px 10px;
   position: relative;
@@ -122,8 +114,6 @@
 
   &::after {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     width: 25px;
     height: 2px;
     background-color: $first-orange-color;
@@ -142,36 +132,29 @@
     display: none;
   }
 
-  // @include tablet {
-  // }
-
   @include desktop {
     @include font-height($eigth-text-size, 1.62);
-    // font-size: 18px;
-    // line-height: 1.62;
     margin: 0px 0px 28px 0px;
     padding: 0px 10px;
     white-space: initial;
-    
+
     &::after {
       bottom: -18px;
     }
-    
+
     &--location {
       display: block;
     }
   }
-  
+
   @include desktop-wide {
     @include font-height($twenty-one-text-size, 1.4);
-    // font-size: 21px;
-    // line-height: 1.4;
     margin: 0px 0px 31px 0px;
-    
+
     &::after {
       bottom: -16px;
     }
-    
+
     &--newline {
       display: none;
     }
@@ -179,34 +162,28 @@
 }
 
 .menu-actions__text {
-  // color: $first-grey-color;
   line-height: 1.818;
   margin: 0px;
   padding: 0px 10px;
   transition: all 0.2s linear;
-  
+
   &--location {
     display: none;
   }
-  
+
   @include desktop {
     @include font-settings($fifth-text-size, 2.083, 1.1px);
-    // font-size: 15px;
-    // line-height: 2.083;
-    // letter-spacing: 1.1px;
     padding: 0px;
-    
+
     &--location {
       display: block;
     }
   }
-  
+
   @include desktop-wide {
     @include font-height(18.75px, 1.667);
-    // font-size: 18.75px;
-    // line-height: 1.667;
     padding: 0px 26px;
-    
+
     &--position {
       margin-right: 22px;
       padding: 0px 2px;

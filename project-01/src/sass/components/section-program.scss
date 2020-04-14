@@ -6,15 +6,10 @@
 
 .section-program__wrapper {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: nowrap;
   padding-top: 46px;
-  // background: #111517;
 
   @include tablet {
     padding: 46px 40px 0px;
-    // margin-bottom: 160px;
     margin-bottom: 166px;
   }
 
@@ -33,33 +28,23 @@
 
 .section-program__title {
   @include font-settings($tenth-text-size, 1.65, 1.2px);
-  // font-size: 20px;
-  // line-height: 1.65;
-  // letter-spacing: 1.2px;
   margin: 0px 0px 23px 0px;
   text-align: center;
 
   @include tablet {
     @include font-height($twenty-six-text-size, 2.405);
-    // font-size: 26px;
-    // line-height: 2.405;
     margin-bottom: 30px;
     text-align: left;
   }
 
   @include desktop {
     @include font-settings($forty-two-text-size, 1.489, 2px);
-    // font-size: 42px;
-    // line-height: 1.489;
-    // letter-spacing: 2px;
     padding-left: 35px;
     margin-bottom: 30px;
   }
 
   @include desktop-wide {
     @include font-height($forty-six-text-size, 1.365);
-    // font-size: 46px;
-    // line-height: 1.365;
     padding-left: 186px;
     margin-bottom: 82px;
   }

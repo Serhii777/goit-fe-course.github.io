@@ -1,10 +1,5 @@
 .section-warranty__wrapper {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // text-align: center;
-
 
   @include tablet {
     padding: 0px 40px;
@@ -24,32 +19,20 @@
 
 .section-warranty__title {
   @include font-settings($tenth-text-size, 1.2, 1px);
-  // font-size: 20px;
-  // line-height: 1.2;
-  // letter-spacing: 1px;
-  // color: #111517;
   margin: 0px 0px 22px;
 
   @include tablet {
     @include font-height($twenty-six-text-size, 2.405);
-    // font-size: 26px;
-    // line-height: 2.405;
     margin: 0px 0px 10px
   }
 
   @include desktop {
     @include font-settings($forty-two-text-size, 1.489, 1.7px);
-    // font-size: 42px;
-    // line-height: 1.489;
-    // letter-spacing: 1.7px;
     margin: 0px 0px 28px;
   }
 
   @include desktop-wide {
     @include font-settings($forty-six-text-size, 1.365, 2.3px);
-    // font-size: 46px;
-    // line-height: 1.365;
-    // letter-spacing: 2.3px;
     margin: 0px 0px 38px;
     padding-right: 26px;
   }
@@ -57,7 +40,7 @@
 
 .section-warranty__wrapper-list {
   padding: 0px 20px 0px 26px;
-  background: #f1f1f1;
+  background: $fourth-white-color;
 
   @include tablet {
     padding: 0px 55px 0px 66px;

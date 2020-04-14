@@ -2,9 +2,6 @@
   @include tablet {
     @include center-flex('spbtw');
     flex-wrap: nowrap;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
   }
 
   @include desktop {
@@ -18,14 +15,10 @@
 
 .section-training__content {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
   align-items: start;
-  
+
   @include tablet {
     @include center-flex('col');
-    // display: flex;
-    // flex-direction: column;
     justify-content: start;
     max-width: 280px;
   }
@@ -43,76 +36,54 @@
 
 .section-training__title {
   @include font-settings($tenth-text-size, 1.45, 0.6px);
-  // font-size: 20px;
-  // line-height: 1.45;
-  // letter-spacing: 0.6px;
-  // color: #18191d;
   text-align: left;
   margin: 0px 0px 26px 0px;
-  
+
   @include tablet {
     @include font-height($twenty-six-text-size, 1.291);
-    // font-size: 26px;
-    // line-height: 1.291;
     padding-top: 8px;
     margin: 0px 0px 26px 0px;
   }
-  
+
   @include desktop {
     @include font-settings($forty-eight-text-size, 1.208, 1.05px);
-    // font-size: 48px;
-    // line-height: 1.208;
-    // letter-spacing: 1.05px;
     margin: 0px 0px 28px 0px;
   }
-  
+
   @include desktop-wide {
     @include font-settings(58.333px, 1.34, 1.4px);
-    // font-size: 58.333px;
-    // line-height: 1.34;
-    // letter-spacing: 1.4px;
     margin-bottom: 24px;
   }
 }
 
 .section-training__slogan {
   @include font-settings($fifth-text-size, 1.386, 0.623px);
-  // font-size: 15px;
-  // line-height: 1.386;
-  // letter-spacing: 0.623px;
-  // color: #18191d;
   text-align: left;
   margin: 0px 0px 36px 0px;
-  
+
   &::first-line {
     font-weight: $font-weight-medium;
     color: $second-lightgrey-color;
   }
-  
+
   &--colortext {
     color: $first-orange-color;
   }
-  
+
   @include tablet {
     line-height: 1.35;
     margin-bottom: 32px;
   }
-  
+
   @include desktop {
     min-width: 480px;
     @include font-settings($eigth-text-size, 1.463, 0.8px);
-    // font-size: 18px;
-    // line-height: 1.463;
-    // letter-spacing: 0.8px;
     margin-bottom: 63px;
   }
-  
+
   @include desktop-wide {
     min-width: 540px;
     @include font-settings($twenty-one-text-size, 1.6, 1px);
-    // font-size: 21px;
-    // line-height: 1.6;
-    // letter-spacing: 1px;
     margin-bottom: 40px;
   }
 }

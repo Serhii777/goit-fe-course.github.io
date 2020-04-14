@@ -1,6 +1,5 @@
 .header {
   @include center-flex('col');
-  // flex-direction: column;
   background-color: $first-white-color;
 }
 

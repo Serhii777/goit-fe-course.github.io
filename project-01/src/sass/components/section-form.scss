@@ -2,9 +2,6 @@
   @include center-flex('col-ver');
   background-color: $first-lightdark-color;
   @include bgr-image('../../images/form-bgr.png', cover, no-repeat);
-  // background-image: url(../../images/form-bgr.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
 
   @include tablet {
     background-image: url(../../images/form-bgr-tabl.png);
@@ -42,18 +39,10 @@
 
 .section-form__form {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 .section-form__title {
   @include font-settings($fourth-text-size, 1.86, 1px);
-  // font-size: 14px;
-  // color: #ffffff;
-  // line-height: 1.86;
-  // word-spacing: 4px;
-  // letter-spacing: 1px;
   padding: 0px 10px;
   margin: 0px 0px 20px;
 
@@ -64,16 +53,11 @@
 
   @include tablet {
     @include font-height($twenty-two-text-size, 1.744);
-    // font-size: 22px;
-    // line-height: 1.744;
     margin: 0px 0px 26px;
   }
 
   @include desktop {
     @include font-settings(37.5px, 1.334, 1.8px);
-    // font-size: 37.5px;
-    // line-height: 1.334;
-    // letter-spacing: 1.8px;
     margin: 0px 0px 42px;
   }
 
@@ -85,10 +69,6 @@
 
 .section-form__description {
   @include font-settings($first-text-size, 1.818, 0.8px);
-  // font-size: 11px;
-  // color: #ffffff;
-  // line-height: 1.818;
-  // letter-spacing: 0.8px;
   padding: 0px 6px;
   margin: 0px 0px 26px;
 
@@ -99,9 +79,6 @@
 
   @include tablet {
     @include font-height($fifth-text-size, 1.333);
-    // font-size: 15px;
-    // line-height: 1.333;
-    // letter-spacing: 0.8px;
     margin: 0px 0px 40px;
     white-space: pre-line;
     text-align: left;
@@ -114,9 +91,6 @@
 
   @include desktop {
     @include font-height($eigth-text-size, 1.361);
-    // font-size: 18px;
-    // line-height: 1.361;
-    // letter-spacing: 0.8px;
     margin: 0px 0px 52px;
     text-align: center;
     padding-left: 0px;

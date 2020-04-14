@@ -1,7 +1,5 @@
 .list-warranty {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
   text-align: left;
   @extend %list;
   padding: 24px 0px 0px;
@@ -27,38 +25,25 @@
 
   &::before {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     width: 13px;
     height: 18px;
     background-color: $fourth-white-color;
     @include bgr-image('../../images/icons-svg/fire3x.svg', cover, no-repeat);
-    // background-image: url(../../images/icons-svg/fire3x.svg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
     background-position: center;
     @include absolute-tl(absolute, 0px, -7px);
-    // position: absolute;
-    // top: 0px;
-    // left: -7px;
     z-index: 1;
   }
-  
+
   &:nth-last-of-type(-3n+1) {
     border-left: 1px dotted $fourth-white-color;
-    
+
     &::after {
       @include pseudo($display: block);
-      // display: block;
-      // content: '';
       width: 2px;
       height: 18px;
       border: none;
       border-left: 1px dotted $third-lightgrey-color;
       @include absolute-tl(absolute, 0px, -1px);
-      // position: absolute;
-      // top: 0px;
-      // left: -1px;
     }
   }
 
@@ -107,9 +92,6 @@
 
 .list-warranty__text {
   @include font-height($first-text-size, 1.818);
-  // font-size: 11px;
-  // line-height: 1.818;
-  // color: #18191d;
   margin: 0px;
   word-spacing: 3px;
 
@@ -130,7 +112,7 @@
   }
 
   &--colortext {
-    color: #ff6b08;
+    color: $first-orange-color;
     word-spacing: 5px;
   }
 
@@ -148,34 +130,27 @@
 
   @include desktop {
     @include font-settings($eigth-text-size, 1.62, 0.5px);
-    // font-size: 18px;
-    // line-height: 1.62;
-    // letter-spacing: 0.5px;
     padding: 0px;
-    
+
     &--position {
       padding-right: 0px;
     }
-    
+
     &--placing {
       padding-right: 0px;
     }
-    
+
     &--location {
       display: none;
     }
-    
+
     &--newstring {
       display: block;
     }
   }
-  
+
   @include desktop-wide {
     @include font-settings($twenty-one-text-size, 1.4, 0.7px);
-    // font-size: 21px;
-    // line-height: 1.4;
-    // letter-spacing: 0.7px;
-    //   padding: 0px 20px 0px 0px;
 
     &--newline {
       display: block;

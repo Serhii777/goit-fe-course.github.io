@@ -1,8 +1,5 @@
 .section-slider__wrapper {
   @include center-flex('col-ver');
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   margin-bottom: 56px;
   padding: 51px 20px 0px;
   position: relative;
@@ -25,17 +22,11 @@
 
 .section-slider__title {
   @include font-settings($tenth-text-size, 1.327, 1.2px);
-  font-size: 20px;
-  line-height: 1.327;
-  letter-spacing: 1.2px;
-  // color: #111517;
   text-align: center;
   margin: 0px 0px 18px 0px;
 
   @include tablet {
     @include font-height($twenty-six-text-size, 2.405);
-    // font-size: 26px;
-    // line-height: 2.405;
     margin: 0px 0px 24px 0px;
 
     &--position {
@@ -45,18 +36,12 @@
 
   @include desktop {
     @include font-settings($forty-two-text-size, 1.489, 2px);
-    // font-size: 42px;
-    // line-height: 1.489;
-    // letter-spacing: 2px;
     padding-right: 16px;
     margin: 0px 0px 26px 0px;
   }
 
   @include desktop-wide {
     @include font-height($forty-six-text-size, 1.365);
-    // font-size: 46px;
-    // line-height: 1.365;
-    // letter-spacing: 2px;
     margin: 0px 0px 40px 0px;
     padding: 0px;
   }

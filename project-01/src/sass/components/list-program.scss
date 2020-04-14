@@ -1,8 +1,5 @@
 .list-program {
   @include center-flex('col');
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: column;
   @extend %list;
   counter-reset: count-program;
   padding: 0px 40px 0px 83px;
@@ -14,8 +11,6 @@
 
   @include desktop {
     @include center-flex('spbtw');
-    // flex-direction: row;
-    // justify-content: space-between;
     padding: 42px 24px 0px 35px;
     border-top: 2px solid $second-grey-color;
   }
@@ -33,53 +28,38 @@
 
   &::before {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: $first-orange-color;
     @include absolute-tl(absolute, 15px, -6px);
-    // position: absolute;
-    // top: 15px;
-    // left: -6px;
     transform: translateY(-50%);
   }
-  
+
   &:not(:last-child) {
     border-left: 2px solid $second-grey-color;
   }
-  
+
   &:first-child {
     &::after {
       @include pseudo($display: block);
-      // display: block;
-      // content: '';
       width: 5px;
       height: 10px;
       background-color: $first-lightdark-color;
       @include absolute-tl(absolute, 0px, -3px);
-      // position: absolute;
-      // top: 0px;
-      // left: -3px;
     }
   }
-  
+
   &:nth-last-of-type(-3n+1) {
     border-left: 2px solid $first-lightdark-color;
-    
+
     &::after {
       @include pseudo($display: block);
-      // display: block;
-      // content: '';
       width: 2px;
       height: 10px;
       border: none;
       border-left: 2px solid $second-grey-color;
       @include absolute-tl(absolute, 0px, -2px);
-      // position: absolute;
-      // top: 0px;
-      // left: -2px;
     }
   }
 
@@ -157,24 +137,15 @@
 
     &--second {
       @include absolute-tl(absolute, 42px, 300px);
-      // position: absolute;
-      // top: 42px;
-      // left: 300px;
     }
 
     &--third {
       @include absolute-tl(absolute, 42px, 570px);
-      // position: absolute;
-      // top: 42px;
-      // left: 570px;
     }
 
     &--fourth {
       max-width: 240px;
       @include absolute-tr(absolute, 42px, 200px);
-      // position: absolute;
-      // top: 42px;
-      // right: 200px;
     }
 
     &--fifth {
@@ -198,42 +169,27 @@
 
     &--second {
       @include absolute-tl(absolute, 58px, 488px);
-      // position: absolute;
-      // top: 58px;
-      // left: 488px;
     }
 
     &--third {
       @include absolute-tl(absolute, 58px, 780px);
-      // position: absolute;
-      // top: 58px;
-      // left: 780px;
     }
 
     &--fourth {
       max-width: 270px;
       @include absolute-tr(absolute, 58px, 350px);
-      // position: absolute;
-      // top: 58px;
-      // right: 350px;
     }
-    
+
     &--fifth {
       max-width: 240px;
       padding-top: 0px;
       @include absolute-tr(absolute, 58px, 134px);
-      // position: absolute;
-      // top: 58px;
-      // right: 134px;
     }
   }
 }
 
 .list-program__title {
   @include font-settings($fifth-text-size, 1.944, 1.2px);
-  // font-size: 15px;
-  // line-height: 1.944;
-  // letter-spacing: 1.2px;
   text-transform: uppercase;
   margin: 0px 0px 10px;
   counter-increment: count-program;
@@ -241,67 +197,46 @@
   &::before {
     content: counter(count-program);
     @include font-height($fifth-text-size, 1.944);
-    // font-size: 15px;
-    // line-height: 1.944;
     @include font-family-settings($font-family-monts, $font-weight-bold, $first-white-color);
-    // font-family: "Montserrat";
-    // color: $first-white-color;
-    // font-weight: bold;
     text-transform: uppercase;
     margin-right: 8px;
   }
-  
+
   @include tablet {
     margin: 0px 0px 10px;
   }
-  
+
   @include desktop {
     @include font-settings($ninth-text-size, 1.535, 1.3px);
-    // font-size: 19px;
-    // line-height: 1.535;
-    // letter-spacing: 1.3px;
     margin: 0px 0px 30px;
-    
+
     &::before {
       content: counter(count-program);
       @include font-height($ninth-text-size, 1.535);
-      // font-size: 19px;
-      // line-height: 1.535;
     }
   }
-  
+
   @include desktop-wide {
     @include font-settings($twenty-one-text-size, 1, 1.8px);
-    // font-size: 21px;
-    // line-height: 1;
-    // letter-spacing: 1.8px;
     margin: 0px 0px 24px;
-    
+
     &::before {
       @include font-height($twenty-nine-text-size, 1);
-      // font-size: 29px;
-      // line-height: 1;
     }
   }
 }
 
 .list-program__contents {
   @include center-flex('col');
-  // display: flex;
-  // flex-direction: column;
   @extend %list;
-  
+
   @include tablet {
     @include center-flex('row');
-    // display: flex;
-    // flex-direction: row;
     flex-wrap: nowrap;
   }
-  
+
   @include desktop {
     @include center-flex('col');
-    // display: flex;
-    // flex-direction: column;
   }
 }
 
@@ -338,24 +273,15 @@
 .list-program__segment {
   display: block;
   @include font-settings($third-text-size, 2.244, 1.15px);
-  // font-size: 13px;
-  // line-height: 2.244;
-  // letter-spacing: 1.15px;
-  // color: #ff6b08;
   position: relative;
   margin: 0px 0px 11px 38px;
 
   &::before {
     @include pseudo($display: block);
-    // display: block;
-    // content: '';
     width: 25px;
     height: 2px;
     background-color: $first-orange-color;
     @include absolute-tl(absolute, 50%, -38px);
-    // position: absolute;
-    // top: 50%;
-    // left: -38px;
     transform: translateY(-50%);
   }
 
@@ -369,15 +295,11 @@
 
   @include desktop {
     @include font-height($eigth-text-size, 1.62);
-    // font-size: 18px;
-    // line-height: 1.62;
     margin: 0px 0px 10px 38px;
   }
 
   @include desktop-wide {
     @include font-height($twenty-one-text-size, 1.4);
-    // font-size: 21px;
-    // line-height: 1.4;
     margin: 0px 0px 12px 38px;
   }
 }
@@ -388,31 +310,25 @@
 
 .list-program__text {
   @include font-settings($first-text-size, 1.818, 1.1px);
-  // font-size: 11px;
-  // line-height: 1.818;
-  // letter-spacing: 1.1px;
   color: $first-grey-opacity-color;
   padding: 0px;
   margin: 0px;
   white-space: pre-line;
-  
+
   &--locaton {
     display: none;
   }
-  
+
   @include tablet {
     letter-spacing: 1px;
-    
+
     &--locaton {
       display: none;
     }
   }
-  
+
   @include desktop {
     @include font-height(18.75px, 1.556);
-    // font-size: 18.75px;
-    // line-height: 1.556;
-    // letter-spacing: 1.1px;
     padding: 0px;
     margin: 0px;
 
