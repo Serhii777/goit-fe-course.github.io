@@ -1,7 +1,8 @@
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  @include center-flex('ver');
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
   text-transform: uppercase;
   @extend %list;
 
@@ -36,27 +37,27 @@
 
 .menu__link {
   @include desktop {
-    font-size: 12px;
-    line-height: 1.9;
-    color: rgb(185, 185, 185);
+    @include font-settings($second-text-size, 1.9, 1px);
+    // font-size: 12px;
+    // line-height: 1.9;
+    // letter-spacing: 1px;
+    // color: #b9b9b9;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 1px;
-
+    
     &:hover,
     &:focus {
-      color: rgb(255, 107, 8);
+      color: $first-orange-color;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 14px;
-    line-height: 1.9;
-    // line-height: 7.857;
-    line-height: 1.857;
-    color: rgb(185, 185, 185);
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
+    @include font-settings($fourth-text-size, 1.857, 1px);
+    // font-size: 14px;
+    // line-height: 1.857;
+    // letter-spacing: 1px;
+    // color: #b9b9b9;
+    // text-transform: uppercase;
+    // text-decoration: none;
   }
 }

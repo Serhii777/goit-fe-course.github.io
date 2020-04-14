@@ -1,9 +1,8 @@
-// .section-slider {}
-
 .section-slider__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include center-flex('col-ver');
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   margin-bottom: 56px;
   padding: 51px 20px 0px;
   position: relative;
@@ -15,7 +14,7 @@
 
   @include desktop {
     padding: 0px 100px 0px 116px;
-    margin-bottom: 104px;
+    margin-bottom: 102px;
   }
 
   @include desktop-wide {
@@ -25,16 +24,18 @@
 }
 
 .section-slider__title {
+  @include font-settings($tenth-text-size, 1.327, 1.2px);
   font-size: 20px;
-  color: rgb(17, 21, 23);
   line-height: 1.327;
+  letter-spacing: 1.2px;
+  // color: #111517;
   text-align: center;
   margin: 0px 0px 18px 0px;
-  letter-spacing: 1.2px;
 
   @include tablet {
-    font-size: 26px;
-    line-height: 2.405;
+    @include font-height($twenty-six-text-size, 2.405);
+    // font-size: 26px;
+    // line-height: 2.405;
     margin: 0px 0px 24px 0px;
 
     &--position {
@@ -43,18 +44,20 @@
   }
 
   @include desktop {
-    font-size: 42px;
-    line-height: 1.489;
+    @include font-settings($forty-two-text-size, 1.489, 2px);
+    // font-size: 42px;
+    // line-height: 1.489;
+    // letter-spacing: 2px;
     padding-right: 16px;
     margin: 0px 0px 26px 0px;
-    letter-spacing: 2px;
   }
 
   @include desktop-wide {
-    font-size: 46px;
-    line-height: 1.365;
+    @include font-height($forty-six-text-size, 1.365);
+    // font-size: 46px;
+    // line-height: 1.365;
+    // letter-spacing: 2px;
     margin: 0px 0px 40px 0px;
-    letter-spacing: 2px;
     padding: 0px;
   }
 }
@@ -64,7 +67,7 @@
   border: none;
   width: 20px;
   height: 11px;
-  fill: #ff6b08;
+  fill: $first-orange-color;
   background: none;
 
   &--right-arrow {
@@ -81,8 +84,8 @@
 
   &:hover,
   &:focus {
-    fill: #ffffff;
-    background-color: #ff6b08;
+    fill: $first-white-color;
+    background-color: $first-orange-color;
   }
 
   @include tablet {
@@ -122,9 +125,7 @@
 
     &--right-arrow {
       bottom: 260px;
-      // bottom: 256px;
       right: 252px;
-      // right: 58px;
     }
 
     &--left-arrow {

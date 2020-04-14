@@ -1,51 +1,49 @@
 .menu-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include center-flex('hor');
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
   @extend %list;
 
   @include tablet {
-    justify-content: space-between;
+    @include center-flex('spbtw');
+    // justify-content: space-between;
     margin-bottom: 0px;
   }
-
-  @include desktop {}
-
-  @include desktop-wide {}
 }
 
 .menu-actions__item {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  background-color: $first-white-color;
+  box-shadow: 4px 6.928px 23.68px 8.32px $first-lightdark-opacity-color;
   width: 290px;
   min-height: 262px;
-  padding: 26px 20px 20px;
+  padding: 26px 20px 22px;
   @extend %item;
 
   &:hover,
   &:focus {
-    background-color: #ff6b08;
+    background-color: $first-orange-color;
   }
 
   &:hover .menu-actions__icon,
   &:focus .menu-actions__icon {
-    fill: #ffffff;
+    fill: $first-white-color;
   }
 
   &:hover .menu-actions__title,
   &:focus .menu-actions__title,
   &:hover .menu-actions__text,
   &:focus .menu-actions__text {
-    color: #ffffff;
+    color: $first-white-color;
   }
 
   &:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   @include tablet {
     &:not(:nth-last-of-type(-3n+1)) {
-      margin-bottom: 29px;
+      margin-bottom: 26px;
     }
 
     &:nth-last-of-type(-n+2) {
@@ -82,7 +80,7 @@
 
 .menu-actions__item:hover .menu-actions__title::after,
 .menu-actions__item:focus .menu-actions__title::after {
-  background-color: #ffffff;
+  background-color: $first-white-color;
 }
 
 .menu-actions__link {
@@ -94,7 +92,7 @@
   width: 50px;
   height: 50px;
   margin: 0px 0px 14px 0px;
-  fill: #ff6b08;
+  fill: $first-orange-color;
   transition: all 0.2s linear;
 
   @include tablet {
@@ -111,22 +109,25 @@
 }
 
 .menu-actions__title {
-  font-size: 13px;
-  color: #111517;
-  line-height: 1.538;
+  @include font-settings($third-text-size, 1.538, 1.07px);
+  // font-size: 13px;
+  // line-height: 1.538;
+  // letter-spacing: 1.07px;
+  // color: $first-lightdark-color;
   margin: 0px 0px 36px 0px;
+  padding: 0px 10px;
   position: relative;
   transition: all 0.2s linear;
   white-space: pre-line;
-  letter-spacing: 1.07px;
 
   &::after {
-    display: block;
-    content: '';
-    position: absolute;
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
+    background-color: $first-orange-color;
+    position: absolute;
     bottom: -18px;
     left: 50%;
     transform: translateX(-50%);
@@ -141,31 +142,36 @@
     display: none;
   }
 
+  // @include tablet {
+  // }
+
   @include desktop {
-    font-size: 18px;
-    line-height: 1.62;
+    @include font-height($eigth-text-size, 1.62);
+    // font-size: 18px;
+    // line-height: 1.62;
     margin: 0px 0px 28px 0px;
     padding: 0px 10px;
     white-space: initial;
-
+    
     &::after {
       bottom: -18px;
     }
-
+    
     &--location {
       display: block;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1.4;
+    @include font-height($twenty-one-text-size, 1.4);
+    // font-size: 21px;
+    // line-height: 1.4;
     margin: 0px 0px 31px 0px;
-
+    
     &::after {
       bottom: -16px;
     }
-
+    
     &--newline {
       display: none;
     }
@@ -173,32 +179,34 @@
 }
 
 .menu-actions__text {
-  color: #858585;
+  // color: $first-grey-color;
   line-height: 1.818;
   margin: 0px;
   padding: 0px 10px;
   transition: all 0.2s linear;
-
+  
   &--location {
     display: none;
   }
-
+  
   @include desktop {
-    font-size: 15px;
-    line-height: 2.083;
+    @include font-settings($fifth-text-size, 2.083, 1.1px);
+    // font-size: 15px;
+    // line-height: 2.083;
+    // letter-spacing: 1.1px;
     padding: 0px;
-    letter-spacing: 1.1px;
-
+    
     &--location {
       display: block;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 18.75px;
-    line-height: 1.667;
+    @include font-height(18.75px, 1.667);
+    // font-size: 18.75px;
+    // line-height: 1.667;
     padding: 0px 26px;
-
+    
     &--position {
       margin-right: 22px;
       padding: 0px 2px;

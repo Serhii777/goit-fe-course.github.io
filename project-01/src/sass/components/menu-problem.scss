@@ -1,14 +1,15 @@
 .menu-problem {
   @extend %list;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  background-color: $first-white-color;
+  box-shadow: 4px 6.928px 15.54px 5.46px $second-lightdark-opacity-color;
   padding: 16px 10px 0px 28px;
   counter-reset: count-problem;
 
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include center-flex('spbtw');
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
     padding: 30px 76px 0px 108px;
 
     &--select {
@@ -36,10 +37,13 @@
 
   &::before {
     content: '0'counter(count-problem);
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: #ff6b08;
-    line-height: 2.083;
+    @include font-height($fourth-text-size, 2.083);
+    // font-size: 14px;
+    // line-height: 2.083;
+    @include font-family-settings($font-family-monts, $font-weight-medium, $first-orange-color);
+    // font-family: "Montserrat";
+    // font-weight: 500;
+    // color: #ff6b08;
     margin-left: 35px;
   }
 
@@ -68,7 +72,7 @@
 
     // 2 останні
     &:nth-last-of-type(-n+2) {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
   }
 
@@ -148,48 +152,52 @@
 }
 
 .menu-problem__text {
-  font-size: 13px;
-  color: rgb(24, 25, 29);
-  line-height: 1.538;
+  @include font-settings($third-text-size, 1.538, 0.7px);
+  // font-size: 13px;
+  // line-height: 1.538;
+  // letter-spacing: 0.7px;
+  // color: #18191d;
   text-align: left;
   margin: 0px;
   position: relative;
   white-space: pre-line;
-  letter-spacing: 0.7px;
-
+  
   &::before {
-    display: block;
-    content: '';
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
-    position: absolute;
-    top: -16px;
+    background-color: $first-orange-color;
+    @include absolute-tl(absolute, -16px, 0px);
+    // position: absolute;
+    // top: -16px;
   }
-
+  
   &--position::before {
     display: none;
   }
-
+  
   @include tablet {
     white-space: initial;
     letter-spacing: 0.6px;
-
+    
     &--format {
       letter-spacing: 1.1px;
     }
-
+    
     &--position {
       padding-right: 70px;
     }
   }
-
+  
   @include desktop {
-    font-size: 18px;
-    line-height: 1.6;
+    @include font-settings($eigth-text-size, 1.6, 1.15px);
+    // font-size: 18px;
+    // line-height: 1.6;
+    // letter-spacing: 1.15px;
     padding-top: 6px;
     white-space: initial;
-    letter-spacing: 1.15px;
 
     &--position {
       padding-right: 0px;
@@ -201,8 +209,9 @@
   }
 
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1.4;
+    @include font-height($twenty-one-text-size, 1.4);
+    // font-size: 21px;
+    // line-height: 1.4;
     white-space: initial;
     padding-top: 8px;
 

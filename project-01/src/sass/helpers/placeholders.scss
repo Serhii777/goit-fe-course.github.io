@@ -7,26 +7,24 @@
   transition: all 0.2s linear;
 }
 
+// передается в item (li)
 %list {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-// передается в item (li)
 
+// передается в link (а)
 %link {
-  // display: inline-block;
   margin: 0px;
   text-decoration: none;
-  // transition: all 0.2s linear;
 }
-// передается в link (а)
 
+// передается в link (а) (если нужно)
 %item {
   cursor: pointer;
   transition: all 0.2s linear;
 }
-// передается в link (а) (если нужно)
 
 %icon {
   display: block;

@@ -1,7 +1,8 @@
 .list-program {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
   @extend %list;
   counter-reset: count-program;
   padding: 0px 40px 0px 83px;
@@ -12,15 +13,16 @@
   }
 
   @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
+    @include center-flex('spbtw');
+    // flex-direction: row;
+    // justify-content: space-between;
     padding: 42px 24px 0px 35px;
-    border-top: 2px solid #546264;
+    border-top: 2px solid $second-grey-color;
   }
 
   @include desktop-wide {
     padding: 58px 140px 0px 186px;
-    border-top: 4px solid #546264;
+    border-top: 4px solid $second-grey-color;
   }
 }
 
@@ -30,48 +32,54 @@
   padding-left: 30px;
 
   &::before {
-    display: block;
-    content: '';
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ff6b08;
-    position: absolute;
-    top: 15px;
-    left: -6px;
+    background-color: $first-orange-color;
+    @include absolute-tl(absolute, 15px, -6px);
+    // position: absolute;
+    // top: 15px;
+    // left: -6px;
     transform: translateY(-50%);
   }
-
+  
   &:not(:last-child) {
-    border-left: 2px solid #546264;
+    border-left: 2px solid $second-grey-color;
   }
-
+  
   &:first-child {
     &::after {
-      display: block;
-      content: '';
-      position: absolute;
+      @include pseudo($display: block);
+      // display: block;
+      // content: '';
       width: 5px;
       height: 10px;
-      background-color: #111517;
-      top: 0px;
-      left: -3px;
+      background-color: $first-lightdark-color;
+      @include absolute-tl(absolute, 0px, -3px);
+      // position: absolute;
+      // top: 0px;
+      // left: -3px;
     }
   }
-
+  
   &:nth-last-of-type(-3n+1) {
-    border-left: 2px solid #111517;
-
+    border-left: 2px solid $first-lightdark-color;
+    
     &::after {
-      display: block;
-      content: '';
-      position: absolute;
+      @include pseudo($display: block);
+      // display: block;
+      // content: '';
       width: 2px;
       height: 10px;
       border: none;
-      border-left: 2px solid #546264;
-      top: 0px;
-      left: -2px;
+      border-left: 2px solid $second-grey-color;
+      @include absolute-tl(absolute, 0px, -2px);
+      // position: absolute;
+      // top: 0px;
+      // left: -2px;
     }
   }
 
@@ -108,7 +116,7 @@
     }
 
     &:nth-last-of-type(-3n+1) {
-      border-left: 2px solid #111517;
+      border-left: 2px solid $first-lightdark-color;
 
       &::after {
         height: 20px;
@@ -121,7 +129,6 @@
     border-left: none;
     max-width: 220px;
     position: relative;
-    // width: 200px;
 
     &::before {
       width: 16px;
@@ -149,22 +156,25 @@
     }
 
     &--second {
-      position: absolute;
-      top: 42px;
-      left: 300px;
+      @include absolute-tl(absolute, 42px, 300px);
+      // position: absolute;
+      // top: 42px;
+      // left: 300px;
     }
 
     &--third {
-      position: absolute;
-      top: 42px;
-      left: 570px;
+      @include absolute-tl(absolute, 42px, 570px);
+      // position: absolute;
+      // top: 42px;
+      // left: 570px;
     }
 
     &--fourth {
-      position: absolute;
       max-width: 240px;
-      top: 42px;
-      right: 200px;
+      @include absolute-tr(absolute, 42px, 200px);
+      // position: absolute;
+      // top: 42px;
+      // right: 200px;
     }
 
     &--fifth {
@@ -187,99 +197,112 @@
     }
 
     &--second {
-      position: absolute;
-      top: 58px;
-      left: 488px;
+      @include absolute-tl(absolute, 58px, 488px);
+      // position: absolute;
+      // top: 58px;
+      // left: 488px;
     }
 
     &--third {
-      position: absolute;
-      top: 58px;
-      left: 780px;
+      @include absolute-tl(absolute, 58px, 780px);
+      // position: absolute;
+      // top: 58px;
+      // left: 780px;
     }
 
     &--fourth {
-      position: absolute;
       max-width: 270px;
-      top: 58px;
-      right: 350px;
+      @include absolute-tr(absolute, 58px, 350px);
+      // position: absolute;
+      // top: 58px;
+      // right: 350px;
     }
-
+    
     &--fifth {
-      position: absolute;
       max-width: 240px;
       padding-top: 0px;
-      top: 58px;
-      right: 134px;
+      @include absolute-tr(absolute, 58px, 134px);
+      // position: absolute;
+      // top: 58px;
+      // right: 134px;
     }
   }
 }
 
 .list-program__title {
-  font-size: 15px;
-  line-height: 1.944;
+  @include font-settings($fifth-text-size, 1.944, 1.2px);
+  // font-size: 15px;
+  // line-height: 1.944;
+  // letter-spacing: 1.2px;
   text-transform: uppercase;
   margin: 0px 0px 10px;
   counter-increment: count-program;
-  letter-spacing: 1.2px;
 
   &::before {
     content: counter(count-program);
-    font-size: 15px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    @include font-height($fifth-text-size, 1.944);
+    // font-size: 15px;
+    // line-height: 1.944;
+    @include font-family-settings($font-family-monts, $font-weight-bold, $first-white-color);
+    // font-family: "Montserrat";
+    // color: $first-white-color;
+    // font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.944;
     margin-right: 8px;
   }
-
+  
   @include tablet {
     margin: 0px 0px 10px;
   }
-
+  
   @include desktop {
-    font-size: 19px;
-    line-height: 1.535;
+    @include font-settings($ninth-text-size, 1.535, 1.3px);
+    // font-size: 19px;
+    // line-height: 1.535;
+    // letter-spacing: 1.3px;
     margin: 0px 0px 30px;
-    letter-spacing: 1.3px;
-
+    
     &::before {
       content: counter(count-program);
-      font-size: 19px;
-      line-height: 1.535;
+      @include font-height($ninth-text-size, 1.535);
+      // font-size: 19px;
+      // line-height: 1.535;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1;
+    @include font-settings($twenty-one-text-size, 1, 1.8px);
+    // font-size: 21px;
+    // line-height: 1;
+    // letter-spacing: 1.8px;
     margin: 0px 0px 24px;
-    letter-spacing: 1.8px;
-
+    
     &::before {
-      font-size: 29px;
-      line-height: 1;
+      @include font-height($twenty-nine-text-size, 1);
+      // font-size: 29px;
+      // line-height: 1;
     }
   }
 }
 
 .list-program__contents {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
   @extend %list;
-
+  
   @include tablet {
-    display: flex;
-    flex-direction: row;
+    @include center-flex('row');
+    // display: flex;
+    // flex-direction: row;
+    flex-wrap: nowrap;
   }
-
+  
   @include desktop {
-    display: flex;
-    flex-direction: column;
+    @include center-flex('col');
+    // display: flex;
+    // flex-direction: column;
   }
-
-  @include desktop-wide {}
 }
 
 .list-program__content {
@@ -314,22 +337,25 @@
 
 .list-program__segment {
   display: block;
-  font-size: 13px;
-  color: rgb(255, 107, 8);
-  line-height: 2.244;
+  @include font-settings($third-text-size, 2.244, 1.15px);
+  // font-size: 13px;
+  // line-height: 2.244;
+  // letter-spacing: 1.15px;
+  // color: #ff6b08;
   position: relative;
   margin: 0px 0px 11px 38px;
-  letter-spacing: 1.15px;
 
   &::before {
-    display: block;
-    content: '';
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 25px;
     height: 2px;
-    background-color: #ff6b08;
-    position: absolute;
-    top: 50%;
-    left: -38px;
+    background-color: $first-orange-color;
+    @include absolute-tl(absolute, 50%, -38px);
+    // position: absolute;
+    // top: 50%;
+    // left: -38px;
     transform: translateY(-50%);
   }
 
@@ -342,14 +368,16 @@
   }
 
   @include desktop {
-    font-size: 18px;
-    line-height: 1.62;
+    @include font-height($eigth-text-size, 1.62);
+    // font-size: 18px;
+    // line-height: 1.62;
     margin: 0px 0px 10px 38px;
   }
 
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1.4;
+    @include font-height($twenty-one-text-size, 1.4);
+    // font-size: 21px;
+    // line-height: 1.4;
     margin: 0px 0px 12px 38px;
   }
 }
@@ -359,33 +387,34 @@
 }
 
 .list-program__text {
-  font-size: 11px;
-  color: rgba(133, 133, 133, 0.502);
-  line-height: 1.818;
+  @include font-settings($first-text-size, 1.818, 1.1px);
+  // font-size: 11px;
+  // line-height: 1.818;
+  // letter-spacing: 1.1px;
+  color: $first-grey-opacity-color;
   padding: 0px;
   margin: 0px;
   white-space: pre-line;
-  letter-spacing: 1.1px;
-
+  
   &--locaton {
     display: none;
   }
-
+  
   @include tablet {
     letter-spacing: 1px;
-
+    
     &--locaton {
       display: none;
     }
   }
-
+  
   @include desktop {
-    font-size: 18.75px;
-    line-height: 1.556;
+    @include font-height(18.75px, 1.556);
+    // font-size: 18.75px;
+    // line-height: 1.556;
+    // letter-spacing: 1.1px;
     padding: 0px;
     margin: 0px;
-    // white-space: initial;
-    letter-spacing: 1.1px;
 
     &--word {
       display: none;

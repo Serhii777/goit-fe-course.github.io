@@ -17,54 +17,60 @@
 }
 
 .graduate-card__title {
-  font-size: 13px;
-  color: #ff6b08;
-  line-height: 2.144;
+  @include font-settings($third-text-size, 2.144, 1.1px);
+  // font-size: 13px;
+  // color: #ff6b08;
+  // line-height: 2.144;
+  // letter-spacing: 1.1px;
   margin: 0px;
-  letter-spacing: 1.1px;
 
   @include tablet {
-    font-size: 18px;
-    line-height: 1.62;
+    @include font-height($eigth-text-size, 1.62);
+    // font-size: 18px;
+    // line-height: 1.62;
+    // letter-spacing: 1.1px;
     margin: 0px 0px 12px;
-    letter-spacing: 1.1px;
   }
-
+  
   @include desktop {
-    font-size: 25px;
-    line-height: 1.167;
+    @include font-height($twenty-five-text-size, 1.167);
+    // font-size: 25px;
+    // line-height: 1.167;
     margin: 0px 0px 10px;
   }
 }
 
 .graduate-card__description {
-  font-size: 11px;
-  color: #858585;
-  line-height: 1.515;
+  @include font-settings($first-text-size, 1.515, 0.7px);
+  // font-size: 11px;
+  // color: #858585;
+  // line-height: 1.515;
+  // letter-spacing: 0.7px;
   margin: 0px 0px 14px;
-  letter-spacing: 0.7px;
 
   @include tablet {
-    font-size: 12.5px;
-    line-height: 1.333;
+    @include font-height(12.5px, 1.333);
+    // font-size: 12.5px;
+    // line-height: 1.333;
     margin: 0px 0px 18px;
   }
 
   @include desktop {
-    font-size: 12.5px;
-    line-height: 1.333;
+    // font-size: 12.5px;
+    // line-height: 1.333;
     margin: 0px 0px 18px;
     padding-right: 276px;
   }
 }
 
 .graduate-card__text {
-  font-size: 11px;
-  color: #18191d;
-  line-height: 1.818;
+  @include font-settings($first-text-size, 1.818, 0.6px);
+  // font-size: 11px;
+  // line-height: 1.818;
+  // letter-spacing: 0.6px;
+  // color: #18191d;
   padding: 0px 2px;
   margin: 0px;
-  letter-spacing: 0.6px;
 
   &--colortext {
     color: #ff6b08;
@@ -79,9 +85,10 @@
   }
 
   @include tablet {
+    @include line-letter(1.9, 0.7px);
+    // line-height: 1.9;
+    // letter-spacing: 0.7px;
     padding-right: 10px;
-    line-height: 1.9;
-    letter-spacing: 0.7px;
 
     &--narrow {
       display: none;
@@ -93,9 +100,10 @@
   }
 
   @include desktop {
-    font-size: 16.667px;
-    line-height: 1.75;
-    letter-spacing: 0.7px;
+    @include font-settings(16.667px, 1.75, 0.7px);
+    // font-size: 16.667px;
+    // line-height: 1.75;
+    // letter-spacing: 0.7px;
     padding: 0px 20px 0px 0px;
   }
 }

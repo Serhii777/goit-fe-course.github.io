@@ -9,11 +9,10 @@ html {
 }
 
 body {
+  font-family: $main-font-stack;
   font-size: $first-text-size;
   line-height: $main-text-height;
-  font-family: $main-font-stack;
   color: $first-grey-color;
-  // counter-reset: count-problem count-block;
   margin: 0px;
   padding: 0px;
 }

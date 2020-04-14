@@ -1,15 +1,17 @@
 .menu-icons {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
   margin: 0px;
   padding-left: 50px;
   @extend %list;
 
   @include tablet {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include center-flex('spbtw');
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // justify-content: space-between;
     align-items: center;
     padding: 0px;
   }
@@ -30,8 +32,10 @@
 }
 
 .menu-icons__item {
-  display: flex;
-  flex-direction: row;
+  @include center-flex('row');
+  // display: flex;
+  // flex-direction: row;
+  flex-wrap: nowrap;
 
   &:not(:nth-last-of-type(-3n+1)) {
     margin-bottom: 24px;
@@ -114,24 +118,28 @@
 }
 
 .menu-icons__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-flex('all');
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 58px;
   height: 58px;
-  border: 2px solid #ff6b08;
+  border: 2px solid $first-orange-color;
   @extend %link;
   position: relative;
   margin: 0px 14px 0px 0px;
 
   &::after {
-    display: block;
-    content: '';
-    position: absolute;
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 2px;
     height: 36px;
-    background: #ffffff;
-    right: -2px;
+    background: $first-white-color;
+    @include absolute-tr(absolute, 50%, -2px);
+    // position: absolute;
+    // right: -2px;
+    transform: translateY(-50%);
   }
 
   @include tablet {
@@ -154,7 +162,7 @@
 .menu-icons__icon {
   width: 36px;
   height: 36px;
-  fill: #ff6b08;
+  fill: $first-orange-color;
 
   @include tablet {}
 
@@ -168,9 +176,10 @@
 
 .menu-icons__description {
   flex-basis: 120px;
-  font-size: 13px;
-  color: rgb(24, 25, 29);
-  line-height: 1.538;
+  @include font-height($third-text-size, 1.538);
+  // font-size: 13px;
+  // line-height: 1.538;
+  // color: #18191d;
   text-align: left;
   margin: 0px;
   // padding-right: 40px;
@@ -181,15 +190,17 @@
   }
 
   @include desktop {
-    font-size: 18px;
-    line-height: 1.556;
+    @include font-settings($eigth-text-size, 1.556, 1px);
+    // font-size: 18px;
+    // line-height: 1.556;
+    // letter-spacing: 1px;
     margin: -18px;
     z-index: 1;
-    letter-spacing: 1px;
   }
 
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1.6;
+    @include font-height($twenty-one-text-size, 1.6);
+    // font-size: 21px;
+    // line-height: 1.6;
   }
 }

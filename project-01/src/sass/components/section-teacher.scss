@@ -1,47 +1,53 @@
-// .section-teacher {
-// display: flex;
-// }
-
 .section-teacher__wrapper {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  @include center-flex('col');
   padding: 0px 20px;
   margin-bottom: 44px;
 
   @include tablet {
     padding: 0px 40px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   @include desktop {
     padding: 84px 35px 0px;
-    margin-bottom: 74px;}
+    margin-bottom: 74px;
+  }
 
   @include desktop-wide {
     padding: 0px 240px 0px 186px;
-    margin-bottom: 104px;}
+    margin-bottom: 104px;
+  }
 }
 
 .section-teacher__title {
-  font-size: 20px;
-  color: #111517;
-  line-height: 1.5;
+  @include font-settings($tenth-text-size, 1.5, 1.2px);
+  // font-size: 20px;
+  // line-height: 1.5;
+  // letter-spacing: 1.2px;
+  // color: #111517;
   margin: 0px 0px 22px;
-  letter-spacing: 1.2px;
 
   @include tablet {
-    font-size: 26px;
-    line-height: 2.405;
-    margin-bottom: 14px;}
+    @include font-height($twenty-six-text-size, 2.405);
+    // font-size: 26px;
+    // line-height: 2.405;
+    margin-bottom: 14px;
+  }
 
   @include desktop {
-    font-size: 42px;
-    line-height: 1.489;
+    @include font-settings($forty-two-text-size, 1.489, 1.8px);
+    // font-size: 42px;
+    // line-height: 1.489;
+    // letter-spacing: 1.8px;
     margin-bottom: 44px;
-    letter-spacing: 1.8px;}
+  }
 
   @include desktop-wide {
-    font-size: 46px;
-    line-height: 1.365;
-    margin-bottom: 68px;}
+    @include font-height($forty-six-text-size, 1.365);
+    // font-size: 46px;
+    // line-height: 1.365;
+    margin-bottom: 68px;
+  }
 }

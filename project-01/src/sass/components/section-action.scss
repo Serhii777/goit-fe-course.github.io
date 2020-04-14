@@ -1,6 +1,7 @@
 .section-action__wrapper {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
   text-align: center;
   padding: 40px 0px 0px;
 
@@ -21,35 +22,39 @@
 }
 
 .section-action__title {
-  font-size: 20px;
-  color: rgb(24, 25, 29);
-  line-height: 1.65;
+  @include font-settings($tenth-text-size, 1.65, 1.45px);
+  // font-size: 20px;
+  // line-height: 1.65;
+  // letter-spacing: 1.45px;
+  // color: #18191d;
   margin: 0px 0px 34px 0px;
-  letter-spacing: 1.45px;
 
   @include tablet {
-    font-size: 26px;
-    line-height: 1.269;
-    margin: 0px 0px 34px 0px;
+    @include font-height($twenty-six-text-size, 1.269);
+    // font-size: 26px;
+    // line-height: 1.269;
+    margin: 0px 0px 36px 0px;
     padding-right: 10px;
   }
 
   @include desktop {
-    font-size: 42px;
-    line-height: 1;
+    @include font-settings($forty-two-text-size, 1, 1.8px);
+    // font-size: 42px;
+    // line-height: 1;
+    // letter-spacing: 1.8px;
     text-align: left;
     margin: 0px 0px 44px 0px;
-    letter-spacing: 1.8px;
   }
-
+  
   @include desktop-wide {
-    font-size: 46px;
-    line-height: 1.365;
-    letter-spacing: 1.9px;
+    @include font-settings($forty-six-text-size, 1.365, 1.9px);
+    // font-size: 46px;
+    // line-height: 1.365;
+    // letter-spacing: 1.9px;
     margin-bottom: 0px 0px 32px 0px;
   }
 }
 
 .section-action__items {
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }

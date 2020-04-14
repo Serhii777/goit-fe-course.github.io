@@ -18,19 +18,22 @@
 }
 
 .section-problem__wrapper {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
+  flex-wrap: nowrap;
   height: 516px;
-  background-color: #111517;
+  background-color: $first-lightdark-color;
   padding: 46px 20px 0px;
 
   @include tablet {
     width: 100%;
     height: 328px;
     padding: 56px 40px 0px 40px;
-    background-image: url(../../images/bgr-fire.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    @include bgr-image('../../images/bgr-fire.png', contain, no-repeat);
+    // background-image: url(../../images/bgr-fire.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
     background-position: 0 0;
   }
 
@@ -48,75 +51,79 @@
 }
 
 .section-problem__title {
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  line-height: 1.578;
+  @include font-settings($tenth-text-size, 1.578, 1.2px);
+  // font-size: 20px;
+  // line-height: 1.578;
+  // letter-spacing: 1.2px;
+  // color: rgb(255, 255, 255);
   text-align: left;
   margin: 0px 0px 12px 0px;
   padding: 0px 45px 0px 0px;
   white-space: pre-line;
-  letter-spacing: 1.2px;
-
+  
   &--newline {
     display: none;
   }
-
+  
   &--position {
     // display: none;
     padding-right: 0px;
   }
-
+  
   &--colortext {
     color: #ff6b08;
     padding-right: 0px;
   }
-
+  
   @include tablet {
-    font-size: 26px;
-    line-height: 1.269;
+    @include font-settings($twenty-six-text-size, 1.269, 1.3px);
+    // font-size: 26px;
+    // line-height: 1.269;
+    // letter-spacing: 1.3px;
     padding: 0px 200px 0px 0px;
     white-space: initial;
     margin: 0px 0px 24px 0px;
-    letter-spacing: 1.3px;
-
+    
     &--newline {
       display: inline-block;
       padding: 0px;
     }
-
+    
     &--position {
       display: inline;
       // white-space: pre;
       padding: 0px;
     }
-
+    
     &--colortext {
       padding-right: 0px;
     }
   }
-
+  
   @include desktop {
-    font-size: 42px;
-    line-height: 1.346;
+    @include font-settings($forty-two-text-size, 1.346, 1.78px);
+    // font-size: 42px;
+    // line-height: 1.346;
+    // letter-spacing: 1.78px;
     padding-right: 480px;
     margin-bottom: 42px;
-    letter-spacing: 1.78px;
-
+    
     &--position {
       padding: 0px;
     }
-
+    
     &--colortext {
       padding-right: 0px;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 46px;
-    line-height: 1.365;
+    @include font-settings($forty-six-text-size, 1.365, 1.8px);
+    // font-size: 46px;
+    // line-height: 1.365;
+    // letter-spacing: 1.8px;
     padding-right: 530px;
     margin-bottom: 64px;
-    letter-spacing: 1.8px;
 
     &--position {
       padding: 0px;

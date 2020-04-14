@@ -1,6 +1,7 @@
 .list-warranty {
-  display: flex;
-  flex-direction: column;
+  @include center-flex('col');
+  // display: flex;
+  // flex-direction: column;
   text-align: left;
   @extend %list;
   padding: 24px 0px 0px;
@@ -25,34 +26,39 @@
   padding-left: 30px;
 
   &::before {
-    display: block;
-    content: '';
-    position: absolute;
+    @include pseudo($display: block);
+    // display: block;
+    // content: '';
     width: 13px;
     height: 18px;
-    background-color: #f1f1f1;
-    background-image: url(../../images/icons-svg/fire3x.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $fourth-white-color;
+    @include bgr-image('../../images/icons-svg/fire3x.svg', cover, no-repeat);
+    // background-image: url(../../images/icons-svg/fire3x.svg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
     background-position: center;
-    top: 0px;
-    left: -7px;
+    @include absolute-tl(absolute, 0px, -7px);
+    // position: absolute;
+    // top: 0px;
+    // left: -7px;
     z-index: 1;
   }
-
+  
   &:nth-last-of-type(-3n+1) {
-    border-left: 1px dotted #f1f1f1;
-
+    border-left: 1px dotted $fourth-white-color;
+    
     &::after {
-      display: block;
-      content: '';
-      position: absolute;
+      @include pseudo($display: block);
+      // display: block;
+      // content: '';
       width: 2px;
       height: 18px;
       border: none;
-      border-left: 1px dotted #bbbbbb;
-      top: 0px;
-      left: -1px;
+      border-left: 1px dotted $third-lightgrey-color;
+      @include absolute-tl(absolute, 0px, -1px);
+      // position: absolute;
+      // top: 0px;
+      // left: -1px;
     }
   }
 
@@ -61,7 +67,7 @@
   }
 
   &:not(:nth-last-of-type(-3n+1)) {
-    border-left: 1px dotted #bbbbbb;
+    border-left: 1px dotted $third-lightgrey-color;
   }
 
   @include tablet {
@@ -100,9 +106,10 @@
 }
 
 .list-warranty__text {
-  font-size: 11px;
-  color: rgb(24, 25, 29);
-  line-height: 1.818;
+  @include font-height($first-text-size, 1.818);
+  // font-size: 11px;
+  // line-height: 1.818;
+  // color: #18191d;
   margin: 0px;
   word-spacing: 3px;
 
@@ -140,32 +147,34 @@
   }
 
   @include desktop {
-    font-size: 18px;
-    line-height: 1.62;
+    @include font-settings($eigth-text-size, 1.62, 0.5px);
+    // font-size: 18px;
+    // line-height: 1.62;
+    // letter-spacing: 0.5px;
     padding: 0px;
-    letter-spacing: 0.5px;
-
+    
     &--position {
       padding-right: 0px;
     }
-
+    
     &--placing {
       padding-right: 0px;
     }
-
+    
     &--location {
       display: none;
     }
-
+    
     &--newstring {
       display: block;
     }
   }
-
+  
   @include desktop-wide {
-    font-size: 21px;
-    line-height: 1.4;
-    letter-spacing: 0.7px;
+    @include font-settings($twenty-one-text-size, 1.4, 0.7px);
+    // font-size: 21px;
+    // line-height: 1.4;
+    // letter-spacing: 0.7px;
     //   padding: 0px 20px 0px 0px;
 
     &--newline {
