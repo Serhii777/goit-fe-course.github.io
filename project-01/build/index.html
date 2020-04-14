@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>project-01 title</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper container">
+      <nav class="navigation header__navigation ">
+        <a href="#" class="logo navigation__logo">
+          <img class="img logo__img " src="./images/logo-mob.png" alt="brand and company name"
+            srcset="images/logo-mob.png 320w, images/logo-tabl.png 768w, images/logo-desk.png 1280w"
+            sizes="(min-width: 1320px) 1280px, (min-width: 808px) 768px, 320px">
+        </a>
+        <ul class="menu navigation--list">
+          <li class="menu__item">
+            <a class="menu__link typographic-tb text-lightgrey" href="#program">Программа обучения</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link typographic-tb text-lightgrey" href="#choice">о нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link typographic-tb text-lightgrey" href="#action">варианты обучения</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link typographic-tb text-lightgrey" href="#consultation">контакты</a>
+          </li>
+          <li class="menu__item menu__item--button">
+            <button class="button button--lighter menu__button typographic-tb" type="button">консультация по
+              телефону</button>
+          </li>
+        </ul>
+        <div class="burger navigation__burger">
+          <span class="burger__block"></span>
+        </div>
+      </nav>
+
+      <section class="section-training header__section-training">
+        <div class="section-training__wrapper">
+          <div class="section-training__content">
+            <h2 class="section-training__title typographic-meb text-dark">Комплексная подготовка к ВНО <br /> по
+              английскому
+              языку</h2>
+            <p class="section-training__slogan typographic-mb text-dark">Просто не будет. <br /> Но ты гарантировано
+              наберешь
+              <span class="section-training__slogan section-training__slogan--colortext typographic-mb">+25
+                баллов</span></p>
+            <button class="button button--light section-training__button typographic-tb" type="button">хочу на
+              бесплатное занятие</button>
+          </div>
+          <div class="section-training__img">
+            <picture>
+              <source srcset="images/train-desk-large.png" type="image/png" media="(min-width: 1680px)">
+              <source srcset="images/train-desk.png" type="image/png" media="(min-width: 1280px)">
+              <source srcset="images/train-tabl.png" type="image/png" media="(min-width: 768px)">
+              <img class="img card__image" src="./images/train-mob.png"
+                alt="Комплексная подготовка к ВНО по английскому языку">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-icons header__section-icons">
+        <div class="section-icons__wrapper">
+          <h2 class="section-icons__title visually-hidden">Наше преимущество</h2>
+          <ul class="menu-icons">
+            <li class="menu-icons__item menu-icons__item--first">
+              <a href="#" class="menu-icons__link menu-icons__link--female">
+                <svg class="menu-icons__icon">
+                  <use y="-1" x="-7" width="135%" height="130%" href="./images/icons-svg/symbol-defs.svg#icon-female">
+                  </use>
+                </svg>
+              </a>
+              <p class="menu-icons__description typographic-mb text-dark">Адаптированная авторская программа ВНО</p>
+            </li>
+            <li class="menu-icons__item menu-icons__item--second">
+              <a href="#" class="menu-icons__link menu-icons__link--mobile">
+                <svg class="menu-icons__icon">
+                  <use y="-1" x="-7" width="135%" height="130%"
+                    href="./images/icons-svg/symbol-defs.svg#icon-mobile-learning">
+                  </use>
+                </svg>
+              </a>
+              <p class="menu-icons__description typographic-mb text-dark">Современные методики обучения</p>
+            </li>
+            <li class="menu-icons__item menu-icons__item--third">
+              <a href="#" class="menu-icons__link menu-icons__link--insurance">
+                <svg class="menu-icons__icon">
+                  <use y="-1" x="-7" width="135%" height="130%"
+                    href="./images/icons-svg/symbol-defs.svg#icon-insurance">
+                  </use>
+                </svg>
+              </a>
+              <p class="menu-icons__description menu-icons__description--size typographic-mb text-dark">Финансовая
+                гарантия
+                результата</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="wrapper main--wrapper container">
+      <h1 class="main-title visually-hidden">Комплексное изучение английского языка</h1>
+
+      <section class="section-problem container">
+        <div class="section-problem__wrapper">
+          <h2 class="section-problem__title typographic-meb text-white">Главные проблемы учеников
+            на English ВНО, которые <br class="section-problem__title--newline" /><span
+              class="section-problem__title section-problem__title--position">мы
+            </span><span class="section-problem__title section-problem__title--colortext">помогаем</span> решить</h2>
+          <ul class="menu-problem section-problem__menu-problem items">
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Незнание <span
+                  class="menu-problem__text menu-problem__text--position"> грамматики</span></p>
+            </li>
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Неумение воспринимать устную английскую речь</p>
+            </li>
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Скупой словарный запас <br /> для написания
+                сочинения</p>
+            </li>
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Подготовка в одиночку</p>
+            </li>
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Отсутствие единого <br /> ресурса знаний</p>
+            </li>
+            <li class="menu-problem__item">
+              <p class="menu-problem__text typographic-mb text-dark">Недостаток самоорганизации и лень</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-action" id="action">
+        <div class="section-action__wrapper">
+          <h2 class="section-action__title typographic-meb text-dark">Как мы это делаем</h2>
+          <ul class="menu-actions section-action__items items">
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-study"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Адаптированная программа
+                  подготовки к ВНО</h3>
+                <p class="menu-actions__text typographic-mr text-grey">Ты будешь изучать грамматику<br />
+                  и лексику одновременно. <br />
+                  И ты научишься писать сочинения.</p>
+              </a>
+            </li>
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-mobile-learning"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Аудиторное<br
+                    class="menu-actions__title--location" />
+                  и онлайн-обучение</h3>
+                <p class="menu-actions__text typographic-mr text-grey">Учитель поможет не <span
+                    class="menu-actions__text menu-actions__text--position">только</span>
+                  в аудитории, но и во время домашней подготовки. Родители могут <span
+                    class="menu-actions__text menu-actions__text--position"> участвовать</span> в чате при желании.</p>
+              </a>
+            </li>
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-open-book"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Привычка читать
+                  <br class="menu-actions__title--location" />на английском языке</h3>
+                <p class="menu-actions__text typographic-mr text-grey">Статьи из источников, которые используются при
+                  разработке
+                  настоящего ВНО, будут
+                  приходить на телефон дважды в неделю.</p>
+              </a>
+            </li>
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-communication"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Психологическая<br
+                    class="menu-actions__title--location" /> поддержка</h3>
+                <p class="menu-actions__text typographic-mr text-grey">Мы научим тебя методикам прохождения
+                  тестирований, <br class="menu-actions__text--location" />умению планировать свою<br
+                    class="menu-actions__text--location" />
+                  подготовку уверенности в себе</p>
+              </a>
+            </li>
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-female"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Обучение по автроским
+                  пособиям</h3>
+                <p class="menu-actions__text typographic-mr text-grey">Тебе не нужно тратить время на самостоятельный
+                  поиск
+                  материала и ничего покупать
+                  дополнительно. Мы составили 2 пособия для тебя.</p>
+              </a>
+            </li>
+            <li class="menu-actions__item">
+              <a href="#" class="link menu-actions__link">
+                <svg class="icon menu-actions__icon">
+                  <use width="104%" height="127%" href="./images/icons-svg/symbol-defs.svg#icon-audio-book"></use>
+                </svg>
+                <h3 class="menu-actions__title typographic-mb text-lightdark">Умение воспринивать
+                  устную <br class="menu-actions__title--newline" />английскую речь</h3>
+                <p class="menu-actions__text typographic-mr text-grey">“F.R.I.E.N.D.S” тебе не помогут.
+                  Ты будешь регулярно слушать <br class="menu-actions__text--location" />и разбирать аудиозаписи в
+                  соответствии с изучаемой лексикой.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-program" id="program">
+        <div class="section-program__wrapper container">
+          <h2 class="section-program__title typographic-meb text-white">Наша программа</h2>
+          <ul class="list-program section-program__list">
+            <li class="list-program__item list-program__item--first">
+              <div class="list-program__wrapper">
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <ul class="list-program__contents">
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Grammar</span>
+                    <p class="list-program__text typographic-mr ">Nouns & Articles
+                      Adjectives & Adverb</p>
+                  </li>
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Vocabulary</span>
+                    <p class="list-program__text typographic-mr ">Family & Relations
+                      People & Society<br class="list-program__text--location" /></p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-program__item list-program__item--second">
+              <div class="list-program__wrapper">
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <ul class="list-program__contents">
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Grammar</span>
+                    <p class="list-program__text typographic-mr ">Pronouns
+                      Active Voice
+                      Passive Voice</p>
+                  </li>
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Vocabulary</span>
+                    <p class="list-program__text typographic-mr">Home
+                      School
+                      Worky</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-program__item list-program__item--third">
+              <div class="list-program__wrapper">
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <ul class="list-program__contents">
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Grammar</span>
+                    <p class="list-program__text typographic-mr ">Modal verbs
+                      Infinitive
+                      Gerund
+                      Participle: 1, 2<br class="list-program__text--location" /></p>
+                  </li>
+                  <li class="list-program__content">
+                    <span
+                      class="list-program__segment list-program__segment--vocabulary typographic-mm text-orange">Vocabulary</span>
+                    <p class="list-program__text typographic-mr ">Travel & Tourism
+                      Culture & Free Time
+                      Sport</p>
+                  </li>
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Writing</span>
+                    <p class="list-program__text typographic-mr ">Informal Letter</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-program__item list-program__item--fourth">
+              <div class="list-program__wrapper">
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <ul class="list-program__contents">
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Grammar</span>
+                    <p class="list-program__text typographic-mr ">Clauses: Conditional
+                      and Wishes
+                      Direct/Reported speech
+                      Preposition
+                      Conjunction
+                      <span class="list-program__text list-program__text--word">Numeral</span><br
+                        class="list-program__text--location" /></p>
+                  </li>
+                  <li class="list-program__content">
+                    <span
+                      class="list-program__segment list-program__segment--vocabulary typographic-mm text-orange">Vocabulary</span>
+                    <p class="list-program__text typographic-mr ">Healthy Living
+                      Nature & Environment
+                      Money</p><br class="list-program__text--location" />
+                  </li>
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">Writing</span>
+                    <p class="list-program__text typographic-mr ">Formal Letter</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-program__item list-program__item--fifth">
+              <div class="list-program__wrapper">
+                <h3 class="list-program__title typographic-mb text-white">семестр</h3>
+                <ul class="list-program__contents">
+                  <li class="list-program__content">
+                    <span class="list-program__segment typographic-mm text-orange">
+                      <span class="list-program__hidden-element">Grammar</span></span>
+                    <p class="list-program__text typographic-mr ">Revision
+                      Tests </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="section-program__img"></div>
+        </div>
+      </section>
+
+      <section class="section-choosing container" id="choice">
+        <div class="section-choosing__wrapper">
+          <h2 class="section-choosing__title typographic-meb text-white">Почему нас
+            выбирают</h2>
+          <ul class="menu-problem menu-problem--select section-choosing__menu-problem">
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Обучение в <span
+                  class="menu-problem__text menu-problem__text--format menu-problem__text--position">малых</span>
+                командах</p>
+            </li>
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Визуализированные
+                конспекты</p>
+            </li>
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Каждое занятие имеет
+                цель и конкретный
+                результат </p>
+            </li>
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Реальные результаты преподавателя</p>
+            </li>
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Программа курса
+                соответствует требованиям
+                МОН Украины</p>
+            </li>
+            <li class="menu-problem__item menu-problem__item--selection">
+              <p class="menu-problem__text menu-problem__text--format">Набор команд по уровням знаний</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-teacher">
+        <div class="section-teacher__wrapper">
+          <h2 class="section-teacher__title typographic-meb text-lightdark">Преподаватель</h2>
+          <div class="card section-teacher__card">
+            <div class="card__img">
+              <picture>
+                <source srcset="images/teacher-desk-larg.png" type="image/png" media="(min-width: 1720px)">
+                <source srcset="images/teacher-desk.png" type="image/png" media="(min-width: 1320px)">
+                <source srcset="images/teacher-tabl.png" type="image/png" media="(min-width: 808px)">
+                <img class="img card__image" src="./images/teacher.png" alt="Елена Морева">
+              </picture>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title typographic-meb text-lightdark">Елена Морева</h3>
+              <ul class="card__items">
+                <li class="card__item">
+                  <p class="card__description typographic-msb text-lightdark">Опыт подготовки <span
+                      class="card__description card__description--position">учеников</span>
+                    к ВНО - 6 лет</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__description typographic-msb text-lightdark">Собственный результат сдачи ВНО - 197
+                    баллов 2 года
+                    подряд</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__description typographic-msb text-lightdark">Сдала на отлично международный аналог ВНО
+                    - Кембриджский
+                    PET (Preliminary Eng&shy;lish Test)</p>
+                </li>
+              </ul>
+              <p class="card__text card__text--position typographic-mr">Высшее образование получила в Институте
+                международных отношений НАУ по специальности переводчик - аналитик.</p>
+              <p class="card__text typographic-mr">В свободное время проходит курсы от лучших университетов мира по
+                эффективному преподаванию и методикам написания сочинений.</p>
+              <p class="card__text typographic-mr">В числе пройденных: English Grammar and Essay&shy; Writing
+                (Berke&shy;ley), English Grammar&Style (The University of Queesland), How to Write an Essay
+                (Berke&shy;ley), Academic and Business Writing (Berke&shy;ley), The Art of Teaching (GEMS
+                edu&shy;cation), Powerful Tools for Teaching and Learning (University of Houston).</p>
+              <a href="#" class="card__link typographic-mr text-orange">Cambrige English Entry Level Certificate</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-warranty">
+        <div class="section-warranty__wrapper">
+          <h2 class="section-warranty__title typographic-meb text-lightdark">Мы гарантируем</h2>
+          <div class="section-warranty__wrapper-list">
+            <ul class="list-warranty section-warranty__items">
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm text-dark">Ты сдашь ВНО минимум на 25 баллов лучше, чем на
+                  первом
+                  пробном
+                  тестировании.<br class="list-warranty__text--newline" /> Иначе мы вернем деньги.<span
+                    class="list-warranty__text typographic-mm list-warranty__text--colortext">*</span></p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm text-dark">Ты научишься писать сочинения минимум на 10
+                  баллов из
+                  14. <br class="list-warranty__text--newstring" /><span
+                    class="list-warranty__text list-warranty__text--colortext typographic-mm">В то
+                    время как 20% учеников получили
+                    за сочинение 0.</span>
+                </p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm text-dark">Ты будешь заниматься в своем районе. Мы выберем
+                  место
+                  проведения занятий после формирования команд.</p>
+              </li>
+              <li class="list-warranty__item">
+                <p class="list-warranty__text typographic-mm text-dark">Команды будут <span
+                    class="list-warranty__text list-warranty__text--position">сформированы,</span>
+                  исходя из начального <span
+                    class="list-warranty__text list-warranty__text--position">уровня</span><span
+                    class="list-warranty__text list-warranty__text--placing"> учеников. </span><br
+                    class="list-warranty__text--location" />Мы учитываем особенности каждого ученика.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slider">
+        <div class="section-slider__wrapper">
+          <h2 class="section-slider__title typographic-meb text-lightdark">Отзывы <span
+              class="section-slider__title section-slider__title--position">наших</span> выпускников</h2>
+          <ul class="slider section-slider__items">
+            <li class="slider__item slider__item--first-card">
+              <div class="slider__link-wrapper">
+                <a href="#" class="slider__link slider__link--img">
+                  <picture>
+                    <source srcset="images/graduate7.png" type="image/png" media="(min-width: 1320px)">
+                    <source srcset="images/graduate1.png" type="image/png" media="(max-width: 1319px)">
+                    <img class="img slider__img" src="./images/graduate1.png" alt="Тоня Кучеровская">
+                  </picture>
+                </a>
+                <a href="#" class="slider__link slider__link--icon">
+                  <svg class="slider__icon" width="26px" height="14px">
+                    <use y="-5" x="-11" width="186%" height="176%" href="./images/icons-svg/symbol-defs.svg#icon-vk">
+                    </use>
+                  </svg>
+                </a>
+              </div>
+              <div class="graduate-card slider__graduate-card">
+                <h3 class="graduate-card__title typographic-meb text-orange">Тоня Кучеровская</h3>
+                <p class="graduate-card__description typographic-mm text-grey">Выпуск 2015-го года, Національний
+                  університет
+                  біоресурсів
+                  і природокористування України</p>
+                <p class="graduate-card__text graduate-card__text--narrow typographic-mm text-dark">За короткий час
+                  занять з
+                  Оленою я опанувала граматику і
+                  поповнила свій зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що знаходжуся у своїй
+                  тарілці ...<a class="graduate-card__link graduate-card__text graduate-card__text--colortext"
+                    href="#">Читать
+                    дальше</a>
+                </p>
+                <p class="graduate-card__text graduate-card__text--wide typographic-mm text-dark">За короткий час
+                  занять з Оленою я опанувала граматику і
+                  поповнила свій зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що знаходжуся у
+                  своїй
+                  тарілці. Ми з Оленою стали друзями, тому що її справді хвилювала моя успішність. Вона стала для мене
+                  авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз я можу
+                  похизуватись тим, що я студен ...
+                  <a class="graduate-card__link graduate-card__text graduate-card__text--colortext" href="#">Читать
+                    дальше</a></p>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="cards-slides__wrapper">
+                <ul class="cards-slides">
+                  <li class="cards-slides__item cards-slides__item--second-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate2.png" alt="name of the second card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--third-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate3.png" alt="name of the third card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--fourth-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate4.png" alt="name of the fourth card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--fifth-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate5.png" alt="name of the fifth card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--sixth-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate6.png" alt="name of the sixth card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--seventh-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate7.png" alt="name of the seventh card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                  <li class="cards-slides__item cards-slides__item--eighth-card">
+                    <a href="#" class="cards-slides__link">
+                      <img class="cards-slides__image" src="./images/graduate8.png" alt="name of the eighth card"
+                        width="54" height="54">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button class="section-slider__button  section-slider__button--left-arrow" type="button">
+            <svg class="icon section-slider__icon">
+              <use y="-4" x="-12" width="200%" height="165%" href="./images/icons-svg/symbol-defs.svg#icon-left-arrow">
+              </use>
+            </svg>
+          </button>
+          <button class="section-slider__button section-slider__button--right-arrow" type="button">
+            <svg class="icon section-slider__icon">
+              <use y="-4" x="-12" width="200%" height="165%" href="./images/icons-svg/symbol-defs.svg#icon-right-arrow">
+              </use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-form">
+        <div class="section-form__wrapper">
+          <form class="section-form__form" action="#" method="GET" id="registration">
+            <h2 class="section-form__title typographic-meb text-white">Регистрация на
+              <span class="section-form__title section-form__title--colortext">бесплатную </span> телефонную
+              <span class="section-form__title section-form__title--colortext">консультацию </span>
+              по нюансам ЗНО<br /> по английскому языку</h2>
+            <p class="section-form__description typographic-msb text-white">Оставь заявку на участие в<span
+                class="section-form__description section-form__description--colortext"> бесплатном занятии. </span>
+              С вами свяжется консультант и ответит на вопросы.</p>
+            <input class="input-field section-form__input typographic-mb" type="text" name="name" placeholder="Имя*"
+              minlength="4" maxlength="30" autocomplete="name" required>
+            <input class="input-field section-form__input typographic-mb" type="tel" name="phone" placeholder="Телефон*"
+              minlength="6" maxlength="30" autocomplete="tel" required>
+            <button class="button section-form__button button--light button--longer typographic-tb" type="submit">хочу
+              на бесплатное
+              занятие</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
+  <footer class="footer container">
+    <div class="footer__wrapper ">
+      <ul class="footer__menu">
+        <li class="footer__item footer__item--logo">
+          <a href="#" class="footer__logo logo">
+            <img class="img footer__img" src="./images/logo-mob.png" alt="brand and company name"
+              srcset="images/logo-mob.png 320w, images/logo-tabl.png 768w, images/logo-desk.png 1280w"
+              sizes="(min-width: 1320px) 1280px, (min-width: 808px) 768px, 320px">
+          </a>
+        </li>
+        <li class="footer__item footer__item--form">
+          <form class="footer-form footer__form" action="#" method="GET" id="consultation">
+            <label class="footer-form__label" for="phoneNummber">
+              <svg class="icon footer-form__icon">
+                <use y="0" x="-3" width="125%" height="125%" href="./images/icons-svg/symbol-defs.svg#icon-call">
+                </use>
+              </svg>
+              <input class="footer-form__input typographic-msb text-lightdark" type="tel" name="tel" id="phoneNummber"
+                placeholder="+38 (000) 000 00 00" required autocomplete="tel" minlength="13" maxlength="19"
+                pattern="+38 ([0-9]{3}) [0-9]{3} [0-9]{2} [0-9]{2}">
+            </label>
+          </form>
+        </li>
+        <li class="footer__item footer__item--form">
+          <a href="#" class="footer__link">
+            <i class="footer__icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright footer__copyright ">
+      <p class="copyright__text typographic-mm text-light">
+        <span class="copyright__symbol typographic-mm text-light">&copy;</span> Все права защищены, 2019</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
