@@ -63,7 +63,7 @@
 .section-program__img {
   width: 142px;
   height: 169px;
-  background-image: url(../../images/pic.png);
+  background-image: url(../images/pic.png);
   position: absolute;
   right: 0px;
   bottom: -90px;
@@ -71,7 +71,7 @@
   @include tablet {
     width: 404px;
     height: 282px;
-    background-image: url(../../images/pic-tabl.png);
+    background-image: url(../images/pic-tabl.png);
     right: 0px;
     bottom: 58px;
   }
@@ -79,7 +79,7 @@
   @include desktop {
     width: 546px;
     height: 364px;
-    background-image: url(../../images/pic-desk.png);
+    background-image: url(../images/pic-desk.png);
     left: 0px;
     bottom: -136px;
   }
@@ -87,7 +87,7 @@
   @include desktop-wide {
     width: 700px;
     height: 485px;
-    background-image: url(../../images/pic-desk-larg.png);
+    background-image: url(../images/pic-desk-larg.png);
     left: 0px;
     bottom: -248px;
   }

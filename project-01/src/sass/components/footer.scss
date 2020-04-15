@@ -93,7 +93,7 @@
   display: block;
   width: 37px;
   height: 37px;
-  @include bgr-image('../../images/icons-svg/instagram.svg', cover, no-repeat);
+  @include bgr-image('../images/icons-svg/instagram.svg', cover, no-repeat);
   font-size: 0px;
   margin-bottom: 20px;
 

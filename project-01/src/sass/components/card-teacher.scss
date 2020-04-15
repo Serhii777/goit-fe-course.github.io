@@ -58,7 +58,7 @@
     font-size: $twenty-nine-text-size;
     margin: 0px 0px 34px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid $first-lightgrey-color;
   }
 
   @include desktop-wide {
@@ -88,11 +88,10 @@
 
   &::before {
     @include pseudo($display: block);
-    position: absolute;
     width: 16px;
     height: 12px;
-    @include bgr-image('../../images/icons-svg/check3x.svg', cover, no-repeat);
-    left: -34px;
+    @include bgr-image('../images/icons-svg/check3x.svg', cover, no-repeat);
+    @include absolute-tl(absolute, 0px, -34px);
 
     @include desktop {
       width: 20px;
@@ -131,7 +130,7 @@
   }
 
   @include desktop {
-    @include font-settings(16.667px, 1.75, 1px);
+    @include font-settings($custom-second-text-size, 1.75, 1px);
     padding-right: 108px;
 
     &--position {
@@ -170,7 +169,7 @@
   }
 
   @include desktop {
-    @include font-height(16.667px, 1.75);
+    @include font-height($custom-second-text-size, 1.75);
     margin-bottom: 16px;
     padding: 0px 28px 0px 0px;
     word-wrap: break-word;
@@ -215,6 +214,6 @@
   }
 
   @include desktop {
-    @include font-height(16.667px, 1.75);
+    @include font-height($custom-second-text-size, 1.75);
   }
 }

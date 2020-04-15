@@ -28,7 +28,7 @@
     width: 13px;
     height: 18px;
     background-color: $fourth-white-color;
-    @include bgr-image('../../images/icons-svg/fire3x.svg', cover, no-repeat);
+    @include bgr-image('../images/icons-svg/fire3x.svg', cover, no-repeat);
     background-position: center;
     @include absolute-tl(absolute, 0px, -7px);
     z-index: 1;

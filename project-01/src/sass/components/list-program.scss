@@ -328,7 +328,7 @@
   }
 
   @include desktop {
-    @include font-height(18.75px, 1.556);
+    @include font-height($custom-third-text-size, 1.556);
     padding: 0px;
     margin: 0px;
 

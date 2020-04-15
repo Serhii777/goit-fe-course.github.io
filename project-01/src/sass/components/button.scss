@@ -27,7 +27,7 @@
     &:focus {
       color: $first-white-color;
       background-color: $first-orange-color;
-      border: 2px solid #ffffff;
+      border: 2px solid $first-white-color;
     }
 
     &--longer {

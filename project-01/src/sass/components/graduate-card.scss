@@ -34,7 +34,7 @@
   margin: 0px 0px 14px;
 
   @include tablet {
-    @include font-height(12.5px, 1.333);
+    @include font-height($custom-first-text-size, 1.333);
     margin: 0px 0px 18px;
   }
 
@@ -75,7 +75,7 @@
   }
 
   @include desktop {
-    @include font-settings(16.667px, 1.75, 0.7px);
+    @include font-settings($custom-second-text-size, 1.75, 0.7px);
     padding: 0px 20px 0px 0px;
   }
 }

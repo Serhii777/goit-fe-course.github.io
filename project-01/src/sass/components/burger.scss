@@ -43,12 +43,10 @@
 }
 
 .burger__block {
-  position: absolute;
   width: 100%;
   height: 2px;
   background-color: $first-black-color;
-  left: 0;
-  top: 50%;
+  @include absolute-tl(absolute, 50%, 0px);
   transform: translateY(-50%);
   transition: all 0.1s linear;
 }

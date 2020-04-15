@@ -1,18 +1,18 @@
 .section-form {
   @include center-flex('col-ver');
   background-color: $first-lightdark-color;
-  @include bgr-image('../../images/form-bgr.png', cover, no-repeat);
+  @include bgr-image('../images/form-bgr.png', cover, no-repeat);
 
   @include tablet {
-    background-image: url(../../images/form-bgr-tabl.png);
+    background-image: url(../images/form-bgr-tabl.png);
   }
 
   @include desktop {
-    background-image: url(../../images/form-bgr-desk.png);
+    background-image: url(../images/form-bgr-desk.png);
   }
 
   @include desktop-wide {
-    background-image: url(../../images/form-bgr-desk-larg.png);
+    background-image: url(../images/form-bgr-desk-larg.png);
   }
 }
 
@@ -57,7 +57,7 @@
   }
 
   @include desktop {
-    @include font-settings(37.5px, 1.334, 1.8px);
+    @include font-settings($custom-fourth-text-size, 1.334, 1.8px);
     margin: 0px 0px 42px;
   }
 

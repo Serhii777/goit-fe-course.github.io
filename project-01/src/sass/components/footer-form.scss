@@ -16,16 +16,13 @@
 
     &::after {
       @include pseudo($display: block);
-      position: absolute;
       width: 1px;
       height: 29px;
       background-color: $third-white-color;
-      top: 5px;
-      right: -24px;
-
+      @include absolute-tr(absolute, 5px, -24px);
+      
       @include desktop {
-        top: 5px;
-        right: -26px;
+        @include absolute-tr(absolute, 5px, -26px);
       }
     }
   }
