@@ -91,11 +91,12 @@
     width: 16px;
     height: 12px;
     @include bgr-image('../images/icons-svg/check3x.svg', cover, no-repeat);
-    @include absolute-tl(absolute, 0px, -34px);
+    @include absolute-tl(absolute, 2px, -34px);
 
     @include desktop {
       width: 20px;
       height: 16px;
+      top: 4px;
       left: -40px;
     }
 

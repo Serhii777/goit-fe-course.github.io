@@ -120,10 +120,10 @@
 
   &::after {
     @include pseudo($display: block);
-    width: 2px;
+    width: 4px;
     height: 36px;
     background: $first-white-color;
-    @include absolute-tr(absolute, 50%, -2px);
+    @include absolute-tr(absolute, 50%, -3px);
     transform: translateY(-50%);
   }
 
