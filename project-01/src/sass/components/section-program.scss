@@ -1,12 +1,12 @@
 .section-program {
   display: flex;
-  position: relative;
   background-color: $first-lightdark-color;
 }
 
 .section-program__wrapper {
   @include center-flex('col');
-  padding-top: 46px;
+  padding-top: 44px;
+  position: relative;
 
   @include tablet {
     padding: 46px 40px 0px;
@@ -28,7 +28,7 @@
 
 .section-program__title {
   @include font-settings($tenth-text-size, 1.65, 1.2px);
-  margin: 0px 0px 23px 0px;
+  margin: 0px 0px 25px 0px;
   text-align: center;
 
   @include tablet {
@@ -73,7 +73,7 @@
     height: 282px;
     background-image: url(../images/pic-tabl.png);
     right: 0px;
-    bottom: 58px;
+    bottom: -108px;
   }
 
   @include desktop {
@@ -81,7 +81,7 @@
     height: 364px;
     background-image: url(../images/pic-desk.png);
     left: 0px;
-    bottom: -136px;
+    bottom: -210px;
   }
 
   @include desktop-wide {
@@ -89,6 +89,6 @@
     height: 485px;
     background-image: url(../images/pic-desk-larg.png);
     left: 0px;
-    bottom: -248px;
+    bottom: -324px;
   }
 }

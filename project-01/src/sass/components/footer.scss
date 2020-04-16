@@ -33,7 +33,7 @@
   @include tablet {
     @include center-flex('ver');
     justify-content: flex-start;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
   }
 
   @include desktop {

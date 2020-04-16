@@ -2,6 +2,7 @@
   @include center-flex('col-ver');
   background-color: $first-lightdark-color;
   @include bgr-image('../images/form-bgr.png', cover, no-repeat);
+  background-position: center;
 
   @include tablet {
     background-image: url(../images/form-bgr-tabl.png);
@@ -79,13 +80,17 @@
 
   @include tablet {
     @include font-height($fifth-text-size, 1.333);
-    margin: 0px 0px 40px;
+    margin: 0px 0px 38px;
     white-space: pre-line;
     text-align: left;
-    padding-left: 12px;
+    padding: 0px 0px 0px 56px;
 
     &--colortext {
-      padding: 0px;
+      padding: 0px 70px 0px 0px;
+    }
+
+    &--newstring {
+      display: block;
     }
   }
 
@@ -93,7 +98,11 @@
     @include font-height($eigth-text-size, 1.361);
     margin: 0px 0px 52px;
     text-align: center;
-    padding-left: 0px;
+    padding: 0px 100px;
+
+    &--colortext {
+      padding: 0px;
+    }
   }
 
   @include desktop-wide {
@@ -102,7 +111,7 @@
   }
 }
 
-.section-form__input:not(:nth-last-of-type(-2n+1)) {
+.section-form__input:not(:nth-last-of-type(-2n + 1)) {
   margin-bottom: 20px;
 
   @include tablet {
@@ -118,7 +127,7 @@
   }
 }
 
-.section-form__input:nth-last-of-type(-2n+1) {
+.section-form__input:nth-last-of-type(-2n + 1) {
   margin-bottom: 53px;
 
   @include tablet {

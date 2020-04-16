@@ -5,12 +5,12 @@
 
   @include tablet {
     padding: 0px 40px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   @include desktop {
-    padding: 84px 35px 0px;
-    margin-bottom: 74px;
+    padding: 82px 35px 0px;
+    margin-bottom: 76px;
   }
 
   @include desktop-wide {

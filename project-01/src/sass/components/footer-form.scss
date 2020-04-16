@@ -1,13 +1,8 @@
 .footer-form {
   @include center-flex('hor');
 
-  & input[type='tel']:valid {
+  & input[type='tel']:required:valid {
     outline: 2px solid $first-green-color;
-    outline-offset: -2px;
-  }
-
-  & input[type='tel']:invalid {
-    outline: 2px solid $first-red-color;
     outline-offset: -2px;
   }
 
@@ -20,7 +15,7 @@
       height: 29px;
       background-color: $third-white-color;
       @include absolute-tr(absolute, 5px, -24px);
-      
+
       @include desktop {
         @include absolute-tr(absolute, 5px, -26px);
       }
@@ -54,10 +49,15 @@
   max-width: 218px;
   @include font-settings($eigth-text-size, 2.083, 0.8px);
   padding: 0px 0px 0px 8px;
+  border: none;
 
   &::-webkit-input-placeholder {
     @include font-settings($eigth-text-size, 2.083, 0.8px);
-    @include font-family-settings($font-family-monts, $font-weight-bold, $first-lightdark-color);
+    @include font-family-settings(
+      $font-family-monts,
+      $font-weight-bold,
+      $first-lightdark-color
+    );
   }
 
   @include tablet {

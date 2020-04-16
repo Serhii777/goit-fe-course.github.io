@@ -34,7 +34,7 @@
   }
 
   &:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   @include tablet {
@@ -96,11 +96,11 @@
   }
 
   @include desktop {
-    margin: 0px 0px 18px 0px;
+    margin: 0px 0px 21px 0px;
   }
 
   @include desktop-wide {
-    margin: 0px 0px 14px 0px;
+    margin: 0px 0px 16px 0px;
   }
 }
 
@@ -110,7 +110,7 @@
   padding: 0px 10px;
   position: relative;
   transition: all 0.2s linear;
-  white-space: pre-line;
+  // white-space: pre-line;
 
   &::after {
     @include pseudo($display: block);
@@ -125,7 +125,7 @@
   }
 
   &--location {
-    display: none;
+    display: block;
   }
 
   &--newline {

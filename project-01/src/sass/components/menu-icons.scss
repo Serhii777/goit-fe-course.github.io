@@ -30,7 +30,7 @@
   flex-wrap: nowrap;
 
   &:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   @include tablet {

@@ -24,7 +24,7 @@
 .card__img {
   width: 280px;
   height: 214px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   @include tablet {
     width: 246px;
@@ -70,15 +70,15 @@
 .card__items {
   @extend %list;
   padding-left: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @include tablet {
     margin-bottom: 36px;
   }
 
   @include desktop {
-    margin-bottom: 54px;
     padding-left: 44px;
+    margin-bottom: 58px;
   }
 }
 
@@ -106,7 +106,7 @@
   }
 
   &:not(:nth-last-of-type(-3n+1)) {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 
     @include desktop-wide {
       margin-bottom: 16px;
@@ -115,7 +115,7 @@
 }
 
 .card__description {
-  @include font-settings($third-text-size, 1.5, 0.7px);
+  @include font-settings($third-text-size, 1.6, 0.7px);
   margin: 0px;
 
   &--position {
@@ -150,7 +150,7 @@
 
 .card__text {
   @include font-settings($first-text-size, 1.881, 0.3px);
-  margin: 0px 0px 16px 0px;
+  margin: 0px 0px 12px 0px;
   padding: 0px 16px;
   position: relative;
 
@@ -160,7 +160,7 @@
     width: 25px;
     height: 2px;
     background-color: $first-orange-color;
-    top: -20px;
+    top: -16px;
   }
 
   @include tablet {
@@ -177,7 +177,7 @@
     word-spacing: 3px;
 
     &--position::before {
-      top: -36px;
+      top: -28px;
     }
   }
 
@@ -198,7 +198,7 @@
 
 .card__link {
   display: block;
-  @include font-settings($first-text-size,  2.152, 0.4px);
+  @include font-settings($first-text-size,  2.052, 0.4px);
   text-decoration: underline;
   margin: 0px;
   padding-left: 16px;

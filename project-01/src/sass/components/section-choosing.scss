@@ -1,30 +1,49 @@
 .section-choosing {
-  min-height: 636px;
+  background: linear-gradient(
+    0deg,
+    $first-white-color 33.6%,
+    $first-lightdark-color 33.6%
+  );
 
   @include tablet {
-    min-height: 402px;
+    background: linear-gradient(
+      0deg,
+      $first-white-color 46.1%,
+      $first-lightdark-color 46.1%
+    );
+  }
+
+  @include desktop {
+    height: auto;
+    background: $first-lightdark-color;
   }
 
   @include desktop-wide {
     min-height: 610px;
+      background: linear-gradient(
+      0deg,
+      $first-white-color 50%,
+      $first-lightdark-color 50%
+    );
   }
 }
 
 .section-choosing__wrapper {
   @include center-flex('col');
   flex-wrap: nowrap;
-  height: 398px;
-  background: $first-lightdark-color;
+  height: auto;
   padding: 0px 20px;
+  margin-bottom: 42px;
 
   @include tablet {
-    height: 188px;
     padding: 0px 40px;
+    margin-bottom: 44px;
   }
 
   @include desktop {
     height: auto;
     padding: 0px 35px;
+    margin-bottom: 0px;
   }
 
   @include desktop-wide {
@@ -37,7 +56,7 @@
   @include font-settings($tenth-text-size, 1.5, 1.2px);
   text-align: left;
   margin: 0px 0px 16px 0px;
-  padding: 0px;
+  padding: 0px 20px 0px 0px;
   white-space: pre-line;
 
   @include tablet {
@@ -45,6 +64,7 @@
     text-align: center;
     margin-bottom: 22px;
     white-space: initial;
+    padding: 0px 6px 0px 0px;
   }
 
   @include desktop {

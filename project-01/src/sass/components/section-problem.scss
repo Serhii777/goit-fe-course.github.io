@@ -1,54 +1,62 @@
 .section-problem {
-  min-height: 676px;
+  background: linear-gradient(
+    0deg,
+    $first-white-color 23.6%,
+    $first-lightdark-color 23.6%
+  );
 
   @include tablet {
-    min-height: 552px;
-    background-color: $first-white-color;
+    background: linear-gradient(
+      0deg,
+      $first-white-color 31.2%,
+      $first-lightdark-color 31.2%
+    );
+    @include bgr-image('../images/bgr-fire.png', cover, no-repeat);
+    background-position: center;
   }
 
   @include desktop {
-    min-height: 690px;
+    background: linear-gradient(
+      0deg,
+      $first-white-color 11.8%,
+      $first-lightdark-color 10.8%
+    );
+    @include bgr-image('../images/bgr-fire-desk.png', cover, no-repeat);
   }
 
   @include desktop-wide {
-    min-height: 854px;
+    background: linear-gradient(
+      0deg,
+      $first-white-color 22.8%,
+      $first-lightdark-color 22.8%
+    );
+    @include bgr-image('../images/bgr-fire-desk-larg.png', cover, no-repeat);
   }
 }
 
 .section-problem__wrapper {
   @include center-flex('col');
   flex-wrap: nowrap;
-  height: 516px;
-  background-color: $first-lightdark-color;
-  padding: 46px 20px 0px;
+  padding: 44px 20px 0px;
 
   @include tablet {
-    width: 100%;
-    height: 328px;
     padding: 56px 40px 0px 40px;
-    @include bgr-image('../images/bgr-fire.png', contain, no-repeat);
-    background-position: 0 0;
   }
 
   @include desktop {
-    min-height: 526px;
     padding: 68px 35px 0px;
-    background-image: url(../images/bgr-fire-desk.png);
   }
 
   @include desktop-wide {
-    min-height: 560px;
     padding: 106px 156px 0px 186px;
-    background-image: url(../images/bgr-fire-desk-larg.png);
   }
 }
 
 .section-problem__title {
-  @include font-settings($tenth-text-size, 1.578, 1.2px);
+  @include font-settings($tenth-text-size, 1.528, 1.2px);
   text-align: left;
-  margin: 0px 0px 12px 0px;
+  margin: 0px 0px 16px 0px;
   padding: 0px 45px 0px 0px;
-  white-space: pre-line;
 
   &--newline {
     display: none;

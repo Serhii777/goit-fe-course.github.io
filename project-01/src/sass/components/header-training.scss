@@ -59,7 +59,8 @@
 .section-training__slogan {
   @include font-settings($fifth-text-size, 1.386, 0.623px);
   text-align: left;
-  margin: 0px 0px 36px 0px;
+  margin: 0px 0px 34px 0px;
+  letter-spacing: 0.6px;
 
   &::first-line {
     font-weight: $font-weight-medium;

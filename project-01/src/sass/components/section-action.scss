@@ -4,17 +4,17 @@
   padding: 40px 0px 0px;
 
   @include tablet {
-    padding: 0px 82px 0px;
-    margin-bottom: 52px;
+    padding: 70px 82px 0px;
+    margin-bottom: 50px;
   }
 
   @include desktop {
-    padding: 0px 35px 0px;
-    margin-bottom: 100px;
+    padding: 90px 35px 0px;
+    margin-bottom: 96px;
   }
 
   @include desktop-wide {
-    padding: 0px 156px 0px 186px;
+    padding: 126px 156px 0px 186px;
     margin-bottom: 132px;
   }
 }

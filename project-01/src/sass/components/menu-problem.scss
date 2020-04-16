@@ -2,7 +2,7 @@
   @extend %list;
   background-color: $first-white-color;
   box-shadow: 4px 6.928px 15.54px 5.46px $second-lightdark-opacity-color;
-  padding: 16px 10px 0px 28px;
+  padding: 14px 10px 0px 28px;
   counter-reset: count-problem;
 
   @include tablet {
@@ -33,38 +33,49 @@
   width: 234px;
 
   &::before {
-    content: '0'counter(count-problem);
+    content: '0' counter(count-problem);
     @include font-height($fourth-text-size, 2.083);
-    @include font-family-settings($font-family-monts, $font-weight-medium, $first-orange-color);
+    @include font-family-settings(
+      $font-family-monts,
+      $font-weight-medium,
+      $first-orange-color
+    );
     margin-left: 35px;
   }
 
   // всі, крім останнього
-  &:not(:nth-last-of-type(-3n+1)) {
+  &:not(:nth-last-of-type(-3n + 1)) {
     margin-bottom: 11px;
   }
 
-  &--selection:not(:nth-last-of-type(-3n+1)) {
+  &--selection:not(:nth-last-of-type(-3n + 1)) {
     margin-bottom: 12px;
   }
 
   // останній
-  &:nth-last-of-type(-n+1) {
+  &:nth-last-of-type(-n + 1) {
     margin-bottom: 30px;
+  }
+
+  &--selection:nth-last-of-type(-n + 1) {
+    margin-bottom: 22px;
   }
 
   @include tablet {
     max-width: 320px;
 
-
     // всі, крім 2-x останніх
-    &:not(:nth-last-of-type(-3n+1)) {
+    &:not(:nth-last-of-type(-3n + 1)) {
       margin-bottom: 20px;
     }
 
     // 2 останні
-    &:nth-last-of-type(-n+2) {
+    &:nth-last-of-type(-n + 2) {
       margin-bottom: 36px;
+    }
+
+    &--selection:nth-last-of-type(-n + 2) {
+      margin-bottom: 26px;
     }
   }
 
@@ -81,29 +92,30 @@
     }
 
     // 1 і 4 елементи
-    &:not(:nth-last-of-type(3n+2)) {
+    &:not(:nth-last-of-type(3n + 2)) {
       margin-right: 60px;
     }
 
     //2, 3, 5 і 6 елементи
     &:not(:nth-last-child(3n)) {
       margin-right: 84px;
+      padding: 0px;
     }
 
     // 3 і 6 елементи
     &:nth-of-type(3n) {
       margin-right: 0px;
-      min-width: 300px;
+      min-width: 320px;
     }
 
     // 1, 2 і 3 елементи
-    &:not(:nth-last-of-type(-2n+1)) {
+    &:not(:nth-last-of-type(-2n + 1)) {
       margin-bottom: 34px;
     }
 
     // 4, 5 і 6 елементи
-    &:nth-last-of-type(-n+3) {
-      margin-bottom: 46px;
+    &:nth-last-of-type(-n + 3) {
+      margin-bottom: 48px;
     }
   }
 
@@ -112,12 +124,12 @@
     margin: 0;
 
     // 1 і 4 елементи
-    &:not(:nth-last-of-type(3n+2)) {
+    &:not(:nth-last-of-type(3n + 2)) {
       margin-right: 42px;
     }
 
     // 2 і 5 елементи
-    &:nth-child(3n+2) {
+    &:nth-child(3n + 2) {
       margin-right: 78px;
     }
 
@@ -128,12 +140,12 @@
     }
 
     // 1, 2 і 3 елементи
-    &:not(:nth-last-of-type(-2n+1)) {
+    &:not(:nth-last-of-type(-2n + 1)) {
       margin-bottom: 38px;
     }
 
     // 4, 5 і 6 елементи
-    &:nth-last-of-type(-n+3) {
+    &:nth-last-of-type(-n + 3) {
       margin-bottom: 72px;
     }
   }
@@ -144,7 +156,6 @@
   text-align: left;
   margin: 0px;
   position: relative;
-  white-space: pre-line;
 
   &::before {
     @include pseudo($display: block);
@@ -154,8 +165,16 @@
     @include absolute-tl(absolute, -16px, 0px);
   }
 
-  &--position::before {
+  &--format{
+    padding-right: 10px;
+  }
+
+  &--location {
     display: none;
+  }
+  
+  &--newline {
+    display: block;
   }
 
   @include tablet {
@@ -166,6 +185,14 @@
       letter-spacing: 1.1px;
     }
 
+    &--location {
+      display: block;
+    }
+
+    &--newline {
+      display: none;
+    }
+
     &--position {
       padding-right: 70px;
     }
@@ -173,7 +200,7 @@
 
   @include desktop {
     @include font-settings($eigth-text-size, 1.6, 1.15px);
-    padding-top: 6px;
+    padding: 6px 0px 0px 0px;
     white-space: initial;
 
     &--position {
