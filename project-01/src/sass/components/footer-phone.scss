@@ -1,0 +1,57 @@
+.footer-phone {
+  @include center-flex('all');
+  @extend %link;
+
+  @include tablet {
+    position: relative;
+
+    &::after {
+      @include pseudo($display: block);
+      width: 1px;
+      height: 29px;
+      background-color: $third-white-color;
+      @include absolute-tr(absolute, 5px, -24px);
+
+      @include desktop {
+        @include absolute-tr(absolute, 5px, -26px);
+      }
+    }
+  }
+}
+
+.footer-phone__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: $first-orange-color;
+
+  @include desktop {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer-phone__number {
+  max-width: 218px;
+  @include font-settings($eigth-text-size, 2.083, 0.8px);
+  padding: 0px 0px 0px 8px;
+  border: none;
+  @extend %item;
+
+  &:hover,
+  &:focus {
+    color: $first-orange-color;
+  }
+
+  @include tablet {
+    max-width: 304px;
+    letter-spacing: 1.8px;
+    padding: 0px 0px 0px 8px;
+  }
+
+  @include desktop {
+    max-width: 326px;
+    @include font-settings($twenty-seven-text-size, 1.385, 1.3px);
+    padding: 0px 0px 0px 16px;
+  }
+}

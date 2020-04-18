@@ -52,6 +52,15 @@
       order: 0;
     }
   }
+
+  &--phone {
+    padding: 0px;
+    margin-bottom: 16px;
+  
+    @include tablet {
+      margin: 0px 54px 0px 0px;
+    }
+  }
 }
 
 .footer__logo {
@@ -72,15 +81,6 @@
 
   @include desktop-wide {
     margin-right: 306px;
-  }
-}
-
-.footer__form {
-  padding: 0px;
-  margin-bottom: 16px;
-
-  @include tablet {
-    margin: 0px 54px 0px 0px;
   }
 }
 
