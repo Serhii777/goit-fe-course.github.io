@@ -1,17 +1,22 @@
 .footer-phone {
   @include center-flex('all');
   @extend %link;
-
+  
+  &:hover .footer-phone__number,
+  &:focus .footer-phone__number{
+    color: $first-orange-color;
+  }
+  
   @include tablet {
     position: relative;
-
+    
     &::after {
       @include pseudo($display: block);
       width: 1px;
       height: 29px;
       background-color: $third-white-color;
       @include absolute-tr(absolute, 5px, -24px);
-
+      
       @include desktop {
         @include absolute-tr(absolute, 5px, -26px);
       }
@@ -24,7 +29,7 @@
   width: 20px;
   height: 20px;
   fill: $first-orange-color;
-
+  
   @include desktop {
     width: 34px;
     height: 34px;
@@ -37,12 +42,7 @@
   padding: 0px 0px 0px 8px;
   border: none;
   @extend %item;
-
-  &:hover,
-  &:focus {
-    color: $first-orange-color;
-  }
-
+  
   @include tablet {
     max-width: 304px;
     letter-spacing: 1.8px;
